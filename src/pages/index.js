@@ -24,6 +24,9 @@ class Home extends React.Component {
         <Link className="btn btn-primary" to="/history">
           history
         </Link>
+        <Link className="btn btn-primary" to="/">
+          Home
+        </Link>
       </Layout>
     )
   }
