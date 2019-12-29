@@ -18,6 +18,9 @@ class Home extends React.Component {
         <Link className="btn btn-primary" to="/about">
           About
         </Link>
+        <Link className="btn btn-primary" to="/awards">
+          Awards
+        </Link>
       </Layout>
     )
   }
