@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import "../styles/test.scss"
 
 class Layout extends React.Component {
   render() {
