@@ -1,8 +1,10 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
+import "bootstrap/dist/css/bootstrap.min.css"
 
 class Home extends React.Component {
   render() {
@@ -13,6 +15,9 @@ class Home extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
         <p>home</p>
+        <Link className="btn btn-primary" to="/about">
+          About
+        </Link>
       </Layout>
     )
   }
