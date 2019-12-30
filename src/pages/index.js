@@ -4,8 +4,6 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import "bootstrap/dist/css/bootstrap.min.css"
-
 class Home extends React.Component {
   render() {
     const { data } = this.props

@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import "../styles/test.scss"
+import "../styles/nobel-sustainability.scss"
 
 class Layout extends React.Component {
   render() {
