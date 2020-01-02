@@ -1,5 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
+import PropTypes from "prop-types"
 
 const ImageOffset = ({ src, backgroundColor, text }) => {
   return (
@@ -9,6 +10,12 @@ const ImageOffset = ({ src, backgroundColor, text }) => {
       <div className={`absolute z-index-1 offset-bg ${backgroundColor}`} />
     </div>
   )
+}
+
+ImageOffset.propTypes = {
+  src: PropTypes.object.isRequired,
+  backgroundColor: PropTypes.string,
+  text: PropTypes.string,
 }
 
 export default ImageOffset
