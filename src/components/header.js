@@ -3,11 +3,11 @@ import { Link } from "gatsby"
 
 const header = props => {
   return (
-    <React.Fragment>
+    <header>
       <h1>
         <Link to={`/`}>{props.title}</Link>
       </h1>
-    </React.Fragment>
+    </header>
   )
 }
 
