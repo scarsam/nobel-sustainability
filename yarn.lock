@@ -5962,7 +5962,7 @@ gatsby-plugin-sharp@^2.3.5:
     svgo "1.3.2"
     uuid "^3.3.3"
 
-gatsby-plugin-typography@^2.3.18:
+gatsby-plugin-typography@^2.3.20:
   version "2.3.20"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-typography/-/gatsby-plugin-typography-2.3.20.tgz#0eb6f686e876bbd5a6172f7082f831fc83f7d543"
   integrity sha512-D2wYovyQQgeCxX53jZyzgtcrh5+oT3scN/H0w7EGHKTEC2NSLkYDaHi6pfyrE11C0I4W2rl76Qb382k3hT+KxQ==
@@ -14146,6 +14146,13 @@ typography-normalize@^0.16.19:
   version "0.16.19"
   resolved "https://registry.yarnpkg.com/typography-normalize/-/typography-normalize-0.16.19.tgz#58e0cf12466870c5b27006daa051fe7307780660"
   integrity sha512-vtnSv/uGBZVbd4e/ZhZB9HKBgKKlWQUXw74+ADIHHxzKp27CEf8PSR8TX1zF2qSyQ9/qMdqLwXYz8yRQFq9JLQ==
+
+typography-theme-us-web-design-standards@^0.16.19:
+  version "0.16.19"
+  resolved "https://registry.yarnpkg.com/typography-theme-us-web-design-standards/-/typography-theme-us-web-design-standards-0.16.19.tgz#3b1b667bf3ba654860af5eaabaa318736f0ec5b5"
+  integrity sha512-grHEforbcIyQBruAsLNmRgICY+wCZB0a93sqe+OLdwygThdy+wTVxZjceQIpEpf6q0npxVy6mqEpL2/wD03ZQg==
+  dependencies:
+    gray-percentage "^2.0.0"
 
 typography-theme-wordpress-2016@^0.16.19:
   version "0.16.19"
