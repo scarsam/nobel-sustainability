@@ -1,0 +1,16 @@
+.offset-image-wrapper {
+  .offset-bg {
+    height: 100%;
+    width: 100%;
+    top: 5%;
+    left: -5%;
+  }
+  .offset-image-text {
+    bottom: 4px;
+    left: 20px;
+  }
+
+  .gatsby-image-wrapper {
+    box-shadow: -10px 10px 10px -5px rgba(0, 0, 0, 0.2);
+  }
+}

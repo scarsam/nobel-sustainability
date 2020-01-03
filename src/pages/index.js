@@ -3,10 +3,12 @@ import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ImageOffset from "../components/image_offset"
 
 const Home = props => {
   const { data } = props
   const siteTitle = data.site.siteMetadata.title
+  const image = data.file.childImageSharp.fluid
 
   return (
     <Layout location={props.location} title={siteTitle}>
@@ -21,6 +23,15 @@ const Home = props => {
       <Link className="btn btn-primary" to="/history">
         history
       </Link>
+      <div className="col-4">
+        <ImageOffset
+          src={image}
+          backgroundColor={"bg-green"}
+          text={
+            "Creation a pollution-free, life-sustaining environment for all"
+          }
+        />
+      </div>
     </Layout>
   )
 }
@@ -32,6 +43,13 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    file(relativePath: { eq: "trees.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 200) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
   }
