@@ -3,102 +3,13 @@ html {
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   background-color: $white;
   color: $black;
-  font-family: "lato", $fallback;
   text-rendering: optimizeLegibility;
 }
 
 section {
   background-color: $white;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 1rem;
-}
-
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6,
-q {
-  font-family: "merriweather", $fallback;
-}
-
-h1,
-.h1 {
-  @include type(3);
-  @include media_min_break(md) {
-    @include type(2);
-  }
-  @include media_min_break(xl) {
-    @include type(1);
-  }
-}
-
-h2,
-.h2 {
-  @include type(4);
-  @include media_min_break(md) {
-    @include type(3);
-  }
-  @include media_min_break(xl) {
-    @include type(2);
-  }
-}
-
-h3,
-.h3 {
-  @include type(5);
-  @include media_min_break(md) {
-    @include type(4);
-  }
-  @include media_min_break(xl) {
-    @include type(3);
-  }
-}
-
-h4,
-.h4 {
-  @include type(6);
-  @include media_min_break(md) {
-    @include type(5);
-  }
-  @include media_min_break(xl) {
-    @include type(4);
-  }
-}
-
-h5,
-.h5 {
-  @include type(6);
-  @include media_min_break(md) {
-    @include type(5);
-  }
-}
-
-h6,
-.h6 {
-  @include type(6);
-}
-
-p {
-  @include type(8);
-  margin-top: 0;
-  margin-bottom: 1rem;
 }
