@@ -4,6 +4,7 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ImageOffset from "../components/image_offset"
+import IntroText from "../components/intro_text"
 
 const Home = props => {
   const { data } = props
@@ -24,6 +25,7 @@ const Home = props => {
         history
       </Link>
       <div className="col-4">
+        <IntroText headline="A world in balance" subheading="We bring public awareness to the issues of pollution and clean energy and encouraging change" />
         <ImageOffset
           src={image}
           backgroundColor={"bg-green"}
