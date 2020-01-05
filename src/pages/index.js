@@ -17,14 +17,16 @@ const Home = props => {
         headline="A world in balance"
         subheading="We bring public awareness to the issues of pollution and clean energy and encouraging change"
       />
-      <div className="col-4">
-        <ImageOffset
-          src={image}
-          backgroundColor={"bg-green"}
-          text={
-            "Creation a pollution-free, life-sustaining environment for all"
-          }
-        />
+      <div className="container">
+        <div className="col-4">
+          <ImageOffset
+            src={image}
+            backgroundColor={"bg-green"}
+            text={
+              "Creation a pollution-free, life-sustaining environment for all"
+            }
+          />
+        </div>
       </div>
     </Layout>
   )
