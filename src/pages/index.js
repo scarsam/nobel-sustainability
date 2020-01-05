@@ -13,17 +13,18 @@ const Home = props => {
   return (
     <Layout>
       <SEO title="All posts" />
-      <div className="container">
-      <IntroText headline="A world in balance" subheading="We bring public awareness to the issues of pollution and clean energy and encouraging change" />
-        <div className="col-4">
-          <ImageOffset
-            src={image}
-            backgroundColor={"bg-green"}
-            text={
-              "Creation a pollution-free, life-sustaining environment for all"
-            }
-          />
-        </div>
+      <IntroText
+        headline="A world in balance"
+        subheading="We bring public awareness to the issues of pollution and clean energy and encouraging change"
+      />
+      <div className="col-4">
+        <ImageOffset
+          src={image}
+          backgroundColor={"bg-green"}
+          text={
+            "Creation a pollution-free, life-sustaining environment for all"
+          }
+        />
       </div>
     </Layout>
   )
