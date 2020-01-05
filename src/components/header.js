@@ -29,22 +29,34 @@ export const Header = ({ data }) => {
 
           <ul className="menu padding-none bg-white">
             <li>
-              <Link className="nav-link" to={`/about`}>
+              <Link className="nav-link" activeClassName="active" to={`/about`}>
                 <span className="nav-text c-black">about us</span>
               </Link>
             </li>
             <li>
-              <Link className="nav-link" to={`/awards`}>
+              <Link
+                className="nav-link"
+                activeClassName="active"
+                to={`/awards`}
+              >
                 <span className="nav-text c-black">awards</span>
               </Link>
             </li>
             <li>
-              <Link className="nav-link" to={`/history`}>
+              <Link
+                className="nav-link"
+                activeClassName="active"
+                to={`/history`}
+              >
                 <span className="nav-text c-black">history</span>
               </Link>
             </li>
             <li>
-              <Link className="nav-link" to={`/contact`}>
+              <Link
+                className="nav-link"
+                activeClassName="active"
+                to={`/contact`}
+              >
                 <span className="nav-text c-black">contact</span>
               </Link>
             </li>
