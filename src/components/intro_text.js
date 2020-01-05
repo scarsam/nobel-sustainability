@@ -3,10 +3,10 @@ import PropTypes from "prop-types"
 
 const IntroText = ({ headline, subheading }) => {
   return (
-    <>
+    <div className="container">
       <h1>{headline}</h1>
       <p>{subheading}</p>
-    </>
+    </div>
   )
 }
 
