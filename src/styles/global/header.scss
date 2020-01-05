@@ -23,6 +23,10 @@
   text-decoration: none;
 }
 
+.menu {
+  margin-left: 50px;
+}
+
 .menu-icon {
   cursor: pointer;
   user-select: none;
@@ -76,6 +80,9 @@
 }
 
 @media (min-width: 788px) {
+  .menu {
+    margin: 0;
+  }
   .nav-menu li {
     float: left;
   }
@@ -107,7 +114,7 @@
       &:after {
         content: "";
         position: absolute;
-        bottom: -10px;
+        bottom: -8px;
         width: 0px;
         height: 3px;
         margin: 5px 0 0;

@@ -20,7 +20,10 @@ export const Header = ({ data }) => {
             Nobel Sustainability Trust
           </Link>
           <input className="menu-btn d-none" type="checkbox" id="menu-btn" />
-          <label className="menu-icon padding-bottom-none float-right padding-top-45px padding-right-20px relative" htmlFor="menu-btn">
+          <label
+            className="menu-icon padding-bottom-none float-right padding-top-45px padding-right-20px relative"
+            htmlFor="menu-btn"
+          >
             <span className="navicon relative d-block"></span>
           </label>
 
@@ -31,13 +34,13 @@ export const Header = ({ data }) => {
               </Link>
             </li>
             <li>
-              <Link className="nav-link" to={`/partners`}>
-                <span className="nav-text c-black">partners</span>
+              <Link className="nav-link" to={`/awards`}>
+                <span className="nav-text c-black">awards</span>
               </Link>
             </li>
             <li>
-              <Link className="nav-link" to={`/news`}>
-                <span className="nav-text c-black">news</span>
+              <Link className="nav-link" to={`/history`}>
+                <span className="nav-text c-black">history</span>
               </Link>
             </li>
             <li>
@@ -58,7 +61,7 @@ export default props => (
       query {
         file(relativePath: { eq: "logo.png" }) {
           childImageSharp {
-            fixed(width: 50, height: 30) {
+            fixed(width: 40, height: 30) {
               ...GatsbyImageSharpFixed
             }
           }
