@@ -8,7 +8,7 @@ export const Header = ({ data }) => {
   return (
     <header>
       <nav className="nav-wrapper container padding-top-none padding-bottom-20px">
-        <div className="nav-menu">
+        <div className="nav-menu d-inline-block relative">
           <Link to={`/`} className="logo d-flex c-black padding-top-30px">
             <span>
               <Img
@@ -20,8 +20,8 @@ export const Header = ({ data }) => {
             Nobel Sustainability Trust
           </Link>
           <input className="menu-btn" type="checkbox" id="menu-btn" />
-          <label className="menu-icon padding-bottom-none" htmlFor="menu-btn">
-            <span className="navicon"></span>
+          <label className="menu-icon padding-bottom-none float-right padding-top-45px padding-right-20px relative" htmlFor="menu-btn">
+            <span className="navicon relative d-block"></span>
           </label>
 
           <ul className="menu padding-none bg-white">

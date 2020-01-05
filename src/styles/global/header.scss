@@ -8,16 +8,8 @@
   overflow: hidden;
 }
 
-.nav-menu li a {
-  display: block;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
 .nav-menu .logo {
-  display: block;
   float: left;
-  font-size: 1em;
   text-decoration: none;
 }
 
@@ -27,20 +19,14 @@
   transition: max-height 0.2s ease-out;
 }
 
-.nav-menu .menu-icon {
+.menu-icon {
   cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 42px 20px;
-  position: relative;
   user-select: none;
 }
 
 .nav-menu .menu-icon .navicon {
   background: $black;
-  display: block;
   height: 2px;
-  position: relative;
   transition: background 0.2s ease-out;
   width: 18px;
 }
