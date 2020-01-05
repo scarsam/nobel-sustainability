@@ -79,7 +79,7 @@
   top: 0;
 }
 
-@media (min-width: 788px) {
+@include media_min_break(md) {
   .menu {
     margin: 0;
   }
@@ -96,6 +96,9 @@
   }
   .nav-menu .menu-icon {
     display: none;
+  }
+  .nav-link.active {
+    //TODO ADD BORDER BOTTOM
   }
 
   .nav-link {
