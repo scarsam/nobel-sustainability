@@ -5,6 +5,7 @@ $colors: (
   water: $water,
   green: $green,
   black: $black,
+  grey-beige: $grey-beige,
 );
 
 @each $key, $val in $colors {
