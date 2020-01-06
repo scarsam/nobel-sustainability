@@ -10,13 +10,13 @@ import twitter from "../images/social/twitter.svg"
 
 const footer = () => {
   return (
-    <footer className="c-white padding-top-20px">
+    <footer className="c-white bg-water">
       <div className="container d-flex justify-content-between">
         <div className="footer-title">
           <img src={logo} alt="company logo white" />
           <span className="padding-left-10px">Nobel Sustainability Trust</span>
         </div>
-        <div className="social-links d-flex c-white">
+        <div className="social-links d-flex">
           <Link className="padding-right-15px">
             <img src={facebook} alt="facebook icon" />
           </Link>
