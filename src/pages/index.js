@@ -77,7 +77,7 @@ const Home = props => {
         </div>
       </section>
 
-      <section id="conference" className="container">
+      <section id="conference" className="container border-bottom">
         <div className="row">
           <div className="col-md-2">
             <h3>Sustainable Technology Conference</h3>
@@ -109,10 +109,6 @@ const Home = props => {
           </div>
         </div>
       </section>
-
-      <div className="container padding-top-none padding-bottom-none">
-        <div className="bg-green section-divider"></div>
-      </div>
 
       <section id="news" className="container">
         <div className="row">
