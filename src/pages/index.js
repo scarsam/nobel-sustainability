@@ -17,6 +17,7 @@ const Home = props => {
         headline="A world in balance"
         subheading="We bring public awareness to the issues of pollution and clean energy and encouraging change"
       />
+
       <div className="container">
         <div className="col-4">
           <ImageOffset
@@ -39,6 +40,13 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    file(relativePath: { eq: "trees.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 200) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
     file(relativePath: { eq: "trees.jpg" }) {
