@@ -4,8 +4,6 @@ import Footer from "../components/footer"
 import "../styles/nobel-sustainability.scss"
 
 const Layout = ({ children }) => {
-  console.log(children)
-
   return (
     <React.Fragment>
       <Header />

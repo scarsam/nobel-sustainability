@@ -17,16 +17,16 @@ const footer = () => {
           <span className="padding-left-10px">Nobel Sustainability Trust</span>
         </div>
         <div className="social-links d-flex">
-          <Link className="padding-right-15px">
+          <Link to={`/`} className="padding-right-15px">
             <img src={facebook} alt="facebook icon" />
           </Link>
-          <Link className="padding-right-15px">
+          <Link to={`/`} className="padding-right-15px">
             <img src={instagram} alt=" instagram icon" />
           </Link>
-          <Link className="padding-right-15px"> 
+          <Link to={`/`} className="padding-right-15px">
             <img src={linkedin} alt="linkedin icon" />
           </Link>
-          <Link className="padding-right-15px">
+          <Link to={`/`} className="padding-right-15px">
             <img src={twitter} alt="twitter icon" />
           </Link>
         </div>
