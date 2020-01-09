@@ -1,0 +1,20 @@
+.scroll-top {
+  bottom: 0.9rem;
+  right: 0.5rem;
+  img {
+    cursor: pointer;
+    width: 100px;
+    padding: 10px;
+    border-radius: 25%;
+    animation: fade-in 0.4s ease-in-out;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
