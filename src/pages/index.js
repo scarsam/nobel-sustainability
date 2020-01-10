@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-import SEO from "../components/seo"
 import Layout from "../components/layout"
 import ImageOffset from "../components/image_offset"
+import SEO from "../components/seo"
 import IntroText from "../components/intro_text"
 import eartCapitalLogo from "../images/partners/earth-capital-logo.svg"
 import lombardLogo from "../images/partners/lombard-logo.svg"
@@ -15,7 +15,7 @@ const Home = props => {
 
   return (
     <Layout>
-      <SEO title="All posts" />
+      <SEO title="Home" />
       <IntroText
         headline="A world in balance"
         subheading="We bring public awareness to the issues of pollution and clean energy and encouraging change"
