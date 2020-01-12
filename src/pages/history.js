@@ -102,9 +102,9 @@ const History = ({ data }) => {
         </div>
       </section>
 
-      <section className="nobel-family-society bg-grey-beige margin-bottom-60px">
+      <section className="nobel-family-society bg-grey-beige">
         <div className="container">
-          <h1 className="text-left-sm text-center-md">
+          <h1 className="text-left-sm text-center-md padding-bottom-45px">
             The Nobel Family Society Today
           </h1>
           <div className="row">
