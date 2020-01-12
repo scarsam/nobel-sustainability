@@ -6,6 +6,7 @@ import ImageOffset from "../components/image_offset"
 import IntroText from "../components/intro_text"
 import eartCapitalLogo from "../images/partners/earth-capital-logo.svg"
 import lombardLogo from "../images/partners/lombard-logo.svg"
+import Img from "gatsby-image"
 
 const Home = props => {
   const { data } = props
@@ -21,7 +22,7 @@ const Home = props => {
         subheading="We bring public awareness to the issues of pollution and clean energy and encouraging change"
       />
       <section id="banner">
-        <ImageOffset src={solarImage} backgroundColor={"bg-sand"} />
+        <Img fluid={solarImage} />
       </section>
 
       <section id="awards" className="container">
@@ -98,7 +99,7 @@ const Home = props => {
               church-key brooklyn.
             </p>
           </div>
-          <div className="col-md-5 col-lg-3 offset-lg-1">
+          <div className="col-10 offset-1 col-md-5 offset-md-0 col-lg-3 offset-lg-1">
             <ImageOffset
               src={treesImage}
               backgroundColor={"bg-green"}
