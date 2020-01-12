@@ -1,23 +1,17 @@
 import React from "react"
-import { graphql, StaticQuery, Link } from "gatsby"
-import Img from "gatsby-image"
+import { Link } from "gatsby"
+import logo from "../images/nobel-logo.svg"
 
-export const Header = ({ data }) => {
-  const logo = data.file.childImageSharp.fixed
-
+const Header = () => {
   return (
     <header>
       <nav className="nav-wrapper container padding-top-none padding-bottom-20px">
         <div className="nav-menu d-none d-inline-block relative">
           <Link to={`/`} className="logo d-flex c-black padding-top-30px">
-            <span>
-              <Img
-                className="padding-top-15px"
-                fixed={logo}
-                alt="company logo"
-              />
+            <img src={logo} alt="company logo" />
+            <span className="padding-left-10px padding-top-5px">
+              Nobel Sustainability Trust
             </span>
-            Nobel Sustainability Trust
           </Link>
           <input className="menu-btn d-none" type="checkbox" id="menu-btn" />
           <label
@@ -67,19 +61,4 @@ export const Header = ({ data }) => {
   )
 }
 
-export default props => (
-  <StaticQuery
-    query={graphql`
-      query {
-        file(relativePath: { eq: "logo.png" }) {
-          childImageSharp {
-            fixed(width: 40, height: 30) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-      }
-    `}
-    render={data => <Header data={data} {...props} />}
-  />
-)
+export default Header
