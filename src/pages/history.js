@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import IntroText from "../components/intro_text"
 import ImageOffset from "../components/image_offset"
-import HistoryMidDown from "../components/history_mid_down"
+import HistoryMidBreakpoint from "../components/history_mid_breakpoint"
 
 const History = ({ data }) => {
   const immanuel = data.immanuel.childImageSharp.fluid
@@ -29,7 +29,7 @@ const History = ({ data }) => {
       />
       <section className="container padding-top-none">
         {width && width < 992 ? (
-          <HistoryMidDown ludwig={ludwig} immanuel={immanuel} />
+          <HistoryMidBreakpoint ludwig={ludwig} immanuel={immanuel} />
         ) : (
           <div className="row padding-bottom-60px">
             <div className="col-lg-3">

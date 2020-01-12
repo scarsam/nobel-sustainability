@@ -1,7 +1,7 @@
 import React from "react"
 import ImageOffset from "../components/image_offset"
 
-const HistoryMidDown = ({ immanuel, ludwig }) => {
+const HistoryMidBreakpoint = ({ immanuel, ludwig }) => {
   return (
     <>
       <div className="row padding-bottom-60px">
@@ -42,4 +42,4 @@ const HistoryMidDown = ({ immanuel, ludwig }) => {
   )
 }
 
-export default HistoryMidDown
+export default HistoryMidBreakpoint
