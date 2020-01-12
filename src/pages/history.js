@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import IntroText from "../components/intro_text"
@@ -9,17 +9,6 @@ const History = ({ data }) => {
   const immanuel = data.immanuel.childImageSharp.fluid
   const ludwig = data.ludwig.childImageSharp.fluid
 
-  const [width, setWidth] = useState(window.innerWidth)
-
-  useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth)
-
-    window.addEventListener("resize", handleResize)
-    return () => {
-      window.removeEventListener("resize", handleResize)
-    }
-  })
-
   return (
     <Layout>
       <SEO title="History" />
@@ -27,53 +16,53 @@ const History = ({ data }) => {
         headline="History"
         subheading="Members of the earlier Nobel family were known, not only for their interest in art but also for their inventive ability"
       />
-      <section className="container padding-top-none">
-        {width && width < 992 ? (
-          <HistoryMidBreakpoint ludwig={ludwig} immanuel={immanuel} />
-        ) : (
-          <div className="row padding-bottom-60px">
-            <div className="col-lg-3">
-              <ImageOffset src={immanuel} backgroundColor={"bg-water"} />
-            </div>
-            <div className="col-lg-9">
-              <div className="row">
-                <div className="col-lg-5">
-                  <h2>Immanuel Nobel</h2>
-                  <p>
-                    Immanuel Nobel pioneered the development of underwater
-                    mines, designed some of the first steam engines to power
-                    russian ships, installed the first central heating systems
-                    in Russian homes and was the first to develop modern
-                    plywood, cut with a rotary lathe.
-                  </p>
-                </div>
-                <div className="col-lg-12">
-                  <div className="row padding-top-60px">
-                    <div className="offset-lg-1 col-lg-4">
-                      <ImageOffset src={ludwig} backgroundColor={"bg-green"} />
-                    </div>
-                    <div className="col-lg-6">
-                      <h2>Ludwig Nobel</h2>
-                      <p>
-                        One of his sons, Ludvig Nobel, was the founder of the
-                        machine-building factory Ludvig Nobel, a great armaments
-                        concern and the inventor of the Nobel wheel. Ludvig was
-                        also the founder of BraNobel, the foremost Russian oil
-                        industry in it's time, and launched the world's first
-                        diesel-driven tugs, tankers and u-boats, besides
-                        building the first European oil pipeline in Baku. Alfred
-                        Nobel, a profilic inventor who acquired 355 patents
-                        during his lifespan, was the creator of dynamite and the
-                        blasting cap from which he made a substantial future of
-                        which he left the bulk to form the Nobel Prizes.
-                      </p>
-                    </div>
+      <section className="container padding-top-none d-none d-block d-lg-none">
+        <HistoryMidBreakpoint ludwig={ludwig} immanuel={immanuel} />
+      </section>
+
+      <section className="container padding-top-none d-none d-lg-block">
+        <div className="row padding-bottom-60px">
+          <div className="col-lg-3">
+            <ImageOffset src={immanuel} backgroundColor={"bg-water"} />
+          </div>
+          <div className="col-lg-9">
+            <div className="row">
+              <div className="col-lg-5">
+                <h2>Immanuel Nobel</h2>
+                <p>
+                  Immanuel Nobel pioneered the development of underwater mines,
+                  designed some of the first steam engines to power russian
+                  ships, installed the first central heating systems in Russian
+                  homes and was the first to develop modern plywood, cut with a
+                  rotary lathe.
+                </p>
+              </div>
+              <div className="col-lg-12">
+                <div className="row padding-top-60px">
+                  <div className="offset-lg-1 col-lg-4">
+                    <ImageOffset src={ludwig} backgroundColor={"bg-green"} />
+                  </div>
+                  <div className="col-lg-6">
+                    <h2>Ludwig Nobel</h2>
+                    <p>
+                      One of his sons, Ludvig Nobel, was the founder of the
+                      machine-building factory Ludvig Nobel, a great armaments
+                      concern and the inventor of the Nobel wheel. Ludvig was
+                      also the founder of BraNobel, the foremost Russian oil
+                      industry in it's time, and launched the world's first
+                      diesel-driven tugs, tankers and u-boats, besides building
+                      the first European oil pipeline in Baku. Alfred Nobel, a
+                      profilic inventor who acquired 355 patents during his
+                      lifespan, was the creator of dynamite and the blasting cap
+                      from which he made a substantial future of which he left
+                      the bulk to form the Nobel Prizes.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        )}
+        </div>
       </section>
 
       <section id="foundation" className="container">
