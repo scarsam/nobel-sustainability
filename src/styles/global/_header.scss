@@ -98,7 +98,14 @@
     display: none;
   }
   .nav-link.active {
-    //TODO ADD BORDER BOTTOM
+    .nav-text {
+      &:before,
+      &:after {
+        width: 100%;
+        opacity: 1;
+        width: 50%;
+      }
+    }
   }
 
   .nav-link {
