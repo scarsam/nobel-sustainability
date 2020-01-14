@@ -4,11 +4,16 @@ import IntroText from "../components/intro_text"
 import SEO from "../components/seo"
 import ImageOffset from "../components/image_offset"
 import Img from "gatsby-image"
+import mapSvg from "../images/about/map.svg"
+import squigglyLine from "../images/about/squiggly-line.svg"
+import "../styles/pages/about.scss"
 
 const About = ({ data }) => {
   const treesImage = data.trees.childImageSharp.fluid
   const peterNobelImage = data.peter.childImageSharp.fixed
   const michaelNobelImage = data.michael.childImageSharp.fixed
+  const stinaNordlanderImage = data.stina.childImageSharp.fixed
+  const jamesBurtonImage = data.james.childImageSharp.fixed
 
   return (
     <Layout>
@@ -40,8 +45,8 @@ const About = ({ data }) => {
                 </p>
               </div>
             </div>
-            <div className="col-12 padding-top-60px">
-              <ImageOffset src={treesImage} backgroundColor={"bg-green"} />
+            <div className="col-12 padding-top-30px padding-bottom-30px padding-bottom-md-none">
+              <ImageOffset src={treesImage} backgroundColor="bg-map" />
             </div>
           </div>
           <div className="col-md-5">
@@ -139,86 +144,87 @@ const About = ({ data }) => {
             <div className="col-12 text-center padding-bottom-60px">
               <h2>The board</h2>
             </div>
-            <div className="col-md-6">
-              <div className="row">
-                <div className="col-3 text-center">
-                  <Img fixed={michaelNobelImage} />
-                </div>
-                <div className="col-9">
+            <div className="col-md-5 offset-md-1 padding-bottom-30px padding-bottom-md-none">
+              <div className="d-flex align-items-center margin-bottom-30px">
+                <Img fixed={michaelNobelImage} />
+                <div className="padding-left-30px">
                   <h3>Michael Nobel</h3>
-                  <p>
-                    The chairman of NST, university professor Michael Nobel,
-                    PhD, participated in the introduction of magnetic resonance
-                    imaging as European vice president of Fonar Corp. From 1991
-                    to 2007 he served as Executive Chairman of the MRAB Group, a
-                    company providing MRI services to Swedish hospitals. From
-                    1991 to 2006 he was Vice Chairman and Chairman of the Board
-                    of the Nobel Family. He has been consultant to Unesco in
-                    Paris and the United Nations Social Affairs Division in
-                    Geneva. Michael Nobel is presently chairman or board member
-                    of six international companies in medical diagnostics,
-                    treatment and information and in five non-for-profit
-                    organizations.
-                  </p>
-                  <p>
-                    He is appointed distinguished professor at the Advanced
-                    Research Institute of Natural Science and Technology at
-                    Osaka City University and as guest professor at the Seisa
-                    and Soka Universities in Japan. Michael Nobel has received
-                    twelve honorary doctorates and professorships from
-                    universities around the world and fourteen other types of
-                    awards for his work in medical innovation and conflict
-                    resolution as well as in other fields.
-                  </p>
+                  <img src={squigglyLine} alt="underline" />
                 </div>
               </div>
+              <p>
+                The chairman of NST, university professor Michael Nobel, PhD,
+                participated in the introduction of magnetic resonance imaging
+                as European vice president of Fonar Corp. From 1991 to 2007 he
+                served as Executive Chairman of the MRAB Group, a company
+                providing MRI services to Swedish hospitals. From 1991 to 2006
+                he was Vice Chairman and Chairman of the Board of the Nobel
+                Family. He has been consultant to Unesco in Paris and the United
+                Nations Social Affairs Division in Geneva. Michael Nobel is
+                presently chairman or board member of six international
+                companies in medical diagnostics, treatment and information and
+                in five non-for-profit organizations.
+              </p>
+              <p>
+                He is appointed distinguished professor at the Advanced Research
+                Institute of Natural Science and Technology at Osaka City
+                University and as guest professor at the Seisa and Soka
+                Universities in Japan. Michael Nobel has received twelve
+                honorary doctorates and professorships from universities around
+                the world and fourteen other types of awards for his work in
+                medical innovation and conflict resolution as well as in other
+                fields.
+              </p>
             </div>
-            <div className="col-md-6">
-              <div className="row">
-                <div className="col-3 text-center">
-                  <Img fixed={peterNobelImage} />
-                </div>
-                <div className="col-9">
+            <div className="col-md-5">
+              <div className="d-flex align-items-center margin-bottom-30px">
+                <Img fixed={peterNobelImage} />
+                <div className="padding-left-30px">
                   <h3>Peter Nobel</h3>
-                  <p>
-                    Peter Nobel co-founded the Swedish clean tech company
-                    HeatCore AB which operates in the energy efficiency sector.
-                    The company is developing and marketing a highly compact and
-                    efficient heat cell for applications in the global heating
-                    industry. Peter has a degree of Master of Science in
-                    Material Science and Engineering from the Royal Institute of
-                    Technology in Stockholm and a degree in business
-                    administration from Lund University.
-                  </p>
-                  <p>
-                    He has a track record of over 25 years positioning companies
-                    for success and market share growth in various industrial
-                    markets. He possesses a long experience of holding executive
-                    positions in sales and marketing, R&D and manufacturing
-                    functions in global companies like Alfa Laval and SWEP
-                    International.
-                  </p>
-                  <p>
-                    He has significant expertise in successfully navigating long
-                    sales cycles for industrial components for various global
-                    industry sectors and was instrumental for developing heat
-                    transfer products into an exponential growth resulting in a
-                    €500 million worldwide market.
-                  </p>
+                  <img src={squigglyLine} alt="underline" />
                 </div>
               </div>
+              <p>
+                Peter Nobel co-founded the Swedish clean tech company HeatCore
+                AB which operates in the energy efficiency sector. The company
+                is developing and marketing a highly compact and efficient heat
+                cell for applications in the global heating industry. Peter has
+                a degree of Master of Science in Material Science and
+                Engineering from the Royal Institute of Technology in Stockholm
+                and a degree in business administration from Lund University.
+              </p>
+              <p>
+                He has a track record of over 25 years positioning companies for
+                success and market share growth in various industrial markets.
+                He possesses a long experience of holding executive positions in
+                sales and marketing, R&D and manufacturing functions in global
+                companies like Alfa Laval and SWEP International.
+              </p>
+              <p>
+                He has significant expertise in successfully navigating long
+                sales cycles for industrial components for various global
+                industry sectors and was instrumental for developing heat
+                transfer products into an exponential growth resulting in a €500
+                million worldwide market.
+              </p>
             </div>
           </div>
         </div>
       </section>
-      <section>
+      <section className="personell-bg">
         <div className="container">
           <div className="row">
-            <div className="col-md-2">
+            <div className="col-12 text-center padding-bottom-60px">
               <h2>Personell</h2>
             </div>
-            <div className="col-md-4 offset-md-2">
-              <h3>Stina Nordlander</h3>
+            <div className="col-md-5 offset-md-1 padding-bottom-30px padding-bottom-md-none">
+              <div className="d-flex align-items-center margin-bottom-30px">
+                <Img fixed={stinaNordlanderImage} />
+                <div className="padding-left-30px">
+                  <h3>Stina Nordlander</h3>
+                  <img src={squigglyLine} alt="underline" />
+                </div>
+              </div>
               <p>
                 Miss Stina Nordlander graduated 2016 from junior college after
                 studying natural sciences with the focus on biology. After
@@ -241,8 +247,14 @@ const About = ({ data }) => {
                 Manager for the Nobel Sustainability Trust Foundation.
               </p>
             </div>
-            <div className="col-md-4">
-              <h3>James Burton</h3>
+            <div className="col-md-5">
+              <div className="d-flex align-items-center margin-bottom-30px">
+                <Img fixed={jamesBurtonImage} />
+                <div className="padding-left-30px">
+                  <h3>James Burton</h3>
+                  <img src={squigglyLine} alt="underline" />
+                </div>
+              </div>
               <p>
                 James is an expert in prize design and operations. He has
                 advised organisations such as the World Bank, NASA, Coca Cola,
@@ -273,7 +285,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    trees: file(relativePath: { eq: "trees2.jpg" }) {
+    trees: file(relativePath: { eq: "about/trees2.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 960) {
           ...GatsbyImageSharpFluid
@@ -288,6 +300,20 @@ export const pageQuery = graphql`
       }
     }
     michael: file(relativePath: { eq: "about/michael.png" }) {
+      childImageSharp {
+        fixed(width: 100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    stina: file(relativePath: { eq: "about/stina.png" }) {
+      childImageSharp {
+        fixed(width: 100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    james: file(relativePath: { eq: "about/james.png" }) {
       childImageSharp {
         fixed(width: 100) {
           ...GatsbyImageSharpFixed
