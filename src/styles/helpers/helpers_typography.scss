@@ -1,3 +1,15 @@
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
 @include media_min_break(sm) {
   .text-left-sm {
     text-align: left !important;
