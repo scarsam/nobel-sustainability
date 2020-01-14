@@ -4,7 +4,6 @@ import IntroText from "../components/intro_text"
 import SEO from "../components/seo"
 import ImageOffset from "../components/image_offset"
 import Img from "gatsby-image"
-import mapSvg from "../images/about/map.svg"
 import squigglyLine from "../images/about/squiggly-line.svg"
 import "../styles/pages/about.scss"
 
