@@ -80,42 +80,48 @@ const History = ({ data }) => {
       <section id="foundation">
         <div className="container">
           <div className="row">
-            <div className="col-md-2">
+            <div className="col-md-3">
               <h2>The Nobel Foundation</h2>
             </div>
-            <div className="col-md-5">
-              <p>
-                The foundation, created to manage the estate of Alfred Nobel and
-                to implement the conditions of his testament. The Nobel Family’s
-                Social Commitment Under the leadership of Ludvig Nobel, and
-                later on by his oldest son Emmanuel, the BraNobel Nafta company
-                in Azerbaijan grew into the world’s second largest in its field.
-                The diesel engine factory in St.
-              </p>
-              <p>
-                Petersburg became the largest in the world. At this time the
-                Nobel industries in Russia were the country’s greatest and most
-                influential business organisation with more than 50.000
-                employees.
-              </p>
-            </div>
-            <div className="col-md-5">
-              <p>
-                The success of Ludvig was based on a humanitarian and innovative
-                way of doing things, combined with the mind of a scientific
-                entrepreneur. The world’s first oil transportation ship and
-                pipelines for oil were constructed for the oil fields of Nobel
-                in Baku. As a visionary leader Ludvig strived to improve the
-                conditions for the workers at the Nobel industrial sites.
-              </p>
-              <p>
-                This was achieved by the introduction of shorter working hours,
-                adequate housing, schools and healthcare and recreational
-                facilities. He also opened a cooperative bank for the employees
-                and the world’s first profit sharing system for the workers
-                called “Nobelites”. Sustainability and social commitment was the
-                trademark of the Nobel industries.
-              </p>
+            <div className="col-md-9">
+              <div className="row">
+                <div className="col-md-6">
+                  <p>
+                    The foundation, created to manage the estate of Alfred Nobel
+                    and to implement the conditions of his testament. The Nobel
+                    Family’s Social Commitment Under the leadership of Ludvig
+                    Nobel, and later on by his oldest son Emmanuel, the BraNobel
+                    Nafta company in Azerbaijan grew into the world’s second
+                    largest in its field. The diesel engine factory in St.
+                  </p>
+                  <p>
+                    Petersburg became the largest in the world. At this time the
+                    Nobel industries in Russia were the country’s greatest and
+                    most influential business organisation with more than 50.000
+                    employees.
+                  </p>
+                </div>
+                <div className="col-md-6">
+                  <p>
+                    The success of Ludvig was based on a humanitarian and
+                    innovative way of doing things, combined with the mind of a
+                    scientific entrepreneur. The world’s first oil
+                    transportation ship and pipelines for oil were constructed
+                    for the oil fields of Nobel in Baku. As a visionary leader
+                    Ludvig strived to improve the conditions for the workers at
+                    the Nobel industrial sites.
+                  </p>
+                  <p>
+                    This was achieved by the introduction of shorter working
+                    hours, adequate housing, schools and healthcare and
+                    recreational facilities. He also opened a cooperative bank
+                    for the employees and the world’s first profit sharing
+                    system for the workers called “Nobelites”. Sustainability
+                    and social commitment was the trademark of the Nobel
+                    industries.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
