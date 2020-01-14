@@ -16,7 +16,11 @@ const History = ({ data }) => {
         <IntroText
           headline="History"
           subheading={[
-            "Members of the earlier Nobel family were known, not only", <span className='d-md-block'> for their interest in art but also for their inventive ability</span>,
+            "Members of the earlier Nobel family were known, not only",
+            <span className="d-md-block">
+              {" "}
+              for their interest in art but also for their inventive ability
+            </span>,
           ]}
         />
       </section>
@@ -77,35 +81,40 @@ const History = ({ data }) => {
         <div className="container">
           <div className="row">
             <div className="col-md-2">
-              <h2>Sustainability Award</h2>
+              <h2>The Nobel Foundation</h2>
             </div>
             <div className="col-md-5">
               <p>
-                Lorem ipsum dolor amet williamsburg adaptogen brooklyn small
-                batch etsy mlkshk sartorial biodiesel enamel pin chillwave blog
-                viral 90's. Lomo ethical tousled skateboard swag master cleanse
-                selvage neutra scenester. Cronut plaid YOLO woke tbh wolf
-                aesthetic. Post-ironic banh mi cold-pressed hashtag roof party.
-                Iceland vice aesthetic, raclette meggings pork belly bicycle
-                rights umami tousled pickled hexagon blue bottle. Skateboard
-                etsy succulents, mumblecore flexitarian hammock hella pabst
-                fashion axe tumeric lo-fi swag cronut. Everyday carry blog YOLO
-                air plant vegan keffiyeh viral four dollar toast. Taiyaki vegan
-                deep v, jean shorts cronut vexillologist ennui skateboard ramps
-                man bun selfies church-key brooklyn.
+                The foundation, created to manage the estate of Alfred Nobel and
+                to implement the conditions of his testament. The Nobel Family’s
+                Social Commitment Under the leadership of Ludvig Nobel, and
+                later on by his oldest son Emmanuel, the BraNobel Nafta company
+                in Azerbaijan grew into the world’s second largest in its field.
+                The diesel engine factory in St.
+              </p>
+              <p>
+                Petersburg became the largest in the world. At this time the
+                Nobel industries in Russia were the country’s greatest and most
+                influential business organisation with more than 50.000
+                employees.
               </p>
             </div>
             <div className="col-md-5">
               <p>
-                Lorem ipsum dolor amet williamsburg adaptogen brooklyn small
-                batch etsy mlkshk sartorial biodiesel enamel pin chillwave blog
-                viral 90's. Lomo ethical tousled skateboard swag master cleanse
-                selvage neutra scenester. Cronut plaid YOLO woke tbh wolf
-                aesthetic. Post-ironic banh mi cold-pressed hashtag roof party.
-                Iceland vice aesthetic, raclette meggings pork belly bicycle
-                rights umami tousled pickled hexagon blue bottle. Skateboard
-                etsy succulents, mumblecore flexitarian hammock hella pabst
-                fashion axe tumeric lo-fi swag cronut.
+                The success of Ludvig was based on a humanitarian and innovative
+                way of doing things, combined with the mind of a scientific
+                entrepreneur. The world’s first oil transportation ship and
+                pipelines for oil were constructed for the oil fields of Nobel
+                in Baku. As a visionary leader Ludvig strived to improve the
+                conditions for the workers at the Nobel industrial sites.
+              </p>
+              <p>
+                This was achieved by the introduction of shorter working hours,
+                adequate housing, schools and healthcare and recreational
+                facilities. He also opened a cooperative bank for the employees
+                and the world’s first profit sharing system for the workers
+                called “Nobelites”. Sustainability and social commitment was the
+                trademark of the Nobel industries.
               </p>
             </div>
           </div>
@@ -139,15 +148,15 @@ const History = ({ data }) => {
             <div className="col-md-6">
               <p>
                 It was formed by the descendants of Immanuel Nobel the younger,
-                i.e. the fater of Alfred, Ludvig, Robert and Emil Nobel. The
+                i.e. the father of Alfred, Ludvig, Robert and Emil Nobel. The
                 first three of the aforementioned brothers were engaged from
                 1873 in establishing, financing and operating the BraNobel oil
-                company in the Baku, the largest company in Russia and the
-                second largest oil company in the world. The Nobel family is
-                also represented at the Nobel Prizes Award Ceremonies which are
-                held in Stockholm on the 10th of December every year since 1901.
-                In 2007, the Nobel family archives, kept in the town archives of
-                Lund, were inscribed in UNESCO's Memory of the World Register
+                company in Baku, the largest company in Russia and the second
+                largest oil company in the world. The Nobel family is also
+                represented at the Nobel Prizes Award Ceremonies which are held
+                in Stockholm on the 10th of December every year since 1901. In
+                2007, the Nobel family archives, kept in the town archives of
+                Lund, were inscribed in UNESCO’s Memory of the World Register.
               </p>
             </div>
           </div>
