@@ -113,7 +113,7 @@ const History = ({ data }) => {
         </div>
       </section>
 
-      <section className="nobel-family-society bg-grey-beige">
+      <section className="bg-grey-beige">
         <div className="container">
           <h2 className="text-left-sm text-center-md padding-bottom-45px">
             The Nobel Family Society Today
@@ -126,7 +126,7 @@ const History = ({ data }) => {
                   following objectives
                 </b>
               </p>
-              <ul className="padding-left-15px">
+              <ul className="padding-left-15px green-bullet-list">
                 <li>
                   Climate change with emphasis on reduction of global warming;
                 </li>
