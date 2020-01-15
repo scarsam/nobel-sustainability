@@ -34,13 +34,13 @@ collections:
         widget: "object"
         fields:
           - { label: "heading", name: "heading", widget: "string" }
-          - { label: "column 1", name: "column-1", widget: "string" }
-          - { label: "column 2", name: "column02", widget: "string" }
+          - { label: "column 1", name: "column-1", widget: "markdown" }
+          - { label: "column 2", name: "column02", widget: "markdown" }
       - label: "Second section"
         name: "second section"
         widget: "object"
         fields:
           - { label: "heading", name: "heading", widget: "string" }
-          - { label: "column 1", name: "column-1", widget: "string" }
+          - { label: "column 1", name: "column-1", widget: "markdown" }
           - { label: "image text", name: "image-text", widget: "string" }
           - { label: "image", name: "image", widget: "image" }
