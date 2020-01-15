@@ -6,41 +6,55 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "news"
-    label: "News"
-    folder: "content/news"
+  - name: news
+    label: News
+    folder: content/news
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
       preview: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: Title, name: title, widget: string }
+      - { label: Publish Date, name: date, widget: datetime }
+      - { label: Description, name: description, widget: string }
+      - { label: Body, name: body, widget: markdown }
 
-  - name: "home"
-    label: "Home"
-    folder: "content/home"
+  - name: home
+    label: Home
+    folder: content/home
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
       preview: true
     fields:
-      - { label: "Heading", name: "heading", widget: "string" }
-      - { label: "Subheading", name: "subheading", widget: "string" }
-      - label: "First section"
-        name: "first section"
-        widget: "object"
+      - { label: Title, name: title, widget: string }
+      - { label: Subheading, name: subheading, widget: string }
+      - label: First section
+        name: first section
+        widget: object
         fields:
-          - { label: "heading", name: "heading", widget: "string" }
-          - { label: "column 1", name: "column-1", widget: "markdown" }
-          - { label: "column 2", name: "column02", widget: "markdown" }
-      - label: "Second section"
-        name: "second section"
-        widget: "object"
+          - { label: heading, name: heading, widget: string }
+          - { label: column 1, name: column-1, widget: markdown }
+          - { label: column 2, name: column-2, widget: markdown }
+      - label: Partners
+        name: partners
+        widget: object
         fields:
-          - { label: "heading", name: "heading", widget: "string" }
-          - { label: "column 1", name: "column-1", widget: "markdown" }
-          - { label: "image text", name: "image-text", widget: "string" }
-          - { label: "image", name: "image", widget: "image" }
+          - { label: partner 1, name: partner-1, widget: image }
+          - { label: partner 2, name: partner-2, widget: image }
+      - label: Second section
+        name: second section
+        widget: object
+        fields:
+          - { label: heading, name: heading, widget: string }
+          - { label: column 1, name: column-1, widget: markdown }
+          - { label: image text, name: image-text, widget: string }
+          - { label: image, name: image, widget: image }
+      - label: News
+        name: news
+        widget: relation
+        collection: news
+        multiple: true
+        searchFields: ["title"]
+        valueField: "title"
+        displayFields: ["title"]
