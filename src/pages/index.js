@@ -10,24 +10,18 @@ import Img from "gatsby-image"
 
 const Home = props => {
   const { data } = props
+  console.log(data)
   // const siteTitle = data.site.siteMetadata.title
   const treesImage = data.trees.childImageSharp.fluid
   const solarImage = data.solarImage.childImageSharp.fluid
-
+  const pageText = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
   return (
     <Layout>
       <SEO title="Home" />
-      <section>
-        <IntroText
-          headline="A world in balance"
-          subheading={[
-            "We bring public awareness to the issues of pollution",
-            <span className="d-md-block">
-              and clean energy and encouraging change
-            </span>,
-          ]}
-        />
-      </section>
+      <IntroText
+        headline={pageText.heading}
+        subheading="We bring public awareness to the issues of pollution and clean energy and encouraging change"
+      />
       <section id="banner">
         <Img fluid={solarImage} />
       </section>
@@ -174,6 +168,21 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    allFile(filter: { sourceInstanceName: { eq: "home" } }, limit: 1) {
+      edges {
+        node {
+          childMarkdownRemark {
+            frontmatter {
+              heading
+              title
+              first_section {
+                column_1
+              }
+            }
+          }
+        }
       }
     }
     trees: file(relativePath: { eq: "trees.jpg" }) {
