@@ -19,7 +19,6 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
 
-collections:
   - name: "home"
     label: "Home"
     folder: "content/home"
@@ -34,14 +33,14 @@ collections:
         name: "first section"
         widget: "object"
         fields:
-          - {label: "heading", name: "heading", widget: "string"}
-          - {label: "column 1", name: "column-1", widget: "string"}
-          - {label: "column 2", name: "column02", widget: "string"}
+          - { label: "heading", name: "heading", widget: "string" }
+          - { label: "column 1", name: "column-1", widget: "string" }
+          - { label: "column 2", name: "column02", widget: "string" }
       - label: "Second section"
         name: "second section"
         widget: "object"
         fields:
-          - {label: "heading", name: "heading", widget: "string"}
-          - {label: "column 1", name: "column-1", widget: "string"}
-          - {label: "image text", name: "image-text", widget: "string"}
-          - {label: "image", name: "image", widget: "image"}
+          - { label: "heading", name: "heading", widget: "string" }
+          - { label: "column 1", name: "column-1", widget: "string" }
+          - { label: "image text", name: "image-text", widget: "string" }
+          - { label: "image", name: "image", widget: "image" }
