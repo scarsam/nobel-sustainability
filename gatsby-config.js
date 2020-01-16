@@ -35,8 +35,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/cms/assets`,
-        name: `img`,
+        path: `${__dirname}/cms/images`,
+        name: `CMSimages`,
       },
     },
     {
