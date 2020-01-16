@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: static/img
-public_folder: /img
+media_folder: content/images
+public_folder: /images
 
 collections:
   - name: news
@@ -30,25 +30,25 @@ collections:
       - { label: Title, name: title, widget: string }
       - { label: Subheading, name: subheading, widget: string }
       - label: First section
-        name: first section
+        name: firstSection
         widget: object
         fields:
           - { label: heading, name: heading, widget: string }
-          - { label: column 1, name: column-1, widget: markdown }
-          - { label: column 2, name: column-2, widget: markdown }
+          - { label: column 1, name: column1, widget: markdown }
+          - { label: column 2, name: column2, widget: markdown }
       - label: Partners
         name: partners
         widget: object
         fields:
-          - { label: partner 1, name: partner-1, widget: image }
-          - { label: partner 2, name: partner-2, widget: image }
+          - { label: partner 1, name: partner1, widget: image }
+          - { label: partner 2, name: partner2, widget: image }
       - label: Second section
-        name: second section
+        name: secondSection
         widget: object
         fields:
           - { label: heading, name: heading, widget: string }
-          - { label: column 1, name: column-1, widget: markdown }
-          - { label: image text, name: image-text, widget: string }
+          - { label: column 1, name: column1, widget: markdown }
+          - { label: image text, name: imageText, widget: string }
           - { label: image, name: image, widget: image }
       - label: News
         name: news

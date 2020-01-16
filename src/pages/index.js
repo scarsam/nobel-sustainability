@@ -12,11 +12,12 @@ const Home = props => {
   // const siteTitle = data.site.siteMetadata.title
   const treesImage = data.trees.childImageSharp.fluid
   const solarImage = data.solarImage.childImageSharp.fluid
-  const pageText = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
+  const homeData = data.allMarkdownRemark.edges[0].node.frontmatter
+  console.log(homeData.second_section.image)
   return (
     <Layout>
       <SEO title="Home" />
-      <IntroText headline={pageText.title} subheading={pageText.subheading} />
+      <IntroText headline={homeData.title} subheading={homeData.subheading} />
       <section id="banner">
         <Img fluid={solarImage} />
       </section>
@@ -24,13 +25,13 @@ const Home = props => {
       <section id="awards" className="container">
         <div className="row">
           <div className="col-md-2">
-            <h3>{pageText.first_section.heading}</h3>
+            <h3>{homeData.first_section.heading}</h3>
           </div>
           <div className="col-md-5">
-            <p>{pageText.first_section.column_1}</p>
+            <p>{homeData.first_section.column_1}</p>
           </div>
           <div className="col-md-5">
-            <p>{pageText.first_section.column_2}</p>
+            <p>{homeData.first_section.column_2}</p>
           </div>
         </div>
       </section>
@@ -43,13 +44,13 @@ const Home = props => {
             </div>
             <div className="col-md-3 col-6 d-flex align-items-center">
               <img
-                src={pageText.partners.partner_1}
+                src={homeData.partners.partner_1}
                 alt="Earth Captial company logo"
               />
             </div>
             <div className="col-md-3 col-6 d-flex align-items-center">
               <img
-                src={pageText.partners.partner_2}
+                src={homeData.partners.partner_2}
                 alt="Lombard company logo"
               />
             </div>
@@ -60,16 +61,16 @@ const Home = props => {
       <section id="conference" className="container border-bottom">
         <div className="row">
           <div className="col-md-2">
-            <h3>{pageText.second_section.heading}</h3>
+            <h3>{homeData.second_section.heading}</h3>
           </div>
           <div className="col-md-5">
-            <p>{pageText.second_section.column_1}</p>
+            <p>{homeData.second_section.column_1}</p>
           </div>
           <div className="col-10 offset-1 col-md-5 offset-md-0 col-lg-3 offset-lg-1">
             <ImageOffset
-              src={pageText.second_section.image}
+              src={homeData.second_section.image}
               backgroundColor={"bg-green"}
-              text={pageText.second_section.image_text}
+              text={homeData.second_section.image_text}
             />
           </div>
         </div>
@@ -80,7 +81,7 @@ const Home = props => {
           <div className="col-md-2">
             <h2>News</h2>
           </div>
-          {pageText.news.map(article => (
+          {homeData.news.map(article => (
             <div className="col-md-10">
               <p className="c-green">March 24, 2018</p>
               <p>{article}</p>
@@ -102,30 +103,32 @@ export const pageQuery = graphql`
         title
       }
     }
-    allFile(filter: { sourceInstanceName: { eq: "home" } }, limit: 1) {
+    allMarkdownRemark(
+      limit: 1
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { fileAbsolutePath: { regex: "/home/" } }
+    ) {
       edges {
         node {
-          childMarkdownRemark {
-            frontmatter {
-              title
-              subheading
-              first_section {
-                heading
-                column_1
-                column_2
-              }
-              partners {
-                partner_1
-                partner_2
-              }
-              second_section {
-                heading
-                column_1
-                image
-                image_text
-              }
-              news
+          frontmatter {
+            title
+            subheading
+            first_section {
+              heading
+              column_1
+              column_2
             }
+            partners {
+              partner_1
+              partner_2
+            }
+            second_section {
+              heading
+              column_1
+              image
+              image_text
+            }
+            news
           }
         }
       }
