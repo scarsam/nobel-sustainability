@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import IntroText from "../components/intro_text"
 import ImageOffset from "../components/image_offset"
 import HistoryMidBreakpoint from "../components/history_mid_breakpoint"
+import "../styles/pages/history.scss"
 
 const History = ({ data }) => {
   const immanuel = data.immanuel.childImageSharp.fluid
