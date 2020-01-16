@@ -13,7 +13,6 @@ const Home = props => {
   const treesImage = data.trees.childImageSharp.fluid
   const solarImage = data.solarImage.childImageSharp.fluid
   const homeData = data.allMarkdownRemark.edges[0].node.frontmatter
-  console.log(homeData.second_section.image)
   return (
     <Layout>
       <SEO title="Home" />
@@ -25,13 +24,13 @@ const Home = props => {
       <section id="awards" className="container">
         <div className="row">
           <div className="col-md-2">
-            <h3>{homeData.first_section.heading}</h3>
+            <h3>{homeData.firstSection.heading}</h3>
           </div>
           <div className="col-md-5">
-            <p>{homeData.first_section.column_1}</p>
+            <p>{homeData.firstSection.column1}</p>
           </div>
           <div className="col-md-5">
-            <p>{homeData.first_section.column_2}</p>
+            <p>{homeData.firstSection.column2}</p>
           </div>
         </div>
       </section>
@@ -44,13 +43,13 @@ const Home = props => {
             </div>
             <div className="col-md-3 col-6 d-flex align-items-center">
               <img
-                src={homeData.partners.partner_1}
+                src={homeData.partners.partner1}
                 alt="Earth Captial company logo"
               />
             </div>
             <div className="col-md-3 col-6 d-flex align-items-center">
               <img
-                src={homeData.partners.partner_2}
+                src={homeData.partners.partner2}
                 alt="Lombard company logo"
               />
             </div>
@@ -61,16 +60,16 @@ const Home = props => {
       <section id="conference" className="container border-bottom">
         <div className="row">
           <div className="col-md-2">
-            <h3>{homeData.second_section.heading}</h3>
+            <h3>{homeData.secondSection.heading}</h3>
           </div>
           <div className="col-md-5">
-            <p>{homeData.second_section.column_1}</p>
+            <p>{homeData.secondSection.column1}</p>
           </div>
           <div className="col-10 offset-1 col-md-5 offset-md-0 col-lg-3 offset-lg-1">
             <ImageOffset
-              src={homeData.second_section.image}
+              src={homeData.secondSection.image}
               backgroundColor={"bg-green"}
-              text={homeData.second_section.image_text}
+              text={homeData.secondSection.imageText}
             />
           </div>
         </div>
@@ -113,20 +112,20 @@ export const pageQuery = graphql`
           frontmatter {
             title
             subheading
-            first_section {
+            firstSection {
               heading
-              column_1
-              column_2
+              column1
+              column2
             }
             partners {
-              partner_1
-              partner_2
+              partner1
+              partner2
             }
-            second_section {
+            secondSection {
               heading
-              column_1
+              column1
               image
-              image_text
+              imageText
             }
             news
           }
