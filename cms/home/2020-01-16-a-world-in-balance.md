@@ -32,8 +32,8 @@ firstSection:
     Sustainability Award in the near future.
   heading: Sustainability Award
 partners:
-  partner1: /images/earth-capital-logo.svg
-  partner2: /images/lombard-logo.svg
+  partner1: /cms/images/earth-capital-logo.svg
+  partner2: /cms/images/lombard-logo.svg
 secondSection:
   column1: >-
     We will establish an international conference with focus on alternative,
@@ -54,7 +54,7 @@ secondSection:
     The conference is planned to be held annually or bi-annually and will
     circulate around the world.
   heading: Sustainable Technology Conference
-  image: /images/trees.jpg
+  image: /cms/images/trees.jpg
   imageText: 'Creation a pollution-free, life-sustaining environment for all'
 news:
   - Testing testing
