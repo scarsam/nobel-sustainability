@@ -5,7 +5,7 @@ const HistoryMidBreakpoint = ({ immanuel, ludwig }) => {
   return (
     <>
       <div className="row padding-bottom-60px">
-        <div className="col-7 col-md-3">
+        <div className="col-7 col-md-3 padding-bottom-30px padding-bottom-md-none">
           <ImageOffset src={immanuel} backgroundColor={"bg-water"} />
         </div>
         <div className="col-md-6">
@@ -19,7 +19,7 @@ const HistoryMidBreakpoint = ({ immanuel, ludwig }) => {
         </div>
       </div>
       <div className="row">
-        <div className="col-7 col-md-3 offset-md-2">
+        <div className="col-7 col-md-3 offset-md-2 padding-bottom-30px padding-bottom-md-none">
           <ImageOffset src={ludwig} backgroundColor={"bg-green"} />
         </div>
         <div className="col-md-7 ">
