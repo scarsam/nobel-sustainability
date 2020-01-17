@@ -1,9 +1,9 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import IntroText from "../components/intro_text"
-import ImageOffset from "../components/image_offset"
-import HistoryMidBreakpoint from "../components/history_mid_breakpoint"
+import React from 'react'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import IntroText from '../components/intro_text'
+import ImageOffset from '../components/image_offset'
+import HistoryMidBreakpoint from '../components/history_mid_breakpoint'
 
 const History = ({ data }) => {
   const immanuelImage = data.immanuel.childImageSharp.fluid
@@ -16,9 +16,9 @@ const History = ({ data }) => {
         <IntroText
           headline="History"
           subheading={[
-            "Members of the earlier Nobel family were known, not only",
+            'Members of the earlier Nobel family were known, not only',
             <span className="d-md-block">
-              {" "}
+              {' '}
               for their interest in art but also for their inventive ability
             </span>,
           ]}
@@ -30,46 +30,48 @@ const History = ({ data }) => {
         </div>
       </section>
 
-      <section className="container padding-top-none d-none d-lg-block padding-bottom-none">
-        <div className="row padding-bottom-60px">
-          <div className="col-lg-3">
-            <ImageOffset src={immanuelImage} backgroundColor={"bg-water"} />
-          </div>
-          <div className="col-lg-9">
-            <div className="row">
-              <div className="col-lg-5">
-                <h2>Immanuel Nobel</h2>
-                <p>
-                  Immanuel Nobel pioneered the development of underwater mines,
-                  designed some of the first steam engines to power russian
-                  ships, installed the first central heating systems in Russian
-                  homes and was the first to develop modern plywood, cut with a
-                  rotary lathe.
-                </p>
-              </div>
-              <div className="col-lg-12">
-                <div className="row padding-top-60px">
-                  <div className="offset-lg-1 col-lg-4">
-                    <ImageOffset
-                      src={ludwigImage}
-                      backgroundColor={"bg-green"}
-                    />
-                  </div>
-                  <div className="col-lg-6">
-                    <h2>Ludwig Nobel</h2>
-                    <p>
-                      One of his sons, Ludvig Nobel, was the founder of the
-                      machine-building factory Ludvig Nobel, a great armaments
-                      concern and the inventor of the Nobel wheel. Ludvig was
-                      also the founder of BraNobel, the foremost Russian oil
-                      industry in it's time, and launched the world's first
-                      diesel-driven tugs, tankers and u-boats, besides building
-                      the first European oil pipeline in Baku. Alfred Nobel, a
-                      profilic inventor who acquired 355 patents during his
-                      lifespan, was the creator of dynamite and the blasting cap
-                      from which he made a substantial future of which he left
-                      the bulk to form the Nobel Prizes.
-                    </p>
+      <section className="padding-top-none d-none d-lg-block padding-bottom-none">
+        <div className="container">
+          <div className="row padding-bottom-60px">
+            <div className="col-lg-3">
+              <ImageOffset src={immanuelImage} backgroundColor={'bg-water'} />
+            </div>
+            <div className="col-lg-9">
+              <div className="row">
+                <div className="col-lg-5">
+                  <h2>Immanuel Nobel</h2>
+                  <p>
+                    Immanuel Nobel pioneered the development of underwater
+                    mines, designed some of the first steam engines to power
+                    russian ships, installed the first central heating systems
+                    in Russian homes and was the first to develop modern
+                    plywood, cut with a rotary lathe.
+                  </p>
+                </div>
+                <div className="col-lg-12">
+                  <div className="row padding-top-60px">
+                    <div className="offset-lg-1 col-lg-4">
+                      <ImageOffset
+                        src={ludwigImage}
+                        backgroundColor={'bg-green'}
+                      />
+                    </div>
+                    <div className="col-lg-6">
+                      <h2>Ludwig Nobel</h2>
+                      <p>
+                        One of his sons, Ludvig Nobel, was the founder of the
+                        machine-building factory Ludvig Nobel, a great armaments
+                        concern and the inventor of the Nobel wheel. Ludvig was
+                        also the founder of BraNobel, the foremost Russian oil
+                        industry in it's time, and launched the world's first
+                        diesel-driven tugs, tankers and u-boats, besides
+                        building the first European oil pipeline in Baku. Alfred
+                        Nobel, a profilic inventor who acquired 355 patents
+                        during his lifespan, was the creator of dynamite and the
+                        blasting cap from which he made a substantial future of
+                        which he left the bulk to form the Nobel Prizes.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -78,39 +80,41 @@ const History = ({ data }) => {
         </div>
       </section>
 
-      <section id="foundation" className="container">
-        <div className="row">
-          <div className="col-md-2">
-            <h3>The Nobel Foundation</h3>
-          </div>
-          <div className="col-md-5">
-            <p>
-              Lorem ipsum dolor amet williamsburg adaptogen brooklyn small batch
-              etsy mlkshk sartorial biodiesel enamel pin chillwave blog viral
-              90's. Lomo ethical tousled skateboard swag master cleanse selvage
-              neutra scenester. Cronut plaid YOLO woke tbh wolf aesthetic.
-              Post-ironic banh mi cold-pressed hashtag roof party. Iceland vice
-              aesthetic, raclette meggings pork belly bicycle rights umami
-              tousled pickled hexagon blue bottle. Skateboard etsy succulents,
-              mumblecore flexitarian hammock hella pabst fashion axe tumeric
-              lo-fi swag cronut. Everyday carry blog YOLO air plant vegan
-              keffiyeh viral four dollar toast. Taiyaki vegan deep v, jean
-              shorts cronut vexillologist ennui skateboard ramps man bun selfies
-              church-key brooklyn.
-            </p>
-          </div>
-          <div className="col-md-5">
-            <p>
-              Lorem ipsum dolor amet williamsburg adaptogen brooklyn small batch
-              etsy mlkshk sartorial biodiesel enamel pin chillwave blog viral
-              90's. Lomo ethical tousled skateboard swag master cleanse selvage
-              neutra scenester. Cronut plaid YOLO woke tbh wolf aesthetic.
-              Post-ironic banh mi cold-pressed hashtag roof party. Iceland vice
-              aesthetic, raclette meggings pork belly bicycle rights umami
-              tousled pickled hexagon blue bottle. Skateboard etsy succulents,
-              mumblecore flexitarian hammock hella pabst fashion axe tumeric
-              lo-fi swag cronut.
-            </p>
+      <section>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-2">
+              <h3>The Nobel Foundation</h3>
+            </div>
+            <div className="col-md-5">
+              <p>
+                Lorem ipsum dolor amet williamsburg adaptogen brooklyn small
+                batch etsy mlkshk sartorial biodiesel enamel pin chillwave blog
+                viral 90's. Lomo ethical tousled skateboard swag master cleanse
+                selvage neutra scenester. Cronut plaid YOLO woke tbh wolf
+                aesthetic. Post-ironic banh mi cold-pressed hashtag roof party.
+                Iceland vice aesthetic, raclette meggings pork belly bicycle
+                rights umami tousled pickled hexagon blue bottle. Skateboard
+                etsy succulents, mumblecore flexitarian hammock hella pabst
+                fashion axe tumeric lo-fi swag cronut. Everyday carry blog YOLO
+                air plant vegan keffiyeh viral four dollar toast. Taiyaki vegan
+                deep v, jean shorts cronut vexillologist ennui skateboard ramps
+                man bun selfies church-key brooklyn.
+              </p>
+            </div>
+            <div className="col-md-5">
+              <p>
+                Lorem ipsum dolor amet williamsburg adaptogen brooklyn small
+                batch etsy mlkshk sartorial biodiesel enamel pin chillwave blog
+                viral 90's. Lomo ethical tousled skateboard swag master cleanse
+                selvage neutra scenester. Cronut plaid YOLO woke tbh wolf
+                aesthetic. Post-ironic banh mi cold-pressed hashtag roof party.
+                Iceland vice aesthetic, raclette meggings pork belly bicycle
+                rights umami tousled pickled hexagon blue bottle. Skateboard
+                etsy succulents, mumblecore flexitarian hammock hella pabst
+                fashion axe tumeric lo-fi swag cronut.
+              </p>
+            </div>
           </div>
         </div>
       </section>
