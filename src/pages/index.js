@@ -10,7 +10,6 @@ const Home = props => {
   const { data } = props
   console.log(data)
   // const siteTitle = data.site.siteMetadata.title
-  const treesImage = data.trees.childImageSharp.fluid
   const solarImage = data.solarImage.childImageSharp.fluid
   const homeData = data.allMarkdownRemark.edges[0].node.frontmatter
   return (
@@ -43,13 +42,13 @@ const Home = props => {
             </div>
             <div className="col-md-3 col-6 d-flex align-items-center">
               <img
-                src={homeData.partners.partner1}
+                src={homeData.partners.partner1.publicURL}
                 alt="Earth Captial company logo"
               />
             </div>
             <div className="col-md-3 col-6 d-flex align-items-center">
               <img
-                src={homeData.partners.partner2}
+                src={homeData.partners.partner2.publicURL}
                 alt="Lombard company logo"
               />
             </div>
@@ -67,7 +66,7 @@ const Home = props => {
           </div>
           <div className="col-10 offset-1 col-md-5 offset-md-0 col-lg-3 offset-lg-1">
             <ImageOffset
-              src={homeData.secondSection.image}
+              src={homeData.secondSection.image.childImageSharp.fluid}
               backgroundColor={"bg-green"}
               text={homeData.secondSection.imageText}
             />
@@ -118,24 +117,27 @@ export const pageQuery = graphql`
               column2
             }
             partners {
-              partner1
-              partner2
+              partner1 {
+                publicURL
+              }
+              partner2 {
+                publicURL
+              }
             }
             secondSection {
               heading
               column1
-              image
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 500) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
               imageText
             }
             news
           }
-        }
-      }
-    }
-    trees: file(relativePath: { eq: "trees.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 960) {
-          ...GatsbyImageSharpFluid
         }
       }
     }
