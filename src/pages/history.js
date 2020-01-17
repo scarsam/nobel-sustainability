@@ -4,11 +4,10 @@ import SEO from "../components/seo"
 import IntroText from "../components/intro_text"
 import ImageOffset from "../components/image_offset"
 import HistoryMidBreakpoint from "../components/history_mid_breakpoint"
-import "../styles/pages/history.scss"
 
 const History = ({ data }) => {
-  const immanuel = data.immanuel.childImageSharp.fluid
-  const ludwig = data.ludwig.childImageSharp.fluid
+  const immanuelImage = data.immanuel.childImageSharp.fluid
+  const ludwigImage = data.ludwig.childImageSharp.fluid
 
   return (
     <Layout>
@@ -27,14 +26,14 @@ const History = ({ data }) => {
       </section>
       <section className="padding-top-none d-none d-block d-lg-none">
         <div className="container">
-          <HistoryMidBreakpoint ludwig={ludwig} immanuel={immanuel} />
+          <HistoryMidBreakpoint ludwig={ludwigImage} immanuel={immanuelImage} />
         </div>
       </section>
 
       <section className="container padding-top-none d-none d-lg-block padding-bottom-none">
         <div className="row padding-bottom-60px">
           <div className="col-lg-3">
-            <ImageOffset src={immanuel} backgroundColor={"bg-water"} />
+            <ImageOffset src={immanuelImage} backgroundColor={"bg-water"} />
           </div>
           <div className="col-lg-9">
             <div className="row">
@@ -51,7 +50,10 @@ const History = ({ data }) => {
               <div className="col-lg-12">
                 <div className="row padding-top-60px">
                   <div className="offset-lg-1 col-lg-4">
-                    <ImageOffset src={ludwig} backgroundColor={"bg-green"} />
+                    <ImageOffset
+                      src={ludwigImage}
+                      backgroundColor={"bg-green"}
+                    />
                   </div>
                   <div className="col-lg-6">
                     <h2>Ludwig Nobel</h2>
