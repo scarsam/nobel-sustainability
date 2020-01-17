@@ -14,15 +14,22 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/cms/news`,
+        path: `${__dirname}/src/cms/news`,
         name: `news`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/cms/home`,
+        path: `${__dirname}/src/cms/home`,
         name: `home`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/cms/images`,
+        name: `CMSimages`,
       },
     },
     {
@@ -30,13 +37,6 @@ module.exports = {
       options: {
         path: `${__dirname}/src/images`,
         name: `images`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/cms/images`,
-        name: `CMSimages`,
       },
     },
     {
