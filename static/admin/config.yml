@@ -2,13 +2,13 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: src/cms/images
+media_folder: static/cms/images
 public_folder: /images
 
 collections:
   - name: news
     label: News
-    folder: src/cms/news
+    folder: static/cms/news
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
@@ -21,7 +21,7 @@ collections:
 
   - name: home
     label: Home
-    folder: src/cms/home
+    folder: static/cms/home
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:

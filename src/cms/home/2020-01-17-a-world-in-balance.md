@@ -56,9 +56,8 @@ secondSection:
     circulate around the world.
   heading: Sustainable Technology Conference
   image: /images/trees.jpg
-  imageText: 'Creation a pollution-free, life-sustaining environment for all'
+  imageText: "Creation a pollution-free, life-sustaining environment for all"
 news:
   - Kaffe glass
   - This is a test
 ---
-
