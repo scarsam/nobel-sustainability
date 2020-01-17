@@ -1,4 +1,20 @@
-.awards-bg {
+@import '../manifest';
+
+.city-bg {
   background: url(../../images/city.png);
   background-repeat: no-repeat;
+}
+.squiggly-line-bg {
+  background: url(../../images/squiggly-line-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+@include media_min_break(md) {
+  .windmill-bg {
+    background: url(../../images/windmill.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
 }

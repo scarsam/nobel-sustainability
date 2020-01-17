@@ -18,7 +18,6 @@ const History = ({ data }) => {
           subheading={[
             'Members of the earlier Nobel family were known, not only',
             <span className="d-md-block">
-              {' '}
               for their interest in art but also for their inventive ability
             </span>,
           ]}

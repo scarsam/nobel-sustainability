@@ -1,9 +1,9 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import IntroText from "../components/intro_text"
-import Img from "gatsby-image"
-import "../styles/pages/awards.scss"
+import React from 'react'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import IntroText from '../components/intro_text'
+import Img from 'gatsby-image'
+import '../styles/pages/awards.scss'
 
 const Awards = ({ data }) => {
   const windmillImage = data.windmill.childImageSharp.fluid
@@ -54,8 +54,8 @@ const Awards = ({ data }) => {
         </div>
       </section>
 
-      <section className="bg-grey-beige">
-        <div className="container">
+      <section className="bg-grey-beige squiggly-line-bg">
+        <div className="container padding-bottom-none windmill-bg">
           <h2 className="text-left-sm text-center-md padding-bottom-25px">
             Award Selection Procedures
           </h2>
@@ -93,14 +93,11 @@ const Awards = ({ data }) => {
             </div>
           </div>
           <div className="row">
-            <div className="d-none d-lg-block col-lg-3">
-              <Img fluid={windmillImage} alt="" />
-            </div>
-            <div className="col-md-9 offset-md-3 col-lg-8 offset-lg-0">
+            <div className="col-md-9 offset-md-3 col-lg-8 offset-lg-3">
               <p>
                 <b>The Awards cermony will include:</b>
               </p>
-              <ul className="padding-left-15px green-bullet-list">
+              <ul className="padding-left-15px green-bullet-list padding-bottom-60px">
                 <li>
                   It was formed by the descendants of Immanuel Nobel the
                   younger, i.e. the fater of Alfred, Ludvig, Robert and Emil
@@ -247,7 +244,7 @@ const Awards = ({ data }) => {
         </div>
       </section>
 
-      <section className="awards-bg">
+      <section className="city-bg">
         <div className="container">
           <div className="row">
             <div className="col-md-3">
