@@ -94,3 +94,6 @@ collections:
           - { label: heading, name: heading, widget: string }
           - { label: column 1, name: column1, widget: markdown }
           - { label: column 2, name: column2, widget: markdown }
+      - label: Test
+        name: body
+      - { label: 'Blog post content', name: 'body', widget: 'markdown' }

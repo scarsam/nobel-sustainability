@@ -55,6 +55,7 @@ module.exports = {
         name: `images`,
       },
     },
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {

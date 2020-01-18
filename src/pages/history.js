@@ -70,36 +70,13 @@ const History = ({ data }) => {
         <div className="container">
           <div className="row">
             <div className="col-md-2">
-              <h3>The Nobel Foundation</h3>
+              <h3>{secondSection.heading}</h3>
             </div>
             <div className="col-md-5">
-              <p>
-                Lorem ipsum dolor amet williamsburg adaptogen brooklyn small
-                batch etsy mlkshk sartorial biodiesel enamel pin chillwave blog
-                viral 90's. Lomo ethical tousled skateboard swag master cleanse
-                selvage neutra scenester. Cronut plaid YOLO woke tbh wolf
-                aesthetic. Post-ironic banh mi cold-pressed hashtag roof party.
-                Iceland vice aesthetic, raclette meggings pork belly bicycle
-                rights umami tousled pickled hexagon blue bottle. Skateboard
-                etsy succulents, mumblecore flexitarian hammock hella pabst
-                fashion axe tumeric lo-fi swag cronut. Everyday carry blog YOLO
-                air plant vegan keffiyeh viral four dollar toast. Taiyaki vegan
-                deep v, jean shorts cronut vexillologist ennui skateboard ramps
-                man bun selfies church-key brooklyn.
-              </p>
+              <p>{secondSection.column1}</p>
             </div>
             <div className="col-md-5">
-              <p>
-                Lorem ipsum dolor amet williamsburg adaptogen brooklyn small
-                batch etsy mlkshk sartorial biodiesel enamel pin chillwave blog
-                viral 90's. Lomo ethical tousled skateboard swag master cleanse
-                selvage neutra scenester. Cronut plaid YOLO woke tbh wolf
-                aesthetic. Post-ironic banh mi cold-pressed hashtag roof party.
-                Iceland vice aesthetic, raclette meggings pork belly bicycle
-                rights umami tousled pickled hexagon blue bottle. Skateboard
-                etsy succulents, mumblecore flexitarian hammock hella pabst
-                fashion axe tumeric lo-fi swag cronut.
-              </p>
+              <p>{secondSection.column2}</p>
             </div>
           </div>
         </div>
@@ -108,11 +85,14 @@ const History = ({ data }) => {
       <section className="bg-grey-beige">
         <div className="container">
           <h2 className="text-left-sm text-center-md padding-bottom-45px">
-            The Nobel Family Society Today
+            {thirdSection.heading}
           </h2>
           <div className="row">
-            <div className="col-md-6">
-              <p>
+            <div
+              className="col-md-6"
+              dangerouslySetInnerHTML={{ __html: thirdSection.column1 }}
+            >
+              {/* <p>
                 <b>
                   The Nobel Family Society is a private association with the
                   following objectives
@@ -127,7 +107,7 @@ const History = ({ data }) => {
                 </li>
                 <li>A pollution-free, life-sustaining environment;</li>
                 <li>Inspiration for present and future generations</li>
-              </ul>
+              </ul> */}
             </div>
             <div className="col-md-6">
               <p>
