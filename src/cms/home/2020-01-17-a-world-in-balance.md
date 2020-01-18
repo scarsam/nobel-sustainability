@@ -59,5 +59,4 @@ secondSection:
   imageText: "Creation a pollution-free, life-sustaining environment for all"
 news:
   - Kaffe glass
-  - This is a test
 ---

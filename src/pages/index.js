@@ -10,14 +10,13 @@ const Home = props => {
   const { data } = props
   console.log(data)
   // const siteTitle = data.site.siteMetadata.title
-  const solarImage = data.solarImage.childImageSharp.fluid
   const homeData = data.allMarkdownRemark.edges[0].node.frontmatter
   return (
     <Layout>
       <SEO title="Home" />
       <IntroText headline={homeData.title} subheading={homeData.subheading} />
       <section id="banner">
-        <Img fluid={solarImage} />
+        <Img fluid={homeData.image.childImageSharp.fluid} />
       </section>
 
       <section id="awards" className="container">
@@ -111,6 +110,13 @@ export const pageQuery = graphql`
           frontmatter {
             title
             subheading
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1400) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             firstSection {
               heading
               column1
@@ -138,13 +144,6 @@ export const pageQuery = graphql`
             }
             news
           }
-        }
-      }
-    }
-    solarImage: file(relativePath: { eq: "building.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 960, maxHeight: 140) {
-          ...GatsbyImageSharpFluid
         }
       }
     }

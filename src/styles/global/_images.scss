@@ -16,11 +16,11 @@
 
 // Homepage hero banner
 #banner .gatsby-image-wrapper {
-  min-height: 150px;
+  height: 150px;
   @include media_min_break(sm) {
-    min-height: 200px;
+    height: 200px;
   }
   @include media_min_break(md) {
-    min-height: 325px;
+    height: 325px;
   }
 }
