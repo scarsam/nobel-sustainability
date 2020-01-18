@@ -8,9 +8,9 @@ public_folder: /images
 collections:
   - name: news
     label: News
-    folder: static/cms/news
+    folder: src/cms/news
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
     fields:
@@ -21,9 +21,9 @@ collections:
 
   - name: home
     label: Home
-    folder: static/cms/home
+    folder: src/cms/home
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
     fields:
@@ -56,6 +56,6 @@ collections:
         widget: relation
         collection: news
         multiple: true
-        searchFields: ["title"]
-        valueField: "title"
-        displayFields: ["title"]
+        searchFields: ['title']
+        valueField: 'title'
+        displayFields: ['title']
