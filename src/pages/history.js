@@ -6,26 +6,28 @@ import ImageOffset from '../components/image_offset'
 import HistoryMidBreakpoint from '../components/history_mid_breakpoint'
 
 const History = ({ data }) => {
-  const immanuelImage = data.immanuel.childImageSharp.fluid
-  const ludwigImage = data.ludwig.childImageSharp.fluid
+  const {
+    title,
+    subheading,
+    firstSection,
+    secondSection,
+    thirdSection,
+  } = data.allMarkdownRemark.edges[0].node.frontmatter
+
+  console.log(data)
 
   return (
     <Layout>
-      <SEO title="History" />
+      <SEO title={title} />
       <section>
-        <IntroText
-          headline="History"
-          subheading={[
-            'Members of the earlier Nobel family were known, not only',
-            <span className="d-md-block">
-              for their interest in art but also for their inventive ability
-            </span>,
-          ]}
-        />
+        <IntroText headline="History" subheading={subheading} />
       </section>
       <section className="padding-top-none d-none d-block d-lg-none">
         <div className="container">
-          <HistoryMidBreakpoint ludwig={ludwigImage} immanuel={immanuelImage} />
+          <HistoryMidBreakpoint
+            ludwig={firstSection.image1.childImageSharp.fluid}
+            immanuel={firstSection.image2.childImageSharp.fluid}
+          />
         </div>
       </section>
 
@@ -33,43 +35,28 @@ const History = ({ data }) => {
         <div className="container">
           <div className="row padding-bottom-60px">
             <div className="col-lg-3">
-              <ImageOffset src={immanuelImage} backgroundColor={'bg-water'} />
+              <ImageOffset
+                src={firstSection.image1.childImageSharp.fluid}
+                backgroundColor={'bg-water'}
+              />
             </div>
             <div className="col-lg-9">
               <div className="row">
                 <div className="col-lg-5">
-                  <h2>Immanuel Nobel</h2>
-                  <p>
-                    Immanuel Nobel pioneered the development of underwater
-                    mines, designed some of the first steam engines to power
-                    russian ships, installed the first central heating systems
-                    in Russian homes and was the first to develop modern
-                    plywood, cut with a rotary lathe.
-                  </p>
+                  <h2>{firstSection.heading1}</h2>
+                  <p>{firstSection.text1}</p>
                 </div>
                 <div className="col-lg-12">
                   <div className="row padding-top-60px">
                     <div className="offset-lg-1 col-lg-4">
                       <ImageOffset
-                        src={ludwigImage}
+                        src={firstSection.image2.childImageSharp.fluid}
                         backgroundColor={'bg-green'}
                       />
                     </div>
                     <div className="col-lg-6">
-                      <h2>Ludwig Nobel</h2>
-                      <p>
-                        One of his sons, Ludvig Nobel, was the founder of the
-                        machine-building factory Ludvig Nobel, a great armaments
-                        concern and the inventor of the Nobel wheel. Ludvig was
-                        also the founder of BraNobel, the foremost Russian oil
-                        industry in it's time, and launched the world's first
-                        diesel-driven tugs, tankers and u-boats, besides
-                        building the first European oil pipeline in Baku. Alfred
-                        Nobel, a profilic inventor who acquired 355 patents
-                        during his lifespan, was the creator of dynamite and the
-                        blasting cap from which he made a substantial future of
-                        which he left the bulk to form the Nobel Prizes.
-                      </p>
+                      <h2>{firstSection.heading2}</h2>
+                      <p>{firstSection.text2}</p>
                     </div>
                   </div>
                 </div>
@@ -172,17 +159,47 @@ export const pageQuery = graphql`
         title
       }
     }
-    immanuel: file(relativePath: { eq: "immanuel.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 960) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    ludwig: file(relativePath: { eq: "ludwig.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 960) {
-          ...GatsbyImageSharpFluid
+    allMarkdownRemark(
+      limit: 1
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { fileAbsolutePath: { regex: "/history/" } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            subheading
+            firstSection {
+              heading1
+              heading2
+              text1
+              text2
+              image1 {
+                childImageSharp {
+                  fluid(maxWidth: 960) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+              image2 {
+                childImageSharp {
+                  fluid(maxWidth: 960) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+            secondSection {
+              heading
+              column1
+              column2
+            }
+            thirdSection {
+              heading
+              column1
+              column2
+            }
+          }
         }
       }
     }
