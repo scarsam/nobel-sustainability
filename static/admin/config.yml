@@ -164,7 +164,7 @@ collections:
   - name: 'about'
     label: About
     folder: src/cms/about
-    create: true
+    create: false
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
@@ -192,20 +192,36 @@ collections:
         widget: object
         fields:
           - { label: heading, name: heading, widget: string }
-          - { label: subheading 1, name: subheading1, widget: string }
-          - { label: text 1, name: text1, widget: markdown }
-          - { label: image 1, name: image1, widget: image }
-          - { label: subheading 2, name: subheading2, widget: string }
-          - { label: text 2, name: text2, widget: markdown }
-          - { label: image 2, name: image2, widget: image }
+          - label: Board Member One
+            name: boardMemberOne
+            widget: object
+            fields:
+              - { label: name, name: name, widget: string }
+              - { label: text, name: text, widget: markdown }
+              - { label: image, name: image, widget: image }
+          - label: Board Member Two
+            name: boardMemberTwo
+            widget: object
+            fields:
+              - { label: name, name: name, widget: string }
+              - { label: text, name: text, widget: markdown }
+              - { label: image, name: image, widget: image }
       - label: Section Four
         name: sectionFour
         widget: object
         fields:
           - { label: heading, name: heading, widget: string }
-          - { label: subheading 1, name: subheading1, widget: string }
-          - { label: text 1, name: text1, widget: markdown }
-          - { label: image 1, name: image1, widget: image }
-          - { label: subheading 2, name: subheading2, widget: string }
-          - { label: text 2, name: text2, widget: markdown }
-          - { label: image 2, name: image2, widget: image }
+          - label: Employee One
+            name: employeeOne
+            widget: object
+            fields:
+              - { label: name, name: name, widget: string }
+              - { label: text, name: text, widget: markdown }
+              - { label: image, name: image, widget: image }
+          - label: Employee Two
+            name: employeeTwo
+            widget: object
+            fields:
+              - { label: name, name: name, widget: string }
+              - { label: text, name: text, widget: markdown }
+              - { label: image, name: image, widget: image }
