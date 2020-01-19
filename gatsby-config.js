@@ -9,8 +9,8 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-transformer-remark`,
@@ -44,6 +44,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/src/cms/contact`,
+        name: `contact`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/src/cms/images`,
         name: `CMSimages`,
       },
@@ -55,7 +62,6 @@ module.exports = {
         name: `images`,
       },
     },
-    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
