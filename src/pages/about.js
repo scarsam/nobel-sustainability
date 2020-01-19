@@ -1,11 +1,12 @@
-import React from "react"
-import Layout from "../components/layout"
-import IntroText from "../components/intro_text"
-import SEO from "../components/seo"
-import ImageOffset from "../components/image_offset"
-import Img from "gatsby-image"
-import squigglyLine from "../images/about/squiggly-line.svg"
-import "../styles/pages/about.scss"
+import React from 'react'
+import Layout from '../components/layout'
+import IntroText from '../components/intro_text'
+import SEO from '../components/seo'
+import ImageOffset from '../components/image_offset'
+import Img from 'gatsby-image'
+import squigglyLine from '../images/about/squiggly-line.svg'
+import '../styles/pages/about.scss'
+import { graphql } from 'gatsby'
 
 const About = ({ data }) => {
   const treesImage = data.trees.childImageSharp.fluid

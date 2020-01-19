@@ -4,6 +4,7 @@ import SEO from '../components/seo'
 import IntroText from '../components/intro_text'
 import ImageOffset from '../components/image_offset'
 import HistoryMidBreakpoint from '../components/history_mid_breakpoint'
+import { graphql } from 'gatsby'
 
 const History = ({ data }) => {
   const {
@@ -92,7 +93,7 @@ const History = ({ data }) => {
               className="col-md-6"
               // dangerouslySetInnerHTML={{ __html: body }}
             >
-              {/* <p>
+              <p>
                 <b>
                   The Nobel Family Society is a private association with the
                   following objectives
@@ -107,21 +108,10 @@ const History = ({ data }) => {
                 </li>
                 <li>A pollution-free, life-sustaining environment;</li>
                 <li>Inspiration for present and future generations</li>
-              </ul> */}
+              </ul>
             </div>
             <div className="col-md-6">
-              <p>
-                It was formed by the descendants of Immanuel Nobel the younger,
-                i.e. the father of Alfred, Ludvig, Robert and Emil Nobel. The
-                first three of the aforementioned brothers were engaged from
-                1873 in establishing, financing and operating the BraNobel oil
-                company in Baku, the largest company in Russia and the second
-                largest oil company in the world. The Nobel family is also
-                represented at the Nobel Prizes Award Ceremonies which are held
-                in Stockholm on the 10th of December every year since 1901. In
-                2007, the Nobel family archives, kept in the town archives of
-                Lund, were inscribed in UNESCO’s Memory of the World Register.
-              </p>
+              <p>{thirdSection.column2}</p>
             </div>
           </div>
         </div>
