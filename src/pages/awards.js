@@ -2,12 +2,10 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import IntroText from '../components/intro_text'
-import Img from 'gatsby-image'
 import '../styles/pages/awards.scss'
+import { graphql } from 'gatsby'
 
 const Awards = ({ data }) => {
-  const windmillImage = data.windmill.childImageSharp.fluid
-
   return (
     <Layout>
       <SEO title="Awards" />
@@ -130,7 +128,7 @@ const Awards = ({ data }) => {
       </section>
 
       <section>
-        <div className="container">
+        <div className="container padding-bottom-none">
           <div className="row">
             <h2 className="col-md-7 offset-md-3">
               The NST Conference on Sustainability
@@ -173,7 +171,7 @@ const Awards = ({ data }) => {
                 man bun selfies church-key brooklyn.
               </p>
               <p className="border-bottom"></p>
-              <h3>
+              <h3 className="c-water">
                 Each of the university comittees will propose a maximum of five
                 candidates
               </h3>
@@ -266,7 +264,7 @@ const Awards = ({ data }) => {
                 man bun selfies church-key brooklyn.
               </p>
               <p className="border-bottom"></p>
-              <h3>
+              <h3 className="c-water">
                 Each of the university comittees will propose a maximum of five
                 candidates
               </h3>
@@ -300,17 +298,49 @@ export const pageQuery = graphql`
         title
       }
     }
-    city: file(relativePath: { eq: "city.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 960) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    windmill: file(relativePath: { eq: "windmill.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 960) {
-          ...GatsbyImageSharpFluid
+    allMarkdownRemark(
+      limit: 1
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { fileAbsolutePath: { regex: "/awards/" } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            subheading
+            sectionOne {
+              heading
+              column1
+              column2
+            }
+            sectionTwo {
+              heading
+              subheading
+              text1
+              text2
+              text3
+            }
+            sectionThree {
+              heading
+              text
+            }
+            sectionFour {
+              heading
+              subheading
+              column1
+              column2
+            }
+            sectionFive {
+              heading
+              text
+            }
+            sectionSix {
+              heading
+              subheading
+              column1
+              column2
+            }
+          }
         }
       }
     }
