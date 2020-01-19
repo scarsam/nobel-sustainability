@@ -1,20 +1,24 @@
 import React from 'react'
 import Layout from '../components/layout'
 import { graphql } from 'gatsby'
+import Content, { HTMLContent } from '../components/content'
 
-const Contact = ({ data }) => {
-  const { html } = data.allMarkdownRemark.edges[0].node
-  console.log(html)
+export const ContactPageTemplate = ({ title, content, contentComponent }) => {
+  const MarkDown = contentComponent || Content
+
   return (
     <Layout>
       <div className="container">
-        <div
-          className="col-md-6"
-          dangerouslySetInnerHTML={{ __html: html }}
-        ></div>
+        <h2>{title}</h2>
+        <MarkDown className="col-md-6" content={content} />
       </div>
     </Layout>
   )
+}
+
+const Contact = ({ data }) => {
+  const { html } = data.allMarkdownRemark.edges[0].node
+  return <ContactPageTemplate content={html} contentComponent={HTMLContent} />
 }
 
 export default Contact
