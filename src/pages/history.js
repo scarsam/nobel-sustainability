@@ -90,7 +90,7 @@ const History = ({ data }) => {
           <div className="row">
             <div
               className="col-md-6"
-              dangerouslySetInnerHTML={{ __html: thirdSection.column1 }}
+              // dangerouslySetInnerHTML={{ __html: body }}
             >
               {/* <p>
                 <b>

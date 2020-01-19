@@ -1,7 +1,7 @@
-import React from "react"
-import Layout from "../components/layout"
+import React from 'react'
+import Layout from '../components/layout'
 
-const Contact = () => {
+const Contact = ({ data }) => {
   return (
     <Layout>
       <div className="col-4">
@@ -12,3 +12,27 @@ const Contact = () => {
 }
 
 export default Contact
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(
+      limit: 1
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { fileAbsolutePath: { regex: "/history/" } }
+    ) {
+      edges {
+        node {
+          html
+          frontmatter {
+            title
+          }
+        }
+      }
+    }
+  }
+`
