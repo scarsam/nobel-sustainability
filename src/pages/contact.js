@@ -1,27 +1,14 @@
 import React from 'react'
-import Layout from '../components/layout'
 import { graphql } from 'gatsby'
-import Content, { HTMLContent } from '../components/content'
+import { HTMLContent } from '../components/content'
+import ContactPageTemplate from '../templates/ContactPageTemplate'
 
-export const ContactPageTemplate = ({ title, content, contentComponent }) => {
-  const MarkDown = contentComponent || Content
-
-  return (
-    <Layout>
-      <div className="container">
-        <h2>{title}</h2>
-        <MarkDown className="col-md-6" content={content} />
-      </div>
-    </Layout>
-  )
-}
-
-const Contact = ({ data }) => {
+const ContactPage = ({ data }) => {
   const { html } = data.allMarkdownRemark.edges[0].node
   return <ContactPageTemplate content={html} contentComponent={HTMLContent} />
 }
 
-export default Contact
+export default ContactPage
 
 export const pageQuery = graphql`
   query {
