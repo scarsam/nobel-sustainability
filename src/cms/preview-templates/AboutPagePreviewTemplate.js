@@ -1,14 +1,11 @@
 import React from 'react'
-import ReactMarkdown from 'react-markdown'
-import Layout from '../components/layout'
-import IntroText from '../components/intro_text'
-import SEO from '../components/seo'
-import ImageOffset from '../components/image_offset'
-import Img from 'gatsby-image'
-import squigglyLine from '../images/about/squiggly-line.svg'
-import '../styles/pages/about.scss'
+import IntroText from '../../components/intro_text'
+import ImageOffset from '../../components/image_offset'
+import squigglyLine from '../../images/about/squiggly-line.svg'
+import '../../styles/pages/about.scss'
+import PreviewCompatibleImage from '../preview-components/PreviewCompatibleImage'
 
-const AboutPageTemplate = ({
+export const AboutPagePreviewTemplate = ({
   title,
   subheading,
   sectionOne,
@@ -17,9 +14,9 @@ const AboutPageTemplate = ({
   sectionFour,
 }) => {
   return (
-    <Layout>
-      <SEO title="About us" />
+    <>
       <IntroText headline={title} subheading={subheading} />
+
       <section className="container">
         <div className="row">
           <div className="col-md-7">
@@ -28,18 +25,19 @@ const AboutPageTemplate = ({
                 <h2>{sectionOne.heading}</h2>
               </div>
               <div className="col-md-7">
-                <ReactMarkdown source={sectionOne.text1} />
+                <p>{sectionOne.text1}</p>
               </div>
             </div>
             <div className="col-12 padding-top-30px padding-bottom-30px padding-bottom-md-none">
-              <ImageOffset
-                src={sectionOne.image.childImageSharp.fluid}
-                backgroundColor={'bg-map'}
-              />
+              {/* <ImageOffset
+              src={sectionOne.image.childImageSharp.fluid}
+              // backgroundColor={sectionOne.offsetimage.publicURL}
+              backgroundColor={'bg-map'}
+            /> */}
             </div>
           </div>
           <div className="col-md-5">
-            <ReactMarkdown source={sectionOne.text2} />
+            <p>{sectionOne.text2}</p>
           </div>
         </div>
       </section>
@@ -51,12 +49,25 @@ const AboutPageTemplate = ({
                 <h2>{sectionTwo.heading}t</h2>
               </div>
               <div className="col-md-7">
-                <ReactMarkdown source={sectionTwo.column1} />
+                <p>{sectionTwo.column1}</p>
               </div>
             </div>
           </div>
           <div className="col-md-5">
-            <ReactMarkdown source={sectionTwo.column2} />
+            {/* {sectionTwo.column2} */}
+            <p>
+              <b>NST aims to contribute in the following areas:</b>
+            </p>
+            <ul className="padding-left-15px">
+              <li>
+                Climate change with emphasis on reduction of global warming;
+              </li>
+              <li>
+                Advances in clean and renewable technologies and policies;
+              </li>
+              <li>A pollution-free, life-sustaining environment;</li>
+              <li>Inspiration for present and future generations</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -68,31 +79,29 @@ const AboutPageTemplate = ({
             </div>
             <div className="col-md-5 offset-md-1 padding-bottom-30px padding-bottom-md-none">
               <div className="d-flex align-items-center margin-bottom-30px">
-                <Img
-                  fixed={
-                    sectionThree.boardMemberOne.image.childImageSharp.fixed
-                  }
+                <PreviewCompatibleImage
+                  imageInfo={sectionThree.boardMemberOne.image}
+                  type="fixed"
                 />
                 <div className="padding-left-30px">
                   <h3>{sectionThree.boardMemberOne.name}</h3>
                   <img src={squigglyLine} alt="underline" />
                 </div>
               </div>
-              <ReactMarkdown source={sectionThree.boardMemberOne.text} />
+              <p>{sectionThree.boardMemberOne.text}</p>
             </div>
             <div className="col-md-5">
               <div className="d-flex align-items-center margin-bottom-30px">
-                <Img
-                  fixed={
-                    sectionThree.boardMemberTwo.image.childImageSharp.fixed
-                  }
+                <PreviewCompatibleImage
+                  imageInfo={sectionThree.boardMemberTwo.image}
+                  type="fixed"
                 />
                 <div className="padding-left-30px">
                   <h3>{sectionThree.boardMemberTwo.name}</h3>
                   <img src={squigglyLine} alt="underline" />
                 </div>
               </div>
-              <ReactMarkdown source={sectionThree.boardMemberTwo.text} />
+              <p>{sectionThree.boardMemberTwo.text}</p>
             </div>
           </div>
         </div>
@@ -105,33 +114,35 @@ const AboutPageTemplate = ({
             </div>
             <div className="col-md-5 offset-md-1 padding-bottom-30px padding-bottom-md-none">
               <div className="d-flex align-items-center margin-bottom-30px">
-                <Img
-                  fixed={sectionFour.employeeOne.image.childImageSharp.fixed}
+                <PreviewCompatibleImage
+                  imageInfo={sectionFour.employeeOne.image}
+                  type="fixed"
                 />
                 <div className="padding-left-30px">
                   <h3>{sectionFour.employeeOne.name}</h3>
                   <img src={squigglyLine} alt="underline" />
                 </div>
               </div>
-              <ReactMarkdown source={sectionFour.employeeOne.text} />
+              <p>{sectionFour.employeeOne.text}</p>
             </div>
             <div className="col-md-5">
               <div className="d-flex align-items-center margin-bottom-30px">
-                <Img
-                  fixed={sectionFour.employeeTwo.image.childImageSharp.fixed}
+                <PreviewCompatibleImage
+                  imageInfo={sectionFour.employeeTwo.image}
+                  type="fixed"
                 />
                 <div className="padding-left-30px">
                   <h3>{sectionFour.employeeTwo.name}</h3>
                   <img src={squigglyLine} alt="underline" />
                 </div>
               </div>
-              <ReactMarkdown source={sectionFour.employeeTwo.text} />
+              <p>{sectionFour.employeeTwo.text}</p>
             </div>
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   )
 }
 
-export default AboutPageTemplate
+export default AboutPagePreviewTemplate
