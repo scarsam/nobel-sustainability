@@ -1,10 +1,11 @@
 import React from 'react'
+import ReactMarkdown from 'react-markdown'
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import IntroText from '../components/intro_text'
 import ImageOffset from '../components/image_offset'
 import HistoryMidBreakpoint from '../components/history_mid_breakpoint'
-import { graphql } from 'gatsby'
 
 const History = ({ data }) => {
   const {
@@ -45,7 +46,7 @@ const History = ({ data }) => {
               <div className="row">
                 <div className="col-lg-5">
                   <h2>{firstSection.heading1}</h2>
-                  <p>{firstSection.text1}</p>
+                  <ReactMarkdown source={firstSection.text1} />
                 </div>
                 <div className="col-lg-12">
                   <div className="row padding-top-60px">
@@ -57,7 +58,7 @@ const History = ({ data }) => {
                     </div>
                     <div className="col-lg-6">
                       <h2>{firstSection.heading2}</h2>
-                      <p>{firstSection.text2}</p>
+                      <ReactMarkdown source={firstSection.text2} />
                     </div>
                   </div>
                 </div>
@@ -74,10 +75,10 @@ const History = ({ data }) => {
               <h3>{secondSection.heading}</h3>
             </div>
             <div className="col-md-5">
-              <p>{secondSection.column1}</p>
+              <ReactMarkdown source={secondSection.column1} />
             </div>
             <div className="col-md-5">
-              <p>{secondSection.column2}</p>
+              <ReactMarkdown source={secondSection.column2} />
             </div>
           </div>
         </div>
@@ -89,29 +90,11 @@ const History = ({ data }) => {
             {thirdSection.heading}
           </h2>
           <div className="row">
-            <div
-              className="col-md-6"
-              // dangerouslySetInnerHTML={{ __html: body }}
-            >
-              <p>
-                <b>
-                  The Nobel Family Society is a private association with the
-                  following objectives
-                </b>
-              </p>
-              <ul className="padding-left-15px green-bullet-list">
-                <li>
-                  Climate change with emphasis on reduction of global warming;
-                </li>
-                <li>
-                  Advances in clean and renewable technologies and policies;
-                </li>
-                <li>A pollution-free, life-sustaining environment;</li>
-                <li>Inspiration for present and future generations</li>
-              </ul>
+            <div className="col-md-6 green-bullet-list">
+              <ReactMarkdown source={thirdSection.column1} />
             </div>
             <div className="col-md-6">
-              <p>{thirdSection.column2}</p>
+              <ReactMarkdown source={thirdSection.column2} />
             </div>
           </div>
         </div>

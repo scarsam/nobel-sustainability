@@ -11,7 +11,6 @@ const About = ({ data }) => {
     sectionThree,
     sectionFour,
   } = data.allMarkdownRemark.edges[0].node.frontmatter
-
   return (
     <AboutPageTemplate
       title={title}
