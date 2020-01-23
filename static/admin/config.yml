@@ -178,8 +178,18 @@ collections:
           - { label: heading, name: heading, widget: string }
           - { label: text 1, name: text1, widget: markdown }
           - { label: text 2, name: text2, widget: markdown }
-          - { label: image, name: image, widget: image }
-          - { label: offset image, name: offsetimage, widget: image }
+          - label: image
+            name: image
+            widget: object
+            fields:
+              - { label: image, name: image, widget: image }
+              - { label: alt, name: alt, widget: string }
+          - label: offset image
+            name: offsetImage
+            widget: object
+            fields:
+              - { label: image, name: image, widget: image }
+              - { label: alt, name: alt, widget: string }
       - label: Section Two
         name: sectionTwo
         widget: object
@@ -198,7 +208,12 @@ collections:
             fields:
               - { label: name, name: name, widget: string }
               - { label: text, name: text, widget: markdown }
-              - { label: image, name: image, widget: image }
+              - label: image,
+                name: image,
+                widget: object
+                fields:
+                  - { label: image, name: image, widget: image }
+                  - { label: alt, name: alt, widget: string }
           - label: Board Member Two
             name: boardMemberTwo
             widget: object
