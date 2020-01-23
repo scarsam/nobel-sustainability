@@ -1,10 +1,11 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/layout"
-import ImageOffset from "../components/image_offset"
-import SEO from "../components/seo"
-import IntroText from "../components/intro_text"
-import Img from "gatsby-image"
+import React from 'react'
+import { graphql } from 'gatsby'
+import ReactMarkdown from 'react-markdown'
+import Layout from '../components/layout'
+import ImageOffset from '../components/image_offset'
+import SEO from '../components/seo'
+import IntroText from '../components/intro_text'
+import Img from 'gatsby-image'
 
 const Home = props => {
   const { data } = props
@@ -25,10 +26,10 @@ const Home = props => {
             <h3>{homeData.firstSection.heading}</h3>
           </div>
           <div className="col-md-5">
-            <p>{homeData.firstSection.column1}</p>
+            <ReactMarkdown source={homeData.firstSection.column1} />
           </div>
           <div className="col-md-5">
-            <p>{homeData.firstSection.column2}</p>
+            <ReactMarkdown source={homeData.firstSection.column2} />
           </div>
         </div>
       </section>
@@ -61,12 +62,12 @@ const Home = props => {
             <h3>{homeData.secondSection.heading}</h3>
           </div>
           <div className="col-md-5">
-            <p>{homeData.secondSection.column1}</p>
+            <ReactMarkdown source={homeData.secondSection.column1} />
           </div>
           <div className="col-10 offset-1 col-md-5 offset-md-0 col-lg-3 offset-lg-1">
             <ImageOffset
               src={homeData.secondSection.image.childImageSharp.fluid}
-              backgroundColor={"bg-green"}
+              backgroundColor={'bg-green'}
               text={homeData.secondSection.imageText}
             />
           </div>
