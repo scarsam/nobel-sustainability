@@ -90,7 +90,7 @@ const History = ({ data }) => {
             {thirdSection.heading}
           </h2>
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 green-bullet-list">
               <ReactMarkdown source={thirdSection.column1} />
             </div>
             <div className="col-md-6">

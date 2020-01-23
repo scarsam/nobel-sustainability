@@ -30,7 +30,7 @@ const Awards = ({ data }) => {
             <div className="col-md-5 ">
               <ReactMarkdown source={sectionOne.column1} />
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 green-bullet-list">
               <ReactMarkdown source={sectionOne.column2} />
             </div>
           </div>
@@ -38,7 +38,7 @@ const Awards = ({ data }) => {
       </section>
 
       <section className="bg-grey-beige squiggly-line-bg">
-        <div className="container padding-bottom-none windmill-bg">
+        <div className="container windmill-bg">
           <h2 className="text-left-sm text-center-md padding-bottom-25px">
             {sectionTwo.heading}
           </h2>
@@ -56,7 +56,7 @@ const Awards = ({ data }) => {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-9 offset-md-3 col-lg-8 offset-lg-3">
+            <div className="col-md-9 offset-md-3 col-lg-8 offset-lg-3 green-bullet-list">
               <ReactMarkdown source={sectionTwo.text3} />
             </div>
           </div>
