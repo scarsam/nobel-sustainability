@@ -80,7 +80,7 @@ sectionTwo:
   heading: The Mission of the Nobel Sustainability Trust
 sectionThree:
   boardMemberOne:
-    'image,':
+    image:
       alt: Michael Nobel
       image: /images/michael.png
     name: Michael Nobel
@@ -104,7 +104,7 @@ sectionThree:
       around the world and fourteen other types of awards for his work in
       medical innovation and conflict resolution as well as in other fields.
   boardMemberTwo:
-    'image,':
+    image:
       alt: Peter Nobel
       image: /images/peter.png
     name: Peter Nobel
@@ -131,7 +131,7 @@ sectionThree:
   heading: The board
 sectionFour:
   employeeOne:
-    'image,':
+    image:
       alt: Stina Nordlander
       image: /images/stina.png
     name: Stina Nordlander
