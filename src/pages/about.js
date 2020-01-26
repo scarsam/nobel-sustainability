@@ -29,116 +29,116 @@ const AboutPage = ({ data }) => {
 
 export default AboutPage
 
-// export const pageQuery = graphql`
-//   query {
-//     site {
-//       siteMetadata {
-//         title
-//       }
-//     }
-//     allMarkdownRemark(
-//       limit: 1
-//       sort: { order: DESC, fields: [frontmatter___date] }
-//       filter: { fileAbsolutePath: { regex: "/about/" } }
-//     ) {
-//       edges {
-//         node {
-//           frontmatter {
-//             title
-//             subheading
-//             sectionOne {
-//               heading
-//               text1
-//               text2
-//               image {
-//                 alt
-//                 image {
-//                   childImageSharp {
-//                     fluid(maxWidth: 960) {
-//                       ...GatsbyImageSharpFluid
-//                     }
-//                   }
-//                 }
-//               }
-//               offsetimage {
-//                 image {
-//                   alt
-//                   image {
-//                     publicURL
-//                   }
-//                 }
-//               }
-//             }
-//             sectionTwo {
-//               heading
-//               column1
-//               column2
-//             }
-//             sectionThree {
-//               heading
-//               boardMemberOne {
-//                 name
-//                 text
-//                 image {
-//                   alt
-//                   image {
-//                     childImageSharp {
-//                       fixed(width: 100) {
-//                         ...GatsbyImageSharpFixed
-//                       }
-//                     }
-//                   }
-//                 }
-//               }
-//               boardMemberTwo {
-//                 name
-//                 text
-//                 image {
-//                   alt
-//                   image {
-//                     childImageSharp {
-//                       fixed(width: 100) {
-//                         ...GatsbyImageSharpFixed
-//                       }
-//                     }
-//                   }
-//                 }
-//               }
-//             }
-//             sectionFour {
-//               heading
-//               employeeOne {
-//                 name
-//                 text
-//                 image {
-//                   alt
-//                   image {
-//                     childImageSharp {
-//                       fixed(width: 100) {
-//                         ...GatsbyImageSharpFixed
-//                       }
-//                     }
-//                   }
-//                 }
-//               }
-//               employeeTwo {
-//                 name
-//                 text
-//                 image {
-//                   alt
-//                   image {
-//                     childImageSharp {
-//                       fixed(width: 100) {
-//                         ...GatsbyImageSharpFixed
-//                       }
-//                     }
-//                   }
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(
+      limit: 1
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { fileAbsolutePath: { regex: "/about/" } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            subheading
+            sectionOne {
+              heading
+              text1
+              text2
+              image {
+                alt
+                image {
+                  childImageSharp {
+                    fluid(maxWidth: 960) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+              }
+              offsetimage {
+                image {
+                  alt
+                  image {
+                    publicURL
+                  }
+                }
+              }
+            }
+            sectionTwo {
+              heading
+              column1
+              column2
+            }
+            sectionThree {
+              heading
+              boardMemberOne {
+                name
+                text
+                image {
+                  alt
+                  image {
+                    childImageSharp {
+                      fixed(width: 100) {
+                        ...GatsbyImageSharpFixed
+                      }
+                    }
+                  }
+                }
+              }
+              boardMemberTwo {
+                name
+                text
+                image {
+                  alt
+                  image {
+                    childImageSharp {
+                      fixed(width: 100) {
+                        ...GatsbyImageSharpFixed
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            sectionFour {
+              heading
+              employeeOne {
+                name
+                text
+                image {
+                  alt
+                  image {
+                    childImageSharp {
+                      fixed(width: 100) {
+                        ...GatsbyImageSharpFixed
+                      }
+                    }
+                  }
+                }
+              }
+              employeeTwo {
+                name
+                text
+                image {
+                  alt
+                  image {
+                    childImageSharp {
+                      fixed(width: 100) {
+                        ...GatsbyImageSharpFixed
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
