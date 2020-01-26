@@ -11,7 +11,7 @@ const PreviewCompatibleImage = ({ imageInfo, type }) => {
 
   async function resolveImage() {
     let response = await imageInfo.image
-    setPath(response.path)
+    setPath(response.url)
   }
 
   if (type === 'fixed') {
