@@ -4,6 +4,7 @@ import ImageOffset from '../../components/image_offset'
 import squigglyLine from '../../images/about/squiggly-line.svg'
 import '../../styles/pages/about.scss'
 import PreviewCompatibleImage from '../preview-components/PreviewCompatibleImage'
+import ReactMarkdown from 'react-markdown'
 
 export const AboutPagePreviewTemplate = ({
   title,
@@ -54,20 +55,7 @@ export const AboutPagePreviewTemplate = ({
             </div>
           </div>
           <div className="col-md-5">
-            {/* {sectionTwo.column2} */}
-            <p>
-              <b>NST aims to contribute in the following areas:</b>
-            </p>
-            <ul className="padding-left-15px">
-              <li>
-                Climate change with emphasis on reduction of global warming;
-              </li>
-              <li>
-                Advances in clean and renewable technologies and policies;
-              </li>
-              <li>A pollution-free, life-sustaining environment;</li>
-              <li>Inspiration for present and future generations</li>
-            </ul>
+            <ReactMarkdown source={sectionTwo.column2} />
           </div>
         </div>
       </section>
