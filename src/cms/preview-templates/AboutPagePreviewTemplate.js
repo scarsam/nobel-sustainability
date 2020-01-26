@@ -1,6 +1,5 @@
 import React from 'react'
 import IntroText from '../../components/intro_text'
-import ImageOffset from '../../components/image_offset'
 import squigglyLine from '../../images/about/squiggly-line.svg'
 import '../../styles/pages/about.scss'
 import PreviewCompatibleImage from '../preview-components/PreviewCompatibleImage'

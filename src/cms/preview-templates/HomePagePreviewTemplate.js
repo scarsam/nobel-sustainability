@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
-import ImageOffset from '../../components/image_offset'
 import IntroText from '../../components/intro_text'
 import PreviewCompatibleImage from '../preview-components/PreviewCompatibleImage'
 
@@ -9,7 +8,6 @@ const HomePagePreviewTemplate = ({
   subheading,
   image,
   partners,
-  news,
   firstSection,
   secondSection,
 }) => {
