@@ -141,15 +141,15 @@ collections:
           - { label: column 1, name: column1, widget: markdown }
           - { label: column 2, name: column2, widget: markdown }
 
-  - name: 'contact'
+  - name: contact
     label: Contact
     folder: src/cms/contact
-    create: true
+    create: false
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: Title, name: title, widget: string }
       - label: Office 1
         name: officeOne
         widget: object
