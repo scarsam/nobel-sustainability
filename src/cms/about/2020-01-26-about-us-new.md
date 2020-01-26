@@ -1,5 +1,5 @@
 ---
-title: About us NEW
+title: About us
 subheading: >-
   We encourage research, development, action and implementation of sustainable
   solutions
