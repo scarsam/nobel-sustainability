@@ -9,37 +9,19 @@ sectionOne:
     image:
       alt: Immanuel Nobel
       image: /images/immanuel.jpg
-    text: |-
-      Immanuel Nobel pioneered the development of underwater mines, designed
-
-      some of the first steam engines to power russian ships, installed the
-
-      first central heating systems in Russian homes and was the first to
-
-      develop modern plywood, cut with a rotary lathe.
+    text: >-
+      Lorem ipsum dolor amet williamsburg adaptogen brooklyn small batch etsy
+      mlkshk sartorial biodiesel enamel pin chillwave blog viral 90's. Lomo
+      ethical tousled skateboard swag master cleanse selvage neutra scenester.
   columnTwo:
     heading: Ludwig Nobel
     image:
       alt: Ludwig Nobel
       image: /images/ludwig.jpg
-    text: |-
-      One of his sons, Ludvig Nobel, was the founder of the machine-building
-
-      factory Ludvig Nobel, a great armaments concern and the inventor of the
-
-      Nobel wheel. Ludvig was also the founder of BraNobel, the foremost Russian
-
-      oil industry in it's time, and launched the world's first diesel-driven
-
-      tugs, tankers and u-boats, besides building the first European oil
-
-      pipeline in Baku. Alfred Nobel, a profilic inventor who acquired 355
-
-      patents during his lifespan, was the creator of dynamite and the blasting
-
-      cap from which he made a substantial future of which he left the bulk to
-
-      form the Nobel Prizes.
+    text: >-
+      Lorem ipsum dolor amet williamsburg adaptogen brooklyn small batch etsy
+      mlkshk sartorial biodiesel enamel pin chillwave blog viral 90's. Lomo
+      ethical tousled skateboard swag master cleanse selvage neutra scenester.
 sectionTwo:
   column1: >-
     Lorem ipsum dolor amet williamsburg adaptogen brooklyn small batch etsy
