@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Img from 'gatsby-image'
 
 const PreviewCompatibleImage = ({ imageInfo, type }) => {
   const { alt = '', childImageSharp, image } = imageInfo
+
+  console.log(imageInfo)
+
+  // useEffect(() => {
+  //   resolveImage()
+  // }, [])
+
+  // async function resolveImage() {
+  //   let response = await imageInfo.image
+  //   console.log(response)
+  // }
 
   if (type === 'fixed') {
     if (!!image && !!image.childImageSharp) {

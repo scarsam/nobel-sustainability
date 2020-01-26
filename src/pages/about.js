@@ -1,8 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import AboutPageTemplate from '../templates/AboutPageTemplate'
+import SEO from '../components/seo'
 
-const About = ({ data }) => {
+const AboutPage = ({ data }) => {
   const {
     title,
     subheading,
@@ -12,18 +13,21 @@ const About = ({ data }) => {
     sectionFour,
   } = data.allMarkdownRemark.edges[0].node.frontmatter
   return (
-    <AboutPageTemplate
-      title={title}
-      subheading={subheading}
-      sectionOne={sectionOne}
-      sectionTwo={sectionTwo}
-      sectionThree={sectionThree}
-      sectionFour={sectionFour}
-    />
+    <>
+      <SEO title="About us" />
+      <AboutPageTemplate
+        title={title}
+        subheading={subheading}
+        sectionOne={sectionOne}
+        sectionTwo={sectionTwo}
+        sectionThree={sectionThree}
+        sectionFour={sectionFour}
+      />
+    </>
   )
 }
 
-export default About
+export default AboutPage
 
 export const pageQuery = graphql`
   query {
@@ -47,14 +51,20 @@ export const pageQuery = graphql`
               text1
               text2
               image {
-                childImageSharp {
-                  fluid(maxWidth: 960) {
-                    ...GatsbyImageSharpFluid
+                alt
+                image {
+                  childImageSharp {
+                    fluid(maxWidth: 960) {
+                      ...GatsbyImageSharpFluid
+                    }
                   }
                 }
               }
-              offsetimage {
-                publicURL
+              offsetImage {
+                alt
+                image {
+                  publicURL
+                }
               }
             }
             sectionTwo {
@@ -68,9 +78,12 @@ export const pageQuery = graphql`
                 name
                 text
                 image {
-                  childImageSharp {
-                    fixed(width: 100) {
-                      ...GatsbyImageSharpFixed
+                  alt
+                  image {
+                    childImageSharp {
+                      fixed(width: 100) {
+                        ...GatsbyImageSharpFixed
+                      }
                     }
                   }
                 }
@@ -79,9 +92,12 @@ export const pageQuery = graphql`
                 name
                 text
                 image {
-                  childImageSharp {
-                    fixed(width: 100) {
-                      ...GatsbyImageSharpFixed
+                  alt
+                  image {
+                    childImageSharp {
+                      fixed(width: 100) {
+                        ...GatsbyImageSharpFixed
+                      }
                     }
                   }
                 }
@@ -93,9 +109,12 @@ export const pageQuery = graphql`
                 name
                 text
                 image {
-                  childImageSharp {
-                    fixed(width: 100) {
-                      ...GatsbyImageSharpFixed
+                  alt
+                  image {
+                    childImageSharp {
+                      fixed(width: 100) {
+                        ...GatsbyImageSharpFixed
+                      }
                     }
                   }
                 }
@@ -104,9 +123,12 @@ export const pageQuery = graphql`
                 name
                 text
                 image {
-                  childImageSharp {
-                    fixed(width: 100) {
-                      ...GatsbyImageSharpFixed
+                  alt
+                  image {
+                    childImageSharp {
+                      fixed(width: 100) {
+                        ...GatsbyImageSharpFixed
+                      }
                     }
                   }
                 }

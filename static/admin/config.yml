@@ -22,14 +22,19 @@ collections:
   - name: home
     label: Home
     folder: src/cms/home
-    create: false
+    create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Subheading, name: subheading, widget: string }
-      - { label: Hero image, name: image, widget: image }
+      - label: Hero image
+        name: image
+        widget: object
+        fields:
+          - { label: image, name: image, widget: image }
+          - { label: alt, name: alt, widget: string }
       - label: First section
         name: firstSection
         widget: object
@@ -41,16 +46,39 @@ collections:
         name: partners
         widget: object
         fields:
-          - { label: partner 1, name: partner1, widget: image }
-          - { label: partner 2, name: partner2, widget: image }
+          - label: partner 1
+            name: partner1
+            widget: object
+            fields:
+              - label: image
+                name: image
+                widget: object
+                fields:
+                  - { label: image, name: image, widget: image }
+                  - { label: alt, name: alt, widget: string }
+          - label: partner 2
+            name: partner2
+            widget: object
+            fields:
+              - label: image
+                name: image
+                widget: object
+                fields:
+                  - { label: image, name: image, widget: image }
+                  - { label: alt, name: alt, widget: string }
       - label: Second section
         name: secondSection
         widget: object
         fields:
           - { label: heading, name: heading, widget: string }
           - { label: column 1, name: column1, widget: markdown }
-          - { label: image text, name: imageText, widget: string }
-          - { label: image, name: image, widget: image }
+          - label: image
+            name: image
+            widget: object
+            fields:
+              - { label: image, name: image, widget: image }
+              - { label: text, name: text, widget: string }
+              - { label: alt, name: alt, widget: string }
       - label: News
         name: news
         widget: relation
@@ -164,7 +192,7 @@ collections:
   - name: 'about'
     label: About
     folder: src/cms/about
-    create: false
+    create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
@@ -208,8 +236,8 @@ collections:
             fields:
               - { label: name, name: name, widget: string }
               - { label: text, name: text, widget: markdown }
-              - label: image,
-                name: image,
+              - label: image
+                name: image
                 widget: object
                 fields:
                   - { label: image, name: image, widget: image }
@@ -220,7 +248,12 @@ collections:
             fields:
               - { label: name, name: name, widget: string }
               - { label: text, name: text, widget: markdown }
-              - { label: image, name: image, widget: image }
+              - label: image
+                name: image
+                widget: object
+                fields:
+                  - { label: image, name: image, widget: image }
+                  - { label: alt, name: alt, widget: string }
       - label: Section Four
         name: sectionFour
         widget: object
@@ -232,11 +265,21 @@ collections:
             fields:
               - { label: name, name: name, widget: string }
               - { label: text, name: text, widget: markdown }
-              - { label: image, name: image, widget: image }
+              - label: image
+                name: image
+                widget: object
+                fields:
+                  - { label: image, name: image, widget: image }
+                  - { label: alt, name: alt, widget: string }
           - label: Employee Two
             name: employeeTwo
             widget: object
             fields:
               - { label: name, name: name, widget: string }
               - { label: text, name: text, widget: markdown }
-              - { label: image, name: image, widget: image }
+              - label: image
+                name: image
+                widget: object
+                fields:
+                  - { label: image, name: image, widget: image }
+                  - { label: alt, name: alt, widget: string }
