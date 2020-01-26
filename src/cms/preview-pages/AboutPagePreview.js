@@ -1,14 +1,12 @@
-import React, { useState } from 'react'
-import AboutPageTemplate from '../preview-templates/AboutPagePreviewTemplate'
+import React from 'react'
+import AboutPagePreviewTemplate from '../preview-templates/AboutPagePreviewTemplate'
 import PropTypes from 'prop-types'
 import PreviewLayout from '../preview-components/PreviewLayout'
 
 const AboutPagePreview = ({ entry, getAsset }) => {
-  const [imageUrl, setImageUrl] = useState()
-
   return (
     <PreviewLayout>
-      <AboutPageTemplate
+      <AboutPagePreviewTemplate
         title={entry.getIn(['data', 'title'])}
         subheading={entry.getIn(['data', 'subheading'])}
         sectionOne={{
@@ -43,7 +41,22 @@ const AboutPagePreview = ({ entry, getAsset }) => {
               'text',
             ]),
             image: {
-              image: { imageUrl },
+              image: getAsset(
+                entry.getIn([
+                  'data',
+                  'sectionThree',
+                  'boardMemberOne',
+                  'image',
+                  'image',
+                ])
+              ),
+              alt: entry.getIn([
+                'data',
+                'sectionThree',
+                'boardMemberOne',
+                'image',
+                'alt',
+              ]),
             },
           },
           boardMemberTwo: {
@@ -61,8 +74,21 @@ const AboutPagePreview = ({ entry, getAsset }) => {
             ]),
             image: {
               image: getAsset(
-                entry.getIn(['data', 'sectionThree', 'boardMemberTwo', 'image'])
+                entry.getIn([
+                  'data',
+                  'sectionThree',
+                  'boardMemberTwo',
+                  'image',
+                  'image',
+                ])
               ),
+              alt: entry.getIn([
+                'data',
+                'sectionThree',
+                'boardMemberTwo',
+                'image',
+                'alt',
+              ]),
             },
           },
         }}
@@ -73,8 +99,21 @@ const AboutPagePreview = ({ entry, getAsset }) => {
             text: entry.getIn(['data', 'sectionFour', 'employeeOne', 'text']),
             image: {
               image: getAsset(
-                entry.getIn(['data', 'sectionFour', 'employeeOne', 'image'])
+                entry.getIn([
+                  'data',
+                  'sectionFour',
+                  'employeeOne',
+                  'image',
+                  'image',
+                ])
               ),
+              alt: entry.getIn([
+                'data',
+                'sectionFour',
+                'employeeOne',
+                'image',
+                'alt',
+              ]),
             },
           },
           employeeTwo: {
@@ -82,8 +121,21 @@ const AboutPagePreview = ({ entry, getAsset }) => {
             text: entry.getIn(['data', 'sectionFour', 'employeeTwo', 'text']),
             image: {
               image: getAsset(
-                entry.getIn(['data', 'sectionFour', 'employeeTwo', 'image'])
+                entry.getIn([
+                  'data',
+                  'sectionFour',
+                  'employeeTwo',
+                  'image',
+                  'image',
+                ])
               ),
+              alt: entry.getIn([
+                'data',
+                'sectionFour',
+                'image',
+                'image',
+                'alt',
+              ]),
             },
           },
         }}
