@@ -1,41 +1,32 @@
-import React from "react"
-import ImageOffset from "../components/image_offset"
+import React from 'react'
+import ImageOffset from '../components/image_offset'
+import ReactMarkdown from 'react-markdown'
 
-const HistoryMidBreakpoint = ({ immanuel, ludwig }) => {
+const HistoryMidBreakpoint = ({ data }) => {
   return (
     <>
       <div className="row padding-bottom-60px">
         <div className="col-7 col-md-3 padding-bottom-30px padding-bottom-md-none">
-          <ImageOffset src={immanuel} backgroundColor={"bg-water"} />
+          <ImageOffset
+            src={data.columnOne.image.image.childImageSharp.fluid}
+            backgroundColor={'bg-water'}
+          />
         </div>
         <div className="col-md-6">
-          <h2>Immanuel Nobel</h2>
-          <p>
-            Immanuel Nobel pioneered the development of underwater mines,
-            designed some of the first steam engines to power russian ships,
-            installed the first central heating systems in Russian homes and was
-            the first to develop modern plywood, cut with a rotary lathe.
-          </p>
+          <h2>{data.columnOne.heading}</h2>
+          <ReactMarkdown source={data.columnOne.text} />
         </div>
       </div>
       <div className="row">
         <div className="col-7 col-md-3 offset-md-2 padding-bottom-30px padding-bottom-md-none">
-          <ImageOffset src={ludwig} backgroundColor={"bg-green"} />
+          <ImageOffset
+            src={data.columnTwo.image.image.childImageSharp.fluid}
+            backgroundColor={'bg-green'}
+          />
         </div>
         <div className="col-md-7 ">
-          <h2>Ludwig Nobel</h2>
-          <p>
-            One of his sons, Ludvig Nobel, was the founder of the
-            machine-building factory Ludvig Nobel, a great armaments concern and
-            the inventor of the Nobel wheel. Ludvig was also the founder of
-            BraNobel, the foremost Russian oil industry in it's time, and
-            launched the world's first diesel-driven tugs, tankers and u-boats,
-            besides building the first European oil pipeline in Baku. Alfred
-            Nobel, a profilic inventor who acquired 355 patents during his
-            lifespan, was the creator of dynamite and the blasting cap from
-            which he made a substantial future of which he left the bulk to form
-            the Nobel Prizes.
-          </p>
+          <h2>{data.columnTwo.heading}</h2>
+          <ReactMarkdown source={data.columnTwo.text} />
         </div>
       </div>
     </>
