@@ -1,5 +1,5 @@
 ---
-title: History NEW
+title: History
 subheading: >-
   Members of the earlier Nobel family were known, not only for their interest in
   art but also for their inventive ability
