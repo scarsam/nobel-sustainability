@@ -33,7 +33,7 @@ const PreviewCompatibleImage = ({ imageInfo, type }) => {
       return <Img fluid={childImageSharp.fluid} alt={alt} />
     }
   }
-  if (!!image && typeof image === 'string') return <img src={path} alt={alt} />
+  if (path) return <img src={path} alt={alt} />
 
   return null
 }
