@@ -4,6 +4,8 @@ import Img from 'gatsby-image'
 const PreviewCompatibleImage = ({ imageInfo, type }) => {
   const { alt = '', childImageSharp, image } = imageInfo
 
+  console.log(imageInfo)
+
   // useEffect(() => {
   //   resolveImage()
   // }, [])

@@ -9,134 +9,54 @@ const HomePagePreview = ({ entry, getAsset }) => {
       <HomePagePreviewTemplate
         title={entry.getIn(['data', 'title'])}
         subheading={entry.getIn(['data', 'subheading'])}
-        sectionOne={{
-          heading: entry.getIn(['data', 'sectionOne', 'heading']),
-          text1: entry.getIn(['data', 'sectionOne', 'text1']),
-          text2: entry.getIn(['data', 'sectionOne', 'text2']),
+        image={{
+          image: getAsset(entry.getIn(['data', 'image', 'image'])),
+          alt: entry.getIn(['data', 'image', 'alt']),
+        }}
+        firstSection={{
+          heading: entry.getIn(['data', 'firstSection', 'heading']),
+          column1: entry.getIn(['data', 'firstSection', 'column1']),
+          column2: entry.getIn(['data', 'firstSection', 'column2']),
+        }}
+        partners={{
+          partner1: {
+            image: {
+              image: getAsset(
+                entry.getIn(['data', 'partners', 'partner1', 'image', 'image'])
+              ),
+              alt: entry.getIn([
+                'data',
+                'partners',
+                'partner1',
+                'image',
+                'alt',
+              ]),
+            },
+          },
+          partner2: {
+            image: {
+              image: getAsset(
+                entry.getIn(['data', 'partners', 'partner2', 'image', 'image'])
+              ),
+              alt: entry.getIn([
+                'data',
+                'partners',
+                'partner2',
+                'image',
+                'alt',
+              ]),
+            },
+          },
+        }}
+        secondSection={{
+          heading: entry.getIn(['data', 'secondSection', 'heading']),
+          column1: entry.getIn(['data', 'secondSection', 'column1']),
           image: {
             image: getAsset(
-              entry.getIn(['data', 'sectionOne', 'image', 'image'])
+              entry.getIn(['data', 'secondSection', 'image', 'image'])
             ),
-            alt: entry.getIn(['data', 'sectionOne', 'image', 'alt']),
-          },
-        }}
-        sectionTwo={{
-          heading: entry.getIn(['data', 'sectionTwo', 'heading']),
-          column1: entry.getIn(['data', 'sectionTwo', 'column1']),
-          column2: entry.getIn(['data', 'sectionTwo', 'column2']),
-        }}
-        sectionThree={{
-          heading: entry.getIn(['data', 'sectionThree', 'heading']),
-          boardMemberOne: {
-            name: entry.getIn([
-              'data',
-              'sectionThree',
-              'boardMemberOne',
-              'name',
-            ]),
-            text: entry.getIn([
-              'data',
-              'sectionThree',
-              'boardMemberOne',
-              'text',
-            ]),
-            image: {
-              image: getAsset(
-                entry.getIn([
-                  'data',
-                  'sectionThree',
-                  'boardMemberOne',
-                  'image',
-                  'image',
-                ])
-              ),
-              alt: entry.getIn([
-                'data',
-                'sectionThree',
-                'boardMemberOne',
-                'image',
-                'alt',
-              ]),
-            },
-          },
-          boardMemberTwo: {
-            name: entry.getIn([
-              'data',
-              'sectionThree',
-              'boardMemberTwo',
-              'name',
-            ]),
-            text: entry.getIn([
-              'data',
-              'sectionThree',
-              'boardMemberTwo',
-              'text',
-            ]),
-            image: {
-              image: getAsset(
-                entry.getIn([
-                  'data',
-                  'sectionThree',
-                  'boardMemberTwo',
-                  'image',
-                  'image',
-                ])
-              ),
-              alt: entry.getIn([
-                'data',
-                'sectionThree',
-                'boardMemberTwo',
-                'image',
-                'alt',
-              ]),
-            },
-          },
-        }}
-        sectionFour={{
-          heading: entry.getIn(['data', 'sectionFour', 'heading']),
-          employeeOne: {
-            name: entry.getIn(['data', 'sectionFour', 'employeeOne', 'name']),
-            text: entry.getIn(['data', 'sectionFour', 'employeeOne', 'text']),
-            image: {
-              image: getAsset(
-                entry.getIn([
-                  'data',
-                  'sectionFour',
-                  'employeeOne',
-                  'image',
-                  'image',
-                ])
-              ),
-              alt: entry.getIn([
-                'data',
-                'sectionFour',
-                'employeeOne',
-                'image',
-                'alt',
-              ]),
-            },
-          },
-          employeeTwo: {
-            name: entry.getIn(['data', 'sectionFour', 'employeeTwo', 'name']),
-            text: entry.getIn(['data', 'sectionFour', 'employeeTwo', 'text']),
-            image: {
-              image: getAsset(
-                entry.getIn([
-                  'data',
-                  'sectionFour',
-                  'employeeTwo',
-                  'image',
-                  'image',
-                ])
-              ),
-              alt: entry.getIn([
-                'data',
-                'sectionFour',
-                'image',
-                'image',
-                'alt',
-              ]),
-            },
+            alt: entry.getIn(['data', 'secondSection', 'image', 'alt']),
+            text: entry.getIn(['data', 'secondSection', 'image', 'text']),
           },
         }}
       />

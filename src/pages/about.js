@@ -60,12 +60,10 @@ export const pageQuery = graphql`
                   }
                 }
               }
-              offsetimage {
+              offsetImage {
+                alt
                 image {
-                  alt
-                  image {
-                    publicURL
-                  }
+                  publicURL
                 }
               }
             }
