@@ -1,10 +1,13 @@
 import React from 'react'
-import Layout from '../components/layout'
 
-const ContactPageTemplate = ({ title, officeOne, officeTwo, emails }) => {
-  console.log(officeOne)
+const ContactPagePreviewTemplate = ({
+  title,
+  officeOne,
+  officeTwo,
+  emails,
+}) => {
   return (
-    <Layout>
+    <>
       <h1 className="text-center padding-top-50px padding-bottom-50px">
         {title}
       </h1>
@@ -59,8 +62,8 @@ const ContactPageTemplate = ({ title, officeOne, officeTwo, emails }) => {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   )
 }
 
-export default ContactPageTemplate
+export default ContactPagePreviewTemplate
