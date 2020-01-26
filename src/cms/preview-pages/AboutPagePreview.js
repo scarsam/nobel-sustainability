@@ -41,13 +41,15 @@ const AboutPagePreview = ({ entry, getAsset }) => {
               'text',
             ]),
             image: {
-              image: entry.getIn([
-                'data',
-                'sectionThree',
-                'boardMemberOne',
-                'image',
-                'image',
-              ]),
+              image: getAsset(
+                entry.getIn([
+                  'data',
+                  'sectionThree',
+                  'boardMemberOne',
+                  'image',
+                  'image',
+                ])
+              ),
               alt: entry.getIn([
                 'data',
                 'sectionThree',
