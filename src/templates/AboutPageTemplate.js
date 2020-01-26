@@ -2,7 +2,6 @@ import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import Layout from '../components/layout'
 import IntroText from '../components/intro_text'
-import SEO from '../components/seo'
 import ImageOffset from '../components/image_offset'
 import Img from 'gatsby-image'
 import squigglyLine from '../images/about/squiggly-line.svg'
@@ -18,7 +17,6 @@ const AboutPageTemplate = ({
 }) => {
   return (
     <Layout>
-      <SEO title="About us" />
       <IntroText headline={title} subheading={subheading} />
       <section className="container">
         <div className="row">

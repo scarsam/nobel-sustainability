@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import AboutPageTemplate from '../templates/AboutPageTemplate'
+import SEO from '../components/seo'
 
 const About = ({ data }) => {
   const {
@@ -12,14 +13,17 @@ const About = ({ data }) => {
     sectionFour,
   } = data.allMarkdownRemark.edges[0].node.frontmatter
   return (
-    <AboutPageTemplate
-      title={title}
-      subheading={subheading}
-      sectionOne={sectionOne}
-      sectionTwo={sectionTwo}
-      sectionThree={sectionThree}
-      sectionFour={sectionFour}
-    />
+    <>
+      <SEO title="About us" />
+      <AboutPageTemplate
+        title={title}
+        subheading={subheading}
+        sectionOne={sectionOne}
+        sectionTwo={sectionTwo}
+        sectionThree={sectionThree}
+        sectionFour={sectionFour}
+      />
+    </>
   )
 }
 
