@@ -53,7 +53,7 @@ const AboutPageTemplate = ({
               </div>
             </div>
           </div>
-          <div className="col-md-5">
+          <div className="col-md-5 green-bullet-list">
             <ReactMarkdown source={sectionTwo.column2} />
           </div>
         </div>
