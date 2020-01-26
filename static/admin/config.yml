@@ -22,10 +22,10 @@ collections:
   - name: home
     label: Home
     folder: src/cms/home
-    create: false
+    create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-      preview: true
+      preview: false
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Subheading, name: subheading, widget: string }
@@ -50,14 +50,22 @@ collections:
             name: partner1
             widget: object
             fields:
-              - { label: image, name: image, widget: image }
-              - { label: alt, name: alt, widget: string }
+              - label: image
+                name: image
+                widget: object
+                fields:
+                  - { label: image, name: image, widget: image }
+                  - { label: alt, name: alt, widget: string }
           - label: partner 2
             name: partner2
             widget: object
             fields:
-              - { label: image, name: image, widget: image }
-              - { label: alt, name: alt, widget: string }
+              - label: image
+                name: image
+                widget: object
+                fields:
+                  - { label: image, name: image, widget: image }
+                  - { label: alt, name: alt, widget: string }
       - label: Second section
         name: secondSection
         widget: object

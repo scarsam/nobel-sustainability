@@ -32,71 +32,58 @@ const Home = ({ data }) => {
 
 export default Home
 
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(
-      limit: 1
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { fileAbsolutePath: { regex: "/home/" } }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-            subheading
-            image {
-              image {
-                childImageSharp {
-                  fluid(maxWidth: 1400) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-              alt
-            }
-            firstSection {
-              heading
-              column1
-              column2
-            }
-            partners {
-              partner1 {
-                image {
-                  publicURL
-                  alt
-                }
-              }
-              partner2 {
-                image {
-                  publicURL
-                  alt
-                }
-              }
-            }
-            secondSection {
-              heading
-              column1
-              image {
-                image {
-                  childImageSharp {
-                    fluid(maxWidth: 500) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-                alt
-                imageText
-              }
-            }
-            news
-          }
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query {
+//     site {
+//       siteMetadata {
+//         title
+//       }
+//     }
+//     allMarkdownRemark(
+//       limit: 1
+//       sort: { order: DESC, fields: [frontmatter___date] }
+//       filter: { fileAbsolutePath: { regex: "/home/" } }
+//     ) {
+//       edges {
+//         node {
+//           frontmatter {
+//             title
+//             subheading
+//             image {
+//               childImageSharp {
+//                 fluid(maxWidth: 1400) {
+//                   ...GatsbyImageSharpFluid
+//                 }
+//               }
+//             }
+//             firstSection {
+//               heading
+//               column1
+//               column2
+//             }
+//             partners {
+//               partner1 {
+//                 publicURL
+//               }
+//               partner2 {
+//                 publicURL
+//               }
+//             }
+//             secondSection {
+//               heading
+//               column1
+//               image {
+//                 childImageSharp {
+//                   fluid(maxWidth: 500) {
+//                     ...GatsbyImageSharpFluid
+//                   }
+//                 }
+//               }
+//             }
+//             news
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
