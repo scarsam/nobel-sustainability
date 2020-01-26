@@ -33,7 +33,12 @@ const PreviewCompatibleImage = ({ imageInfo, type }) => {
       return <Img fluid={childImageSharp.fluid} alt={alt} />
     }
   }
-  if (path) return <img src={path} alt={alt} />
+  if (path)
+    return (
+      <div className="gatsby-image-wrapper">
+        <img src={path} alt={alt} />
+      </div>
+    )
 
   return null
 }
