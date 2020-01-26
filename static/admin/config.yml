@@ -144,13 +144,36 @@ collections:
   - name: 'contact'
     label: Contact
     folder: src/cms/contact
-    create: false
+    create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: Office 1
+        name: officeOne
+        widget: object
+        fields:
+          - { label: name, name: name, widget: string }
+          - { label: street, name: street, widget: string }
+          - { label: zip, name: zip, widget: string }
+          - { label: city, name: city, widget: string }
+          - { label: country, name: country, widget: string }
+      - label: Office 2
+        name: officeTwo
+        widget: object
+        fields:
+          - { label: name, name: name, widget: string }
+          - { label: street, name: street, widget: string }
+          - { label: zip, name: zip, widget: string }
+          - { label: city, name: city, widget: string }
+          - { label: country, name: country, widget: string }
+      - label: Email
+        name: emails
+        widget: list
+        fields:
+          - { label: name, name: name, widget: string }
+          - { label: email, name: email, widget: string }
 
   - name: 'awards'
     label: Awards
