@@ -1,17 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Img from 'gatsby-image'
 
 const PreviewCompatibleImage = ({ imageInfo, type }) => {
   const { alt = '', childImageSharp, image } = imageInfo
+  const [path, setPath] = useState()
 
-  // useEffect(() => {
-  //   resolveImage()
-  // }, [])
+  useEffect(() => {
+    resolveImage()
+  }, [])
 
-  // async function resolveImage() {
-  //   let response = await imageInfo.image
-  //   console.log(response)
-  // }
+  async function resolveImage() {
+    let response = await imageInfo.image
+    setPath(response.path)
+  }
 
   if (type === 'fixed') {
     if (!!image && !!image.childImageSharp) {
@@ -32,8 +33,7 @@ const PreviewCompatibleImage = ({ imageInfo, type }) => {
       return <Img fluid={childImageSharp.fluid} alt={alt} />
     }
   }
-
-  if (!!image && typeof image === 'string') return <img src={image} alt={alt} />
+  if (!!image && typeof image === 'string') return <img src={path} alt={alt} />
 
   return null
 }
