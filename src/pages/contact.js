@@ -3,8 +3,20 @@ import { graphql } from 'gatsby'
 import ContactPageTemplate from '../templates/ContactPageTemplate'
 
 const ContactPage = ({ data }) => {
-  const { title } = data.allMarkdownRemark.edges[0].node.frontmatter
-  return <ContactPageTemplate title={title} />
+  const {
+    title,
+    officeOne,
+    officeTwo,
+    emails,
+  } = data.allMarkdownRemark.edges[0].node.frontmatter
+  return (
+    <ContactPageTemplate
+      title={title}
+      officeOne={officeOne}
+      officeTwo={officeTwo}
+      emails={emails}
+    />
+  )
 }
 
 export default ContactPage
@@ -23,9 +35,26 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          html
           frontmatter {
             title
+            officeOne {
+              name
+              street
+              zip
+              city
+              country
+            }
+            officeTwo {
+              name
+              street
+              zip
+              city
+              country
+            }
+            emails {
+              email
+              name
+            }
           }
         }
       }

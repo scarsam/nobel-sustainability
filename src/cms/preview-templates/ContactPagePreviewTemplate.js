@@ -1,11 +1,35 @@
 import React from 'react'
-import IntroText from '../../components/intro_text'
 
-const ContactPagePreviewTemplate = ({ title }) => {
+const ContactPagePreviewTemplate = ({
+  title,
+  officeOne,
+  officeTwo,
+  emails,
+}) => {
   return (
-    <>
-      <IntroText headline={title} subheading={title} />
-    </>
+    <div className="container">
+      <h1>{title}</h1>
+      <div>
+        <p>{officeOne.name}</p>
+        <p>{officeOne.street}</p>
+        <p>
+          {officeOne.zip} {officeOne.city}, {officeOne.country}
+        </p>
+      </div>
+      <div>
+        <p>{officeTwo.name}</p>
+        <p>{officeTwo.street}</p>
+        <p>
+          {officeTwo.zip} {officeTwo.city}, {officeTwo.country}
+        </p>
+      </div>
+      {emails.map(email => (
+        <>
+          <p>{email.email}</p>
+          <p>{email.name}</p>
+        </>
+      ))}
+    </div>
   )
 }
 
