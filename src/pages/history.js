@@ -36,29 +36,29 @@ const History = ({ data }) => {
           <div className="row padding-bottom-60px">
             <div className="col-lg-3">
               <ImageOffset
-                src={sectionOne.column1.image.image.childImageSharp.fluid}
+                src={sectionOne.columnOne.image.image.childImageSharp.fluid}
                 backgroundColor={'bg-water'}
               />
             </div>
             <div className="col-lg-9">
               <div className="row">
                 <div className="col-lg-5">
-                  <h2>{sectionOne.column1.heading}</h2>
-                  <ReactMarkdown source={sectionOne.column1.text} />
+                  <h2>{sectionOne.columnOne.heading}</h2>
+                  <ReactMarkdown source={sectionOne.columnOne.text} />
                 </div>
                 <div className="col-lg-12">
                   <div className="row padding-top-60px">
                     <div className="offset-lg-1 col-lg-4">
                       <ImageOffset
                         src={
-                          sectionOne.column2.image.image.childImageSharp.fluid
+                          sectionOne.columnTwo.image.image.childImageSharp.fluid
                         }
                         backgroundColor={'bg-green'}
                       />
                     </div>
                     <div className="col-lg-6">
-                      <h2>{sectionOne.column2.heading}</h2>
-                      <ReactMarkdown source={sectionOne.column2.text} />
+                      <h2>{sectionOne.columnTwo.heading}</h2>
+                      <ReactMarkdown source={sectionOne.columnTwo.text} />
                     </div>
                   </div>
                 </div>
@@ -105,66 +105,66 @@ const History = ({ data }) => {
 
 export default History
 
-// export const pageQuery = graphql`
-//   query {
-//     site {
-//       siteMetadata {
-//         title
-//       }
-//     }
-//     allMarkdownRemark(
-//       limit: 1
-//       sort: { order: DESC, fields: [frontmatter___date] }
-//       filter: { fileAbsolutePath: { regex: "/history/" } }
-//     ) {
-//       edges {
-//         node {
-//           frontmatter {
-//             title
-//             subheading
-//             sectionOne {
-//               column1 {
-//                 heading
-//                 text
-//                 image {
-//                   alt
-//                   image {
-//                     childImageSharp {
-//                       fluid(maxWidth: 960) {
-//                         ...GatsbyImageSharpFluid
-//                       }
-//                     }
-//                   }
-//                 }
-//               }
-//               column2 {
-//                 heading
-//                 text
-//                 image {
-//                   alt
-//                   image {
-//                     childImageSharp {
-//                       fluid(maxWidth: 960) {
-//                         ...GatsbyImageSharpFluid
-//                       }
-//                     }
-//                   }
-//                 }
-//               }
-//             }
-//             sectionTwo {
-//               heading
-//               column1
-//               column2
-//             }
-//             sectionThree {
-//               heading
-//               column1
-//               column2
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(
+      limit: 1
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { fileAbsolutePath: { regex: "/history/" } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            subheading
+            sectionOne {
+              columnOne {
+                heading
+                text
+                image {
+                  alt
+                  image {
+                    childImageSharp {
+                      fluid(maxWidth: 960) {
+                        ...GatsbyImageSharpFluid
+                      }
+                    }
+                  }
+                }
+              }
+              columnTwo {
+                heading
+                text
+                image {
+                  alt
+                  image {
+                    childImageSharp {
+                      fluid(maxWidth: 960) {
+                        ...GatsbyImageSharpFluid
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            sectionTwo {
+              heading
+              column1
+              column2
+            }
+            sectionThree {
+              heading
+              column1
+              column2
+            }
+          }
+        }
+      }
+    }
+  }
+`
