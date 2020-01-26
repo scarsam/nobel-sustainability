@@ -31,7 +31,7 @@ const AboutPageTemplate = ({
             </div>
             <div className="col-12 padding-top-30px padding-bottom-30px padding-bottom-md-none">
               <ImageOffset
-                src={sectionOne.image.childImageSharp.fluid}
+                src={sectionOne.image.image.childImageSharp.fluid}
                 backgroundColor={'bg-map'}
               />
             </div>
@@ -68,7 +68,8 @@ const AboutPageTemplate = ({
               <div className="d-flex align-items-center margin-bottom-30px">
                 <Img
                   fixed={
-                    sectionThree.boardMemberOne.image.childImageSharp.fixed
+                    sectionThree.boardMemberOne.image.image.childImageSharp
+                      .fixed
                   }
                 />
                 <div className="padding-left-30px">
@@ -82,7 +83,8 @@ const AboutPageTemplate = ({
               <div className="d-flex align-items-center margin-bottom-30px">
                 <Img
                   fixed={
-                    sectionThree.boardMemberTwo.image.childImageSharp.fixed
+                    sectionThree.boardMemberTwo.image.image.childImageSharp
+                      .fixed
                   }
                 />
                 <div className="padding-left-30px">
@@ -104,7 +106,9 @@ const AboutPageTemplate = ({
             <div className="col-md-5 offset-md-1 padding-bottom-30px padding-bottom-md-none">
               <div className="d-flex align-items-center margin-bottom-30px">
                 <Img
-                  fixed={sectionFour.employeeOne.image.childImageSharp.fixed}
+                  fixed={
+                    sectionFour.employeeOne.image.image.childImageSharp.fixed
+                  }
                 />
                 <div className="padding-left-30px">
                   <h3>{sectionFour.employeeOne.name}</h3>
@@ -116,7 +120,9 @@ const AboutPageTemplate = ({
             <div className="col-md-5">
               <div className="d-flex align-items-center margin-bottom-30px">
                 <Img
-                  fixed={sectionFour.employeeTwo.image.childImageSharp.fixed}
+                  fixed={
+                    sectionFour.employeeTwo.image.image.childImageSharp.fixed
+                  }
                 />
                 <div className="padding-left-30px">
                   <h3>{sectionFour.employeeTwo.name}</h3>

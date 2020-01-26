@@ -51,14 +51,22 @@ export const pageQuery = graphql`
               text1
               text2
               image {
-                childImageSharp {
-                  fluid(maxWidth: 960) {
-                    ...GatsbyImageSharpFluid
+                alt
+                image {
+                  childImageSharp {
+                    fluid(maxWidth: 960) {
+                      ...GatsbyImageSharpFluid
+                    }
                   }
                 }
               }
               offsetimage {
-                publicURL
+                image {
+                  alt
+                  image {
+                    publicURL
+                  }
+                }
               }
             }
             sectionTwo {
@@ -72,9 +80,12 @@ export const pageQuery = graphql`
                 name
                 text
                 image {
-                  childImageSharp {
-                    fixed(width: 100) {
-                      ...GatsbyImageSharpFixed
+                  alt
+                  image {
+                    childImageSharp {
+                      fixed(width: 100) {
+                        ...GatsbyImageSharpFixed
+                      }
                     }
                   }
                 }
@@ -83,9 +94,12 @@ export const pageQuery = graphql`
                 name
                 text
                 image {
-                  childImageSharp {
-                    fixed(width: 100) {
-                      ...GatsbyImageSharpFixed
+                  alt
+                  image {
+                    childImageSharp {
+                      fixed(width: 100) {
+                        ...GatsbyImageSharpFixed
+                      }
                     }
                   }
                 }
@@ -97,9 +111,12 @@ export const pageQuery = graphql`
                 name
                 text
                 image {
-                  childImageSharp {
-                    fixed(width: 100) {
-                      ...GatsbyImageSharpFixed
+                  alt
+                  image {
+                    childImageSharp {
+                      fixed(width: 100) {
+                        ...GatsbyImageSharpFixed
+                      }
                     }
                   }
                 }
@@ -108,9 +125,12 @@ export const pageQuery = graphql`
                 name
                 text
                 image {
-                  childImageSharp {
-                    fixed(width: 100) {
-                      ...GatsbyImageSharpFixed
+                  alt
+                  image {
+                    childImageSharp {
+                      fixed(width: 100) {
+                        ...GatsbyImageSharpFixed
+                      }
                     }
                   }
                 }

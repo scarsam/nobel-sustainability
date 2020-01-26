@@ -18,7 +18,7 @@ const HomePageTemplate = ({
     <Layout>
       <IntroText headline={title} subheading={subheading} />
       <section id="banner">
-        <Img fluid={image.childImageSharp.fluid} />
+        <Img fluid={image.image.childImageSharp.fluid} />
       </section>
 
       <section id="awards" className="container">
@@ -43,14 +43,14 @@ const HomePageTemplate = ({
             </div>
             <div className="col-md-3 col-6 d-flex align-items-center">
               <img
-                src={partners.partner1.publicURL}
-                alt="Earth Captial company logo"
+                src={partners.partner1.image.image.publicURL}
+                alt={partners.partner1.image.alt}
               />
             </div>
             <div className="col-md-3 col-6 d-flex align-items-center">
               <img
-                src={partners.partner2.publicURL}
-                alt="Lombard company logo"
+                src={partners.partner2.image.image.publicURL}
+                alt={partners.partner2.image.alt}
               />
             </div>
           </div>
@@ -67,9 +67,9 @@ const HomePageTemplate = ({
           </div>
           <div className="col-10 offset-1 col-md-5 offset-md-0 col-lg-3 offset-lg-1">
             <ImageOffset
-              src={secondSection.image.childImageSharp.fluid}
+              src={secondSection.image.image.childImageSharp.fluid}
               backgroundColor={'bg-green'}
-              text={secondSection.imageText}
+              text={secondSection.image.text}
             />
           </div>
         </div>
