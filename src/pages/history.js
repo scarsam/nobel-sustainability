@@ -11,9 +11,9 @@ const History = ({ data }) => {
   const {
     title,
     subheading,
-    firstSection,
-    secondSection,
-    thirdSection,
+    sectionOne,
+    sectionTwo,
+    sectionThree,
   } = data.allMarkdownRemark.edges[0].node.frontmatter
 
   return (
@@ -25,8 +25,8 @@ const History = ({ data }) => {
       <section className="padding-top-none d-none d-block d-lg-none">
         <div className="container">
           <HistoryMidBreakpoint
-            ludwig={firstSection.image1.childImageSharp.fluid}
-            immanuel={firstSection.image2.childImageSharp.fluid}
+            ludwig={sectionOne.column1.image.image.childImageSharp.fluid}
+            immanuel={sectionOne.column2.image.image.childImageSharp.fluid}
           />
         </div>
       </section>
@@ -36,27 +36,29 @@ const History = ({ data }) => {
           <div className="row padding-bottom-60px">
             <div className="col-lg-3">
               <ImageOffset
-                src={firstSection.image1.childImageSharp.fluid}
+                src={sectionOne.column1.image.image.childImageSharp.fluid}
                 backgroundColor={'bg-water'}
               />
             </div>
             <div className="col-lg-9">
               <div className="row">
                 <div className="col-lg-5">
-                  <h2>{firstSection.heading1}</h2>
-                  <ReactMarkdown source={firstSection.text1} />
+                  <h2>{sectionOne.column1.heading}</h2>
+                  <ReactMarkdown source={sectionOne.column1.text} />
                 </div>
                 <div className="col-lg-12">
                   <div className="row padding-top-60px">
                     <div className="offset-lg-1 col-lg-4">
                       <ImageOffset
-                        src={firstSection.image2.childImageSharp.fluid}
+                        src={
+                          sectionOne.column2.image.image.childImageSharp.fluid
+                        }
                         backgroundColor={'bg-green'}
                       />
                     </div>
                     <div className="col-lg-6">
-                      <h2>{firstSection.heading2}</h2>
-                      <ReactMarkdown source={firstSection.text2} />
+                      <h2>{sectionOne.column2.heading}</h2>
+                      <ReactMarkdown source={sectionOne.column2.text} />
                     </div>
                   </div>
                 </div>
@@ -70,13 +72,13 @@ const History = ({ data }) => {
         <div className="container">
           <div className="row">
             <div className="col-md-2">
-              <h3>{secondSection.heading}</h3>
+              <h3>{sectionTwo.heading}</h3>
             </div>
             <div className="col-md-5">
-              <ReactMarkdown source={secondSection.column1} />
+              <ReactMarkdown source={sectionTwo.column1} />
             </div>
             <div className="col-md-5">
-              <ReactMarkdown source={secondSection.column2} />
+              <ReactMarkdown source={sectionTwo.column2} />
             </div>
           </div>
         </div>
@@ -85,14 +87,14 @@ const History = ({ data }) => {
       <section className="bg-grey-beige">
         <div className="container">
           <h2 className="text-left-sm text-center-md padding-bottom-45px">
-            {thirdSection.heading}
+            {sectionThree.heading}
           </h2>
           <div className="row">
             <div className="col-md-6 green-bullet-list">
-              <ReactMarkdown source={thirdSection.column1} />
+              <ReactMarkdown source={sectionThree.column1} />
             </div>
             <div className="col-md-6">
-              <ReactMarkdown source={thirdSection.column2} />
+              <ReactMarkdown source={sectionThree.column2} />
             </div>
           </div>
         </div>
@@ -103,56 +105,66 @@ const History = ({ data }) => {
 
 export default History
 
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(
-      limit: 1
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { fileAbsolutePath: { regex: "/history/" } }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-            subheading
-            firstSection {
-              heading1
-              heading2
-              text1
-              text2
-              image1 {
-                childImageSharp {
-                  fluid(maxWidth: 960) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-              image2 {
-                childImageSharp {
-                  fluid(maxWidth: 960) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-            }
-            secondSection {
-              heading
-              column1
-              column2
-            }
-            thirdSection {
-              heading
-              column1
-              column2
-            }
-          }
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query {
+//     site {
+//       siteMetadata {
+//         title
+//       }
+//     }
+//     allMarkdownRemark(
+//       limit: 1
+//       sort: { order: DESC, fields: [frontmatter___date] }
+//       filter: { fileAbsolutePath: { regex: "/history/" } }
+//     ) {
+//       edges {
+//         node {
+//           frontmatter {
+//             title
+//             subheading
+//             sectionOne {
+//               column1 {
+//                 heading
+//                 text
+//                 image {
+//                   alt
+//                   image {
+//                     childImageSharp {
+//                       fluid(maxWidth: 960) {
+//                         ...GatsbyImageSharpFluid
+//                       }
+//                     }
+//                   }
+//                 }
+//               }
+//               column2 {
+//                 heading
+//                 text
+//                 image {
+//                   alt
+//                   image {
+//                     childImageSharp {
+//                       fluid(maxWidth: 960) {
+//                         ...GatsbyImageSharpFluid
+//                       }
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//             sectionTwo {
+//               heading
+//               column1
+//               column2
+//             }
+//             sectionThree {
+//               heading
+//               column1
+//               column2
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
