@@ -25,8 +25,8 @@ const History = ({ data }) => {
       <section className="padding-top-none d-none d-block d-lg-none">
         <div className="container">
           <HistoryMidBreakpoint
-            ludwig={sectionOne.column1.image.image.childImageSharp.fluid}
-            immanuel={sectionOne.column2.image.image.childImageSharp.fluid}
+            ludwig={sectionOne.columnOne.image.image.childImageSharp.fluid}
+            immanuel={sectionOne.columnOne.image.image.childImageSharp.fluid}
           />
         </div>
       </section>
