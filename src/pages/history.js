@@ -16,8 +16,6 @@ const History = ({ data }) => {
     thirdSection,
   } = data.allMarkdownRemark.edges[0].node.frontmatter
 
-  console.log(data)
-
   return (
     <Layout>
       <SEO title={title} />
