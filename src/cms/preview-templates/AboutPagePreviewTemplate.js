@@ -13,6 +13,7 @@ export const AboutPagePreviewTemplate = ({
   sectionThree,
   sectionFour,
 }) => {
+  console.log(sectionThree)
   return (
     <>
       <IntroText headline={title} subheading={subheading} />
