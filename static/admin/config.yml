@@ -192,7 +192,7 @@ collections:
   - name: 'about'
     label: About
     folder: src/cms/about
-    create: false
+    create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
@@ -248,7 +248,12 @@ collections:
             fields:
               - { label: name, name: name, widget: string }
               - { label: text, name: text, widget: markdown }
-              - { label: image, name: image, widget: image }
+              - label: image,
+                name: image,
+                widget: object
+                fields:
+                  - { label: image, name: image, widget: image }
+                  - { label: alt, name: alt, widget: string }
       - label: Section Four
         name: sectionFour
         widget: object
@@ -260,11 +265,21 @@ collections:
             fields:
               - { label: name, name: name, widget: string }
               - { label: text, name: text, widget: markdown }
-              - { label: image, name: image, widget: image }
+              - label: image,
+                name: image,
+                widget: object
+                fields:
+                  - { label: image, name: image, widget: image }
+                  - { label: alt, name: alt, widget: string }
           - label: Employee Two
             name: employeeTwo
             widget: object
             fields:
               - { label: name, name: name, widget: string }
               - { label: text, name: text, widget: markdown }
-              - { label: image, name: image, widget: image }
+              - label: image
+                name: image
+                widget: object
+                fields:
+                  - { label: image, name: image, widget: image }
+                  - { label: alt, name: alt, widget: string }
