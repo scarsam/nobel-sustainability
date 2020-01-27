@@ -197,32 +197,36 @@ collections:
         widget: object
         fields:
           - { label: heading, name: heading, widget: string }
-          - { label: text 1, name: text1, widget: markdown }
-          - { label: subheading, name: subheading, widget: string }
-          - { label: text 2, name: text2, widget: markdown }
-          - { label: text 3, name: text3, widget: markdown }
+          - { label: text, name: text, widget: markdown }
       - label: Section Three
         name: sectionThree
         widget: object
         fields:
           - { label: heading, name: heading, widget: string }
-          - { label: text, name: text, widget: markdown }
+          - { label: column 1, name: column1, widget: markdown }
+          - { label: column 2, name: column2, widget: markdown }
       - label: Section Four
         name: sectionFour
+        widget: object
+        fields:
+          - { label: heading, name: heading, widget: string }
+          - { label: text, name: text, widget: markdown }
+      - label: Section Five
+        name: sectionFive
         widget: object
         fields:
           - { label: heading, name: heading, widget: string }
           - { label: column 1, name: column1, widget: markdown }
           - { label: subheading, name: subheading, widget: string }
           - { label: column 2, name: column2, widget: markdown }
-      - label: Section Five
-        name: sectionFive
+      - label: Section Six
+        name: sectionSix
         widget: object
         fields:
           - { label: heading, name: heading, widget: string }
           - { label: text, name: text, widget: markdown }
-      - label: Section Six
-        name: sectionSix
+      - label: Section Seven
+        name: sectionSeven
         widget: object
         fields:
           - { label: heading, name: heading, widget: string }
