@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import SEO from '../components/seo'
 import HomePageTemplate from '../templates/HomePageTemplate'
 
-const Home = ({ data }) => {
+const HomePage = ({ data }) => {
   const {
     title,
     subheading,
@@ -30,7 +30,7 @@ const Home = ({ data }) => {
   )
 }
 
-export default Home
+export default HomePage
 
 export const pageQuery = graphql`
   query {
