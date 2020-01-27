@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import SEO from '../components/seo'
 import HistoryPageTemplate from '../templates/HistoryPageTemplate'
 
-const History = ({ data }) => {
+const HistoryPage = ({ data }) => {
   const {
     title,
     subheading,
@@ -26,7 +26,7 @@ const History = ({ data }) => {
   )
 }
 
-export default History
+export default HistoryPage
 
 export const pageQuery = graphql`
   query {
