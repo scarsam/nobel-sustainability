@@ -18,26 +18,28 @@ const AboutPageTemplate = ({
   return (
     <Layout>
       <IntroText headline={title} subheading={subheading} />
-      <section className="container">
-        <div className="row">
-          <div className="col-md-7">
-            <div className="row">
-              <div className="col-md-5">
-                <h2>{sectionOne.heading}</h2>
+      <section>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-7">
+              <div className="row">
+                <div className="col-lg-5 padding-bottom-20px padding-bottom-lg-none">
+                  <h2>{sectionOne.heading}</h2>
+                </div>
+                <div className="col-lg-7">
+                  <ReactMarkdown source={sectionOne.text1} />
+                </div>
               </div>
-              <div className="col-md-7">
-                <ReactMarkdown source={sectionOne.text1} />
+              <div className="col-12 padding-top-30px padding-bottom-30px padding-bottom-md-none">
+                <ImageOffset
+                  src={sectionOne.image.image.childImageSharp.fluid}
+                  backgroundColor={'bg-map'}
+                />
               </div>
             </div>
-            <div className="col-12 padding-top-30px padding-bottom-30px padding-bottom-md-none">
-              <ImageOffset
-                src={sectionOne.image.image.childImageSharp.fluid}
-                backgroundColor={'bg-map'}
-              />
+            <div className="col-md-5">
+              <ReactMarkdown source={sectionOne.text2} />
             </div>
-          </div>
-          <div className="col-md-5">
-            <ReactMarkdown source={sectionOne.text2} />
           </div>
         </div>
       </section>
@@ -45,10 +47,10 @@ const AboutPageTemplate = ({
         <div className="row">
           <div className="col-md-7">
             <div className="row">
-              <div className="col-md-5">
+              <div className="col-lg-5 padding-bottom-20px padding-bottom-lg-none">
                 <h2>{sectionTwo.heading}t</h2>
               </div>
-              <div className="col-md-7">
+              <div className="col-lg-7">
                 <ReactMarkdown source={sectionTwo.column1} />
               </div>
             </div>
