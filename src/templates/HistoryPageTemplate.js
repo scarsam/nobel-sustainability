@@ -63,13 +63,13 @@ const HistoryPageTemplate = ({
       <section>
         <div className="container">
           <div className="row">
-            <div className="col-md-2">
-              <h3>{sectionTwo.heading}</h3>
+            <div className="col-lg-2 padding-bottom-20px padding-bottom-lg-none">
+              <h2>{sectionTwo.heading}</h2>
             </div>
-            <div className="col-md-5">
+            <div className="col-md-6 col-lg-5">
               <ReactMarkdown source={sectionTwo.column1} />
             </div>
-            <div className="col-md-5">
+            <div className="col-md-6 col-lg-5">
               <ReactMarkdown source={sectionTwo.column2} />
             </div>
           </div>
@@ -78,7 +78,7 @@ const HistoryPageTemplate = ({
 
       <section className="bg-grey-beige">
         <div className="container">
-          <h2 className="text-left-sm text-center-md padding-bottom-45px">
+          <h2 className="text-left-sm text-center-md padding-bottom-20px padding-bottom-lg-50px">
             {sectionThree.heading}
           </h2>
           <div className="row">
