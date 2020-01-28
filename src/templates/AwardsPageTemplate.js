@@ -40,20 +40,20 @@ const AwardsPageTemplate = ({
           </h2>
           <div className="row padding-bottom-60px">
             <div className="text-center-md col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-              <ReactMarkdown source={sectionTwo.text1} />
+              <ReactMarkdown source={sectionTwo.text} />
             </div>
           </div>
           <div className="row padding-bottom-30px">
             <div className="offset-md-3 col-lg-3 offset-lg-0">
-              <h2>{sectionTwo.subheading}</h2>
+              <h2>{sectionThree.heading}</h2>
             </div>
             <div className="offset-md-3 col-lg-9 offset-lg-0">
-              <ReactMarkdown source={sectionTwo.text2} />
+              <ReactMarkdown source={sectionThree.column1} />
             </div>
           </div>
           <div className="row">
             <div className="col-md-9 offset-md-3 col-lg-8 offset-lg-3 green-bullet-list">
-              <ReactMarkdown source={sectionTwo.text3} />
+              <ReactMarkdown source={sectionThree.column2} />
             </div>
           </div>
         </div>
@@ -63,27 +63,8 @@ const AwardsPageTemplate = ({
         <div className="container padding-bottom-none">
           <div className="row">
             <div className="col-lg-7 offset-lg-3">
-              <h2>{sectionThree.heading}</h2>
-              <ReactMarkdown source={sectionThree.text} />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-3 padding-bottom-20px padding-bottom-lg-none">
               <h2>{sectionFour.heading}</h2>
-            </div>
-            <div className="col-md-6 col-lg-4">
-              <ReactMarkdown source={sectionFour.column1} />
-              <h3 className="c-water border-top padding-top-20px">
-                {sectionFour.subheading}
-              </h3>
-            </div>
-            <div className="col-md-6 col-lg-4">
-              <ReactMarkdown source={sectionFour.column2} />
+              <ReactMarkdown source={sectionFour.text} />
             </div>
           </div>
         </div>
@@ -95,8 +76,27 @@ const AwardsPageTemplate = ({
             <div className="col-lg-3 padding-bottom-20px padding-bottom-lg-none">
               <h2>{sectionFive.heading}</h2>
             </div>
+            <div className="col-md-6 col-lg-4">
+              <ReactMarkdown source={sectionFive.column1} />
+              <h3 className="c-water border-top padding-top-20px">
+                {sectionFive.subheading}
+              </h3>
+            </div>
+            <div className="col-md-6 col-lg-4">
+              <ReactMarkdown source={sectionFive.column2} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-3 padding-bottom-20px padding-bottom-lg-none">
+              <h2>{sectionSix.heading}</h2>
+            </div>
             <div className="col-lg-8">
-              <ReactMarkdown source={sectionFive.text} />
+              <ReactMarkdown source={sectionSix.text} />
             </div>
           </div>
         </div>
@@ -106,16 +106,16 @@ const AwardsPageTemplate = ({
         <div className="container">
           <div className="row">
             <div className="col-lg-3 padding-bottom-20px padding-bottom-lg-none">
-              <h2>{sectionSix.heading}</h2>
+              <h2>{sectionSeven.heading}</h2>
             </div>
             <div className="col-md-6 col-lg-4">
-              <ReactMarkdown source={sectionSix.column1} />
+              <ReactMarkdown source={sectionSeven.column1} />
               <h3 className="c-water border-top padding-top-20px">
-                {sectionSix.subheading}
+                {sectionSeven.subheading}
               </h3>
             </div>
             <div className="col-md-6 col-lg-4">
-              <ReactMarkdown source={sectionSix.column2} />
+              <ReactMarkdown source={sectionSeven.column2} />
             </div>
           </div>
         </div>
