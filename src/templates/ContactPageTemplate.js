@@ -1,8 +1,8 @@
 import React from 'react'
 import Layout from '../components/layout'
+import LeafletMap from '../components/map'
 
 const ContactPageTemplate = ({ title, officeOne, officeTwo, emails }) => {
-  console.log(officeOne)
   return (
     <Layout>
       <h1 className="text-center padding-top-50px padding-bottom-50px">
@@ -24,6 +24,13 @@ const ContactPageTemplate = ({ title, officeOne, officeTwo, emails }) => {
                   {officeOne.zip} {officeOne.city}, {officeOne.country}
                 </span>
               </p>
+              {typeof window !== 'undefined' && (
+                <LeafletMap
+                  position={[47.3642217, 8.5336899]}
+                  zoom={15}
+                  markerText={'Hello, this is a marker'}
+                />
+              )}
             </div>
             <div className="col-md-4">
               <h4>{officeTwo.name}</h4>
@@ -33,6 +40,13 @@ const ContactPageTemplate = ({ title, officeOne, officeTwo, emails }) => {
                   {officeTwo.zip} {officeTwo.city}, {officeTwo.country}
                 </span>
               </p>
+              {typeof window !== 'undefined' && (
+                <LeafletMap
+                  position={[59.332729, 18.085139]}
+                  zoom={15}
+                  markerText={'Hello, this is a marker'}
+                />
+              )}
             </div>
           </div>
         </div>

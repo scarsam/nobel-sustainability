@@ -159,6 +159,8 @@ collections:
           - { label: zip, name: zip, widget: string }
           - { label: city, name: city, widget: string }
           - { label: country, name: country, widget: string }
+          - { label: latitude, name: lat, valueType: float, widget: number }
+          - { label: longitude, name: long, valueType: float, widget: number }
       - label: Office 2
         name: officeTwo
         widget: object
@@ -167,6 +169,9 @@ collections:
           - { label: street, name: street, widget: string }
           - { label: zip, name: zip, widget: string }
           - { label: city, name: city, widget: string }
+          - { label: country, name: country, widget: string }
+          - { label: latitude, name: lat, valueType: float, widget: number }
+          - { label: longitude, name: long, valueType: float, widget: number }
           - { label: country, name: country, widget: string }
       - label: Email
         name: emails
