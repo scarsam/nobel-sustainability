@@ -11,42 +11,44 @@ const ContactPageTemplate = ({ title, officeOne, officeTwo, emails }) => {
       <section className="bg-sand">
         <div className="container">
           <div className="row">
-            <div className="col-md-3 col-lg-2 offset-lg-2">
+            <div className="col-md-3 col-lg-2 offset-lg-2 padding-bottom-20px padding-bottom-xl-none">
               <h3 className="padding-bottom-20px padding-bottom-md-none">
                 Offices
               </h3>
             </div>
-            <div className="col-md-4">
-              <h4>{officeOne.name}</h4>
-              <p>
-                {officeOne.street}
-                <span className="d-block">
-                  {officeOne.zip} {officeOne.city}, {officeOne.country}
-                </span>
-              </p>
-              {typeof window !== 'undefined' && (
-                <LeafletMap
-                  position={[47.3642217, 8.5336899]}
-                  zoom={15}
-                  markerText={'Hello, this is a marker'}
-                />
-              )}
+            <div className="col-lg-8 col-xl-4 offset-xl-0 padding-bottom-40px padding-bottom-xl-none">
+              <address>
+                <h4>{officeOne.name}</h4>
+                <p>
+                  {officeOne.street}
+                  <span className="d-block">
+                    {officeOne.zip} {officeOne.city}, {officeOne.country}
+                  </span>
+                </p>
+                {typeof window !== 'undefined' && (
+                  <LeafletMap
+                    position={[officeOne.lat, officeOne.long]}
+                    zoom={15}
+                  />
+                )}
+              </address>
             </div>
-            <div className="col-md-4">
-              <h4>{officeTwo.name}</h4>
-              <p>
-                {officeTwo.street}
-                <span className="d-block">
-                  {officeTwo.zip} {officeTwo.city}, {officeTwo.country}
-                </span>
-              </p>
-              {typeof window !== 'undefined' && (
-                <LeafletMap
-                  position={[59.332729, 18.085139]}
-                  zoom={15}
-                  markerText={'Hello, this is a marker'}
-                />
-              )}
+            <div className="col-lg-8 offset-lg-4 col-xl-4 offset-xl-0">
+              <address>
+                <h4>{officeTwo.name}</h4>
+                <p>
+                  {officeTwo.street}
+                  <span className="d-block">
+                    {officeTwo.zip} {officeTwo.city}, {officeTwo.country}
+                  </span>
+                </p>
+                {typeof window !== 'undefined' && (
+                  <LeafletMap
+                    position={[officeTwo.lat, officeTwo.long]}
+                    zoom={15}
+                  />
+                )}
+              </address>
             </div>
           </div>
         </div>
