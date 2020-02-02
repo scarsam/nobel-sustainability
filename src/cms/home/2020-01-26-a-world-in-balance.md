@@ -68,6 +68,8 @@ secondSection:
     image: /images/trees.jpg
     text: Creating a bla bla bla bla
 news:
-  - Kaffe glass
+  - Testar Nyhet 1
+  - Testar Nyhet 2
+  - Testar Nyhet 3
 ---
 
