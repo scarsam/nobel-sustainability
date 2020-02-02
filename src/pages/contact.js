@@ -43,6 +43,8 @@ export const pageQuery = graphql`
               zip
               city
               country
+              lat
+              long
             }
             officeTwo {
               name
@@ -50,6 +52,8 @@ export const pageQuery = graphql`
               zip
               city
               country
+              lat
+              long
             }
             emails {
               email

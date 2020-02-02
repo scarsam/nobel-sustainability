@@ -1,4 +1,5 @@
 import CMS from 'netlify-cms-app'
+import 'leaflet/dist/leaflet.css'
 
 import AboutPagePreview from './preview-pages/AboutPagePreview'
 import ContactPagePreview from './preview-pages/ContactPagePreview'

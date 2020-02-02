@@ -14,6 +14,8 @@ const ContactPagePreview = ({ entry, widgetsFor }) => {
           zip: entry.getIn(['data', 'officeOne', 'zip']),
           city: entry.getIn(['data', 'officeOne', 'city']),
           country: entry.getIn(['data', 'officeOne', 'country']),
+          lat: entry.getIn(['data', 'officeOne', 'lat']),
+          long: entry.getIn(['data', 'officeOne', 'long']),
         }}
         officeTwo={{
           name: entry.getIn(['data', 'officeTwo', 'name']),
@@ -21,6 +23,8 @@ const ContactPagePreview = ({ entry, widgetsFor }) => {
           zip: entry.getIn(['data', 'officeTwo', 'zip']),
           city: entry.getIn(['data', 'officeTwo', 'city']),
           country: entry.getIn(['data', 'officeTwo', 'country']),
+          lat: entry.getIn(['data', 'officeTwo', 'lat']),
+          long: entry.getIn(['data', 'officeTwo', 'long']),
         }}
         emails={widgetsFor('emails').map(email => ({
           name: email.getIn(['data', 'name']),
