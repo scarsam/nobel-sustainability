@@ -14,6 +14,7 @@ const HomePage = ({ data }) => {
     secondSection,
   } = data.allMarkdownRemark.edges[0].node.frontmatter
 
+  console.log(data)
   return (
     <>
       <SEO title="Home" />
@@ -23,6 +24,7 @@ const HomePage = ({ data }) => {
         image={image}
         partners={partners}
         news={news}
+        // newsLinks={}
         firstSection={firstSection}
         secondSection={secondSection}
       />
@@ -98,6 +100,9 @@ export const pageQuery = graphql`
               }
             }
             news
+          }
+          fields {
+            slug
           }
         }
       }
