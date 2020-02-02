@@ -14,6 +14,7 @@ const HomePageTemplate = ({
   firstSection,
   secondSection,
 }) => {
+  console.log(news)
   return (
     <Layout>
       <IntroText headline={title} subheading={subheading} />
