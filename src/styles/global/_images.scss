@@ -14,6 +14,11 @@
   }
 }
 
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
 // Homepage hero banner
 #banner .gatsby-image-wrapper {
   height: 150px;
@@ -23,4 +28,10 @@
   @include media_min_break(md) {
     height: 325px;
   }
+}
+
+#preview-banner img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
 }

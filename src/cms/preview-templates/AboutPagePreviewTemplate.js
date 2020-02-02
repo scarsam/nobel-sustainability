@@ -4,6 +4,7 @@ import squigglyLine from '../../images/about/squiggly-line.svg'
 import '../../styles/pages/about.scss'
 import PreviewCompatibleImage from '../preview-components/PreviewCompatibleImage'
 import ReactMarkdown from 'react-markdown'
+import PreviewImageOffset from '../preview-components/PreviewImageOffset'
 
 export const AboutPagePreviewTemplate = ({
   title,
@@ -29,11 +30,10 @@ export const AboutPagePreviewTemplate = ({
               </div>
             </div>
             <div className="col-12 padding-top-30px padding-bottom-30px padding-bottom-md-none">
-              {/* <ImageOffset
-              src={sectionOne.image.childImageSharp.fluid}
-              // backgroundColor={sectionOne.offsetimage.publicURL}
-              backgroundColor={'bg-map'}
-            /> */}
+              <PreviewImageOffset
+                imageInfo={sectionOne.image}
+                backgroundColor={'bg-map'}
+              />
             </div>
           </div>
           <div className="col-md-5">

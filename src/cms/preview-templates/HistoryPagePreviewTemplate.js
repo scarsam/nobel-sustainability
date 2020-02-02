@@ -2,6 +2,7 @@ import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import IntroText from '../../components/intro_text'
 import HistoryMidBreakpoint from '../preview-components/History_mid_break_preview'
+import PreviewImageOffset from '../preview-components/PreviewImageOffset'
 
 const HistoryPagePreviewTemplate = ({
   title,
@@ -23,10 +24,10 @@ const HistoryPagePreviewTemplate = ({
         <div className="container">
           <div className="row padding-bottom-60px">
             <div className="col-lg-3">
-              {/* <ImageOffset
-                src={sectionOne.columnOne.image.image.childImageSharp.fluid}
+              <PreviewImageOffset
+                imageInfo={sectionOne.columnOne.image}
                 backgroundColor={'bg-water'}
-              /> */}
+              />
             </div>
             <div className="col-lg-9">
               <div className="row">
@@ -37,12 +38,10 @@ const HistoryPagePreviewTemplate = ({
                 <div className="col-lg-12">
                   <div className="row padding-top-60px">
                     <div className="offset-lg-1 col-lg-4">
-                      {/* <ImageOffset
-                        src={
-                          sectionOne.columnTwo.image.image.childImageSharp.fluid
-                        }
+                      <PreviewImageOffset
+                        imageInfo={sectionOne.columnTwo.image}
                         backgroundColor={'bg-green'}
-                      /> */}
+                      />
                     </div>
                     <div className="col-lg-6">
                       <h2>{sectionOne.columnTwo.heading}</h2>

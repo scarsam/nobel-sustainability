@@ -2,6 +2,7 @@ import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import IntroText from '../../components/intro_text'
 import PreviewCompatibleImage from '../preview-components/PreviewCompatibleImage'
+import PreviewImageOffset from '../preview-components/PreviewImageOffset'
 
 const HomePagePreviewTemplate = ({
   title,
@@ -14,7 +15,7 @@ const HomePagePreviewTemplate = ({
   return (
     <>
       <IntroText headline={title} subheading={subheading} />
-      <section id="banner">
+      <section id="preview-banner">
         <PreviewCompatibleImage imageInfo={image} />
       </section>
 
@@ -57,11 +58,11 @@ const HomePagePreviewTemplate = ({
             <ReactMarkdown source={secondSection.column1} />
           </div>
           <div className="col-10 offset-1 col-md-5 offset-md-0 col-lg-3 offset-lg-1">
-            {/* <ImageOffset
-              src={secondSection.image.image.childImageSharp.fluid}
+            <PreviewImageOffset
+              imageInfo={secondSection.image}
               backgroundColor={'bg-green'}
               text={secondSection.image.text}
-            /> */}
+            />
           </div>
         </div>
       </section>
