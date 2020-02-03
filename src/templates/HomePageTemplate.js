@@ -89,7 +89,12 @@ const HomePageTemplate = ({
             {news &&
               news.map(({ node }, index) => {
                 return (
-                  <div key={index} className="col-12">
+                  <div
+                    key={index}
+                    className={
+                      index === 0 ? 'col-md-10' : 'col-md-10 offset-md-2'
+                    }
+                  >
                     <p className="c-green">{node.frontmatter.date}</p>
                     <ReactMarkdown source={node.frontmatter.text} />
                     <Link to={node.fields.slug}>Read More</Link>
