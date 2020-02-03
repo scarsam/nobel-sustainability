@@ -4,17 +4,17 @@ import SEO from '../components/seo'
 import HomePageTemplate from '../templates/HomePageTemplate'
 
 const HomePage = ({ data }) => {
+  const news = data.news.edges
+
   const {
     title,
     subheading,
     image,
     partners,
-    news,
     firstSection,
     secondSection,
-  } = data.allMarkdownRemark.edges[0].node.frontmatter
+  } = data.home.edges[0].node.frontmatter
 
-  console.log(data)
   return (
     <>
       <SEO title="Home" />
@@ -24,7 +24,6 @@ const HomePage = ({ data }) => {
         image={image}
         partners={partners}
         news={news}
-        // newsLinks={}
         firstSection={firstSection}
         secondSection={secondSection}
       />
@@ -41,7 +40,24 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
+    news: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { fileAbsolutePath: { regex: "/news/" } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            text
+            title
+            date
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+    home: allMarkdownRemark(
       limit: 1
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { fileAbsolutePath: { regex: "/home/" } }
@@ -99,7 +115,6 @@ export const pageQuery = graphql`
                 }
               }
             }
-            news
           }
           fields {
             slug
