@@ -18,6 +18,7 @@ const AwardsPage = ({ data }) => {
   } = data.allMarkdownRemark.edges[0].node.frontmatter
   return (
     <>
+      <SEO title={title} />
       <AwardsPageTemplate
         title={title}
         subheading={subheading}
@@ -29,7 +30,6 @@ const AwardsPage = ({ data }) => {
         sectionSix={sectionSix}
         sectionSeven={sectionSeven}
       />
-      <SEO title="Awards" />
     </>
   )
 }

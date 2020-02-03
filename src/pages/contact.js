@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import ContactPageTemplate from '../templates/ContactPageTemplate'
+import SEO from '../components/seo'
 
 const ContactPage = ({ data }) => {
   const {
@@ -10,12 +11,15 @@ const ContactPage = ({ data }) => {
     emails,
   } = data.allMarkdownRemark.edges[0].node.frontmatter
   return (
-    <ContactPageTemplate
-      title={title}
-      officeOne={officeOne}
-      officeTwo={officeTwo}
-      emails={emails}
-    />
+    <>
+      <SEO title={title} />
+      <ContactPageTemplate
+        title={title}
+        officeOne={officeOne}
+        officeTwo={officeTwo}
+        emails={emails}
+      />
+    </>
   )
 }
 
