@@ -6,8 +6,6 @@ import ReactMarkdown from 'react-markdown'
 const NewsPageTemplate = ({ data }) => {
   const post = data.markdownRemark.frontmatter
 
-  console.log(data)
-
   return (
     <Layout>
       <div className="col-md-10">
