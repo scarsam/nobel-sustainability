@@ -14,7 +14,7 @@ const AboutPage = ({ data }) => {
   } = data.allMarkdownRemark.edges[0].node.frontmatter
   return (
     <>
-      <SEO title="About us" />
+      <SEO title={title} />
       <AboutPageTemplate
         title={title}
         subheading={subheading}

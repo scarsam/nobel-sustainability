@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Nobel Sustainability Trust`,
+    description: `The Nobel Sustainable Trust, founded by members of the Swedish Nobel Family, was established in Switzerland to be a proactive response to this threat, bringing public awareness to the issues of pollution and clean energy and encouraging change.`,
+    siteUrl: `https://nobelsustainability.org/`,
     social: {
       twitter: `kylemathews`,
     },

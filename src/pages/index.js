@@ -18,7 +18,7 @@ const HomePage = ({ data }) => {
 
   return (
     <>
-      <SEO title="Home" />
+      <SEO title={title} />
       <HomePageTemplate
         title={title}
         subheading={subheading}
