@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import SEO from '../components/seo'
 import HomePageTemplate from '../templates/HomePageTemplate'
-import '../styles/pages/home.scss'
+import '../styles/pages/news.scss'
 
 const HomePage = ({ data }) => {
   const news = data.news.edges
@@ -42,6 +42,7 @@ export const pageQuery = graphql`
       }
     }
     news: allMarkdownRemark(
+      limit: 5
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { fileAbsolutePath: { regex: "/news/" } }
     ) {
@@ -50,7 +51,7 @@ export const pageQuery = graphql`
           frontmatter {
             text
             title
-            date
+            date(formatString: "dddd, MMMM Do, YYYY")
           }
           fields {
             slug
