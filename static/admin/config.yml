@@ -10,14 +10,13 @@ collections:
     label: News
     folder: src/cms/news
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: 'news/{{slug}}'
     editor:
       preview: true
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Publish Date, name: date, widget: datetime }
-      - { label: Description, name: description, widget: string }
-      - { label: Body, name: body, widget: markdown }
+      - { label: Text, name: text, widget: markdown }
 
   - name: home
     label: Home
@@ -79,14 +78,6 @@ collections:
               - { label: image, name: image, widget: image }
               - { label: text, name: text, widget: string }
               - { label: alt, name: alt, widget: string }
-      - label: News
-        name: news
-        widget: relation
-        collection: news
-        multiple: true
-        searchFields: ['title']
-        valueField: 'title'
-        displayFields: ['title']
 
   - name: history
     label: History

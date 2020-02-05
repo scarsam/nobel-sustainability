@@ -1,6 +1,6 @@
-import React from "react"
-import { Link } from "gatsby"
-import logo from "../images/nobel-logo.svg"
+import React from 'react'
+import { Link } from 'gatsby'
+import logo from '../images/nobel-logo.svg'
 
 const Header = () => {
   return (
@@ -52,6 +52,11 @@ const Header = () => {
                 to={`/contact`}
               >
                 <span className="nav-text c-black">contact</span>
+              </Link>
+            </li>
+            <li>
+              <Link className="nav-link" activeClassName="active" to={`/news`}>
+                <span className="nav-text c-black">news</span>
               </Link>
             </li>
           </ul>

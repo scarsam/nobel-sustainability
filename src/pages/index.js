@@ -2,17 +2,19 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import SEO from '../components/seo'
 import HomePageTemplate from '../templates/HomePageTemplate'
+import '../styles/pages/news.scss'
 
 const HomePage = ({ data }) => {
+  const news = data.news.edges
+
   const {
     title,
     subheading,
     image,
     partners,
-    news,
     firstSection,
     secondSection,
-  } = data.allMarkdownRemark.edges[0].node.frontmatter
+  } = data.home.edges[0].node.frontmatter
 
   return (
     <>
@@ -39,7 +41,25 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
+    news: allMarkdownRemark(
+      limit: 5
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { fileAbsolutePath: { regex: "/news/" } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            text
+            title
+            date(formatString: "dddd, MMMM Do, YYYY")
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+    home: allMarkdownRemark(
       limit: 1
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { fileAbsolutePath: { regex: "/home/" } }
@@ -97,7 +117,6 @@ export const pageQuery = graphql`
                 }
               }
             }
-            news
           }
         }
       }

@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import ImageOffset from '../components/image_offset'
 import IntroText from '../components/intro_text'
 import Img from 'gatsby-image'
+import { Link } from 'gatsby'
 
 const HomePageTemplate = ({
   title,
@@ -86,12 +87,22 @@ const HomePageTemplate = ({
               <h2>News</h2>
             </div>
             {news &&
-              news.map((article, index) => {
+              news.map(({ node }, index) => {
                 return (
-                  <div key={index} className="col-md-10">
-                    <p className="c-green">March 24, 2018</p>
-                    <p>{article}</p>
-                    <p>Read More</p>
+                  <div
+                    key={index}
+                    className={
+                      index === 0
+                        ? 'col-md-10 padding-bottom-20px'
+                        : 'col-md-10 offset-md-2 padding-bottom-30px'
+                    }
+                  >
+                    <h3>{node.frontmatter.title}</h3>
+                    <p className="c-green">{node.frontmatter.date}</p>
+                    <div className="article-markdown">
+                      <ReactMarkdown source={node.frontmatter.text} />
+                    </div>
+                    <Link to={node.fields.slug}>Read More</Link>
                   </div>
                 )
               })}
