@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import SEO from '../components/seo'
 import HomePageTemplate from '../templates/HomePageTemplate'
+import '../styles/pages/home.scss'
 
 const HomePage = ({ data }) => {
   const news = data.news.edges
@@ -115,9 +116,6 @@ export const pageQuery = graphql`
                 }
               }
             }
-          }
-          fields {
-            slug
           }
         }
       }
