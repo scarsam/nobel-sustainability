@@ -1,15 +1,44 @@
 import React from 'react'
-import Layout from '../components/layout'
 import NewsPageTemplate from '../templates/NewsPageTemplate'
+import SEO from '../components/seo'
+import '../styles/pages/news.scss'
 
-const News = () => {
+const NewsPage = ({ data }) => {
+  const news = data.news.edges
+
   return (
-    <Layout>
-      <div className="col-4">
-        <h1>News</h1>
-      </div>
-    </Layout>
+    <>
+      <SEO title="news" />
+      <NewsPageTemplate news={news} />
+    </>
   )
 }
 
-export default News
+export default NewsPage
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    news: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { fileAbsolutePath: { regex: "/news/" } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            text
+            title
+            date(formatString: "dddd, MMMM Do, YYYY")
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`
