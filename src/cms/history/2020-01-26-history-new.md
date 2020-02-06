@@ -10,39 +10,51 @@ sectionOne:
       alt: Immanuel Nobel
       image: /images/immanuel.jpg
     text: >-
-      Lorem ipsum dolor amet williamsburg adaptogen brooklyn small batch etsy
-      mlkshk sartorial biodiesel enamel pin chillwave blog viral 90's. Lomo
-      ethical tousled skateboard swag master cleanse selvage neutra scenester.
+      Immanuel Nobel pioneered the development of underwater mines, designed
+      some of the first steam engines to power Russian ships, installed the
+      first central heating systems in Russian homes and was
+
+      the first to develop modern plywood, cut with a rotary lathe.
   columnTwo:
     heading: Ludwig Nobel
     image:
       alt: Ludwig Nobel
       image: /images/ludwig.jpg
     text: >-
-      Lorem ipsum dolor amet williamsburg adaptogen brooklyn small batch etsy
-      mlkshk sartorial biodiesel enamel pin chillwave blog viral 90's. Lomo
-      ethical tousled skateboard swag master cleanse selvage neutra scenester.
+      One of his sons, Ludvig Nobel, was the founder of the machine-building
+      factory Ludvig Nobel, a great armaments concern and the inventor of the
+      Nobel wheel. Ludvig was also the founder of BraNobel, the foremost Russian
+      oil industry in its time, and launched the world’s first diesel-driven
+      tugs, tankers and u-boats, besides building the first European oil
+      pipeline in Baku. Alfred Nobel, a prolific inventor who acquired 355
+      patents during his lifespan, was the creator of dynamite and the blasting
+      cap from which he made a substantial fortune of which he left the bulk to
+      form the Nobel Prizes.
 sectionTwo:
   column1: >-
-    Lorem ipsum dolor amet williamsburg adaptogen brooklyn small batch etsy
-    mlkshk sartorial biodiesel enamel pin chillwave blog viral 90's. Lomo
-    ethical tousled skateboard swag master cleanse selvage neutra scenester.
-    Cronut plaid YOLO woke tbh wolf aesthetic. Post-ironic banh mi cold-pressed
-    hashtag roof party. Iceland vice aesthetic, raclette meggings pork belly
-    bicycle rights umami tousled pickled hexagon blue bottle. Skateboard etsy
-    succulents, mumblecore flexitarian hammock hella pabst fashion axe tumeric
-    lo-fi swag cronut. Everyday carry blog YOLO air plant vegan keffiyeh viral
-    four dollar toast. Taiyaki vegan deep v, jean shorts cronut vexillologist
-    ennui skateboard ramps man bun selfies church-key brooklyn.
+    The foundation, created to manage the estate of Alfred Nobel and to
+    implement the conditions of his testament. The Nobel Family’s Social
+    Commitment Under the leadership of Ludvig Nobel, and later on by his oldest
+    son Emmanuel, the BraNobel Nafta company in Azerbaijan grew into the world’s
+    second largest in its field. The diesel engine factory in St.
+
+
+    Petersburg became the largest in the world. At this time the Nobel
+    industries in Russia were the country’s greatest and most influential
+    business organisation with more than 50.000 employees.
   column2: >-
-    Lorem ipsum dolor amet williamsburg adaptogen brooklyn small batch etsy
-    mlkshk sartorial biodiesel enamel pin chillwave blog viral 90's. Lomo
-    ethical tousled skateboard swag master cleanse selvage neutra scenester.
-    Cronut plaid YOLO woke tbh wolf aesthetic. Post-ironic banh mi cold-pressed
-    hashtag roof party. Iceland vice aesthetic, raclette meggings pork belly
-    bicycle rights umami tousled pickled hexagon blue bottle. Skateboard etsy
-    succulents, mumblecore flexitarian hammock hella pabst fashion axe tumeric
-    lo-fi swag cronut.
+    The success of Ludvig was based on a humanitarian and innovative way of
+    doing things, combined with the mind of a scientific entrepreneur. The
+    world’s first oil transportation ship and pipelines for oil were constructed
+    for the oil fields of Nobel in Baku. As a visionary leader Ludvig strived to
+    improve the conditions for the workers at the Nobel industrial sites. 
+
+
+    This was achieved by the introduction of shorter working hours, adequate
+    housing, schools and healthcare and recreational facilities. He also opened
+    a cooperative bank for the employees and the world’s first profit sharing
+    system for the workers called “Nobelites”. Sustainability and social
+    commitment was the trademark of the Nobel industries.
   heading: The Nobel Foundation
 sectionThree:
   column1: >-
