@@ -71,9 +71,9 @@ const HistoryPagePreview = ({ entry, getAsset }) => {
           column2: entry.getIn(['data', 'sectionTwo', 'column2']),
         }}
         sectionThree={{
-          heading: entry.getIn(['data', 'sectionTwo', 'heading']),
-          column1: entry.getIn(['data', 'sectionTwo', 'column1']),
-          column2: entry.getIn(['data', 'sectionTwo', 'column2']),
+          heading: entry.getIn(['data', 'sectionThree', 'heading']),
+          column1: entry.getIn(['data', 'sectionThree', 'column1']),
+          column2: entry.getIn(['data', 'sectionThree', 'column2']),
         }}
       />
     </PreviewLayout>

@@ -26,7 +26,7 @@ export const AboutPagePreviewTemplate = ({
                 <h2>{sectionOne.heading}</h2>
               </div>
               <div className="col-md-7">
-                <p>{sectionOne.text1}</p>
+                <ReactMarkdown source={sectionOne.text1} />
               </div>
             </div>
             <div className="col-12 padding-top-30px padding-bottom-30px padding-bottom-md-none">
@@ -37,7 +37,7 @@ export const AboutPagePreviewTemplate = ({
             </div>
           </div>
           <div className="col-md-5">
-            <p>{sectionOne.text2}</p>
+            <ReactMarkdown source={sectionOne.text2} />
           </div>
         </div>
       </section>
@@ -49,7 +49,7 @@ export const AboutPagePreviewTemplate = ({
                 <h2>{sectionTwo.heading}t</h2>
               </div>
               <div className="col-md-7">
-                <p>{sectionTwo.column1}</p>
+                <ReactMarkdown source={sectionTwo.column1} />
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@ export const AboutPagePreviewTemplate = ({
                   <img src={squigglyLine} alt="underline" />
                 </div>
               </div>
-              <p>{sectionThree.boardMemberOne.text}</p>
+              <ReactMarkdown source={sectionThree.boardMemberOne.text} />
             </div>
             <div className="col-md-5">
               <div className="d-flex align-items-center margin-bottom-30px">
@@ -88,7 +88,7 @@ export const AboutPagePreviewTemplate = ({
                   <img src={squigglyLine} alt="underline" />
                 </div>
               </div>
-              <p>{sectionThree.boardMemberTwo.text}</p>
+              <ReactMarkdown source={sectionThree.boardMemberTwo.text} />
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@ export const AboutPagePreviewTemplate = ({
                   <img src={squigglyLine} alt="underline" />
                 </div>
               </div>
-              <p>{sectionFour.employeeOne.text}</p>
+              <ReactMarkdown source={sectionFour.employeeOne.text} />
             </div>
             <div className="col-md-5">
               <div className="d-flex align-items-center margin-bottom-30px">
@@ -123,7 +123,7 @@ export const AboutPagePreviewTemplate = ({
                   <img src={squigglyLine} alt="underline" />
                 </div>
               </div>
-              <p>{sectionFour.employeeTwo.text}</p>
+              <ReactMarkdown source={sectionFour.employeeTwo.text} />
             </div>
           </div>
         </div>

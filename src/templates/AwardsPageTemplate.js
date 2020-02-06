@@ -89,7 +89,7 @@ const AwardsPageTemplate = ({
         </div>
       </section>
 
-      <section>
+      <section className="bg-grey-beige">
         <div className="container">
           <div className="row">
             <div className="col-lg-3 padding-bottom-20px padding-bottom-lg-none">

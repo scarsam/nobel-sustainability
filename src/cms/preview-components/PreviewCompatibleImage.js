@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Img from 'gatsby-image'
 
 const PreviewCompatibleImage = ({ imageInfo }) => {
   const { alt = '', image } = imageInfo

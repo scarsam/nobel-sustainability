@@ -9,7 +9,7 @@ const ArticleTemplate = ({ data }) => {
   return (
     <Layout>
       <div className="container">
-        <div className="col-md-10">
+        <div className="col-md-8 offset-md-2">
           <h3>{post.title}</h3>
           <p className="c-green">{post.date}</p>
           <div>

@@ -15,13 +15,13 @@ const Header = () => {
           </Link>
           <input className="menu-btn d-none" type="checkbox" id="menu-btn" />
           <label
-            className="menu-icon padding-bottom-none float-right padding-top-45px padding-right-20px relative"
+            className="menu-icon float-right margin-top-35px padding-top-10px padding-bottom-10px padding-right-20px relative"
             htmlFor="menu-btn"
           >
             <span className="navicon relative d-block"></span>
           </label>
 
-          <ul className="menu padding-none bg-white">
+          <ul className="menu padding-top-20px bg-white">
             <li>
               <Link className="nav-link" activeClassName="active" to={`/about`}>
                 <span className="nav-text c-black">about us</span>
