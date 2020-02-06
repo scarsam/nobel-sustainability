@@ -66,10 +66,6 @@ secondSection:
   image:
     alt: displaying a forest full of green trees from above
     image: /images/trees.jpg
-    text: Creating a bla bla bla bla
-news:
-  - Testar Nyhet 1
-  - Testar Nyhet 2
-  - Testar Nyhet 3
+    text: 'Creation a pollution-free, life-sustaining environment for all'
 ---
 
