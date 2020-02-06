@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import NewsPageTemplate from '../templates/NewsPageTemplate'
 import SEO from '../components/seo'
 import '../styles/pages/news.scss'

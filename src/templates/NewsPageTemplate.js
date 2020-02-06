@@ -4,13 +4,12 @@ import Layout from '../components/layout'
 import { Link } from 'gatsby'
 
 const HomePageTemplate = ({ news }) => {
-  console.log(news)
   return (
     <Layout>
       <section>
         <div className="container">
           <div className="row">
-            <div className="col-md-2">
+            <div className="col-md-2 padding-bottom-20px padding-bottom-md-none">
               <h2>News</h2>
             </div>
             {news &&
@@ -20,8 +19,8 @@ const HomePageTemplate = ({ news }) => {
                     key={index}
                     className={
                       index === 0
-                        ? 'col-md-10 padding-bottom-20px'
-                        : 'col-md-10 offset-md-2 padding-bottom-30px'
+                        ? 'col-md-10 padding-bottom-50px'
+                        : 'col-md-10 offset-md-2 padding-bottom-50px'
                     }
                   >
                     <h3>{node.frontmatter.title}</h3>
@@ -29,7 +28,9 @@ const HomePageTemplate = ({ news }) => {
                     <div className="article-markdown">
                       <ReactMarkdown source={node.frontmatter.text} />
                     </div>
-                    <Link to={node.fields.slug}>Read More</Link>
+                    <Link className="news-link" to={node.fields.slug}>
+                      Read More
+                    </Link>
                   </div>
                 )
               })}

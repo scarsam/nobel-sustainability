@@ -21,7 +21,7 @@ collections:
   - name: home
     label: Home
     folder: src/cms/home
-    create: true
+    create: false
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
@@ -82,7 +82,7 @@ collections:
   - name: history
     label: History
     folder: src/cms/history
-    create: true
+    create: false
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
@@ -233,7 +233,7 @@ collections:
   - name: 'about'
     label: About
     folder: src/cms/about
-    create: true
+    create: false
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
