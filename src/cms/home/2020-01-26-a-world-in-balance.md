@@ -2,7 +2,7 @@
 title: A world in balance
 subheading: >-
   We bring public awareness to the issues of pollution and clean energy and
-  encouraging change
+  encouraging change 
 image:
   alt: roof of solar panels under a blue sky
   image: /images/building.jpg
