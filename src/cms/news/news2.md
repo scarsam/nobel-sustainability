@@ -1,5 +1,5 @@
 ---
-title: 'News#2'
+title: CleanEquity Monaco
 date: 2020-03-05T14:46:54.687Z
 text: >-
   ![Mungo Park, Chairman of Innovator Capital, presents Prince Albert with a
