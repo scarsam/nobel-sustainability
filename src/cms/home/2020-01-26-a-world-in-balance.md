@@ -33,7 +33,7 @@ firstSection:
 
     Nobel Sustainability Trust will release further information regarding The
     Sustainability Award in the near future.
-  heading: Sustainability Award
+  heading: Nobel Sustainability Trust Award
 partners:
   partner1:
     image:
