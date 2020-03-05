@@ -10,7 +10,8 @@ collections:
     label: News
     folder: src/cms/news
     create: true
-    slug: '{{slug}}'
+    slug: 'news/{{slug}}'
+    preview_path: 'news/{{slug}}'
     editor:
       preview: true
     fields:
