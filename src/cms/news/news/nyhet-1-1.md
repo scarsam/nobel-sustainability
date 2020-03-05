@@ -1,5 +1,5 @@
 ---
-title: Nyhet 1
+title: 'News #1'
 date: 2020-03-05T13:34:59.293Z
 text: >-
   LONDON (Reuters) – Members of Sweden’s Nobel family, best known for the prizes
