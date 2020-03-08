@@ -2,8 +2,6 @@ import React from 'react'
 import '../../styles/pages/about.scss'
 import ReactMarkdown from 'react-markdown'
 
-// TODO: Formatera datum med moment.js
-
 export const ArticlePreviewTemplate = ({ title, date, text }) => {
   return (
     <>

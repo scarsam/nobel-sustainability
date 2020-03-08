@@ -3,9 +3,6 @@ module.exports = {
     title: `Nobel Sustainability Trust`,
     description: `The Nobel Sustainable Trust, founded by members of the Swedish Nobel Family, was established in Switzerland to be a proactive response to this threat, bringing public awareness to the issues of pollution and clean energy and encouraging change.`,
     siteUrl: `https://nobelsustainability.org/`,
-    social: {
-      twitter: `kylemathews`,
-    },
   },
   plugins: [
     `gatsby-plugin-sitemap`,
