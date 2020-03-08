@@ -107,4 +107,3 @@ text: >-
   For the full article, see: [Prince Albert announces Global Green Investment
   bank](http://web.archive.org/web/20180818064924/http://www.monacolife.net/prince-albert-announces-new-award-with-nobel-sustainability-trust-and-global-green-investment-bank/)
 ---
-

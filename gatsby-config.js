@@ -13,13 +13,21 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-react-leaflet`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [`gatsby-plugin-netlify-cms-paths`],
+        plugins: [
+          `gatsby-plugin-netlify-cms-paths`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
+        ],
       },
     },
-    `gatsby-plugin-sass`,
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {

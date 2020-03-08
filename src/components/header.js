@@ -16,7 +16,7 @@ const Header = () => {
             </Link>
             <input className="menu-btn d-none" type="checkbox" id="menu-btn" />
             <label
-              className="menu-icon padding-top-10px padding-bottom-10px padding-right-20px relative"
+              className="menu-icon padding-top-10px padding-bottom-10px padding-right-20px margin-none relative"
               htmlFor="menu-btn"
             >
               <span className="navicon relative d-block"></span>
