@@ -4,7 +4,6 @@ import Layout from '../components/layout'
 import ReactMarkdown from 'react-markdown'
 
 const ArticleTemplate = ({ data }) => {
-  console.log(data)
   const post = data.markdownRemark.frontmatter
 
   return (
@@ -16,6 +15,9 @@ const ArticleTemplate = ({ data }) => {
           <div>
             <ReactMarkdown source={post.text} />
           </div>
+          <section
+            dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+          />
         </div>
       </div>
     </Layout>
@@ -27,10 +29,10 @@ export default ArticleTemplate
 export const PageQuery = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
       frontmatter {
         title
         date(formatString: "dddd, MMMM Do, YYYY")
-        text
       }
       fields {
         slug
