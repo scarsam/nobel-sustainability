@@ -49,7 +49,7 @@ export const pageQuery = graphql`
       edges {
         node {
           frontmatter {
-            text
+            summary
             title
             date(formatString: "dddd, MMMM Do, YYYY")
           }

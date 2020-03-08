@@ -1,22 +1,31 @@
+.nav-wrapper {
+  border-bottom: 1px solid $light-grey;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
 .nav-menu {
   width: 100%;
-  height: 64px;
 }
 
 .nav-menu ul {
   list-style: none;
   overflow: hidden;
+  @include media_min_break(md) {
+    overflow: unset;
+  }
 }
 
 .nav-menu .logo {
-  float: left;
   text-decoration: none;
 }
 
 .nav-menu .menu {
-  clear: both;
   max-height: 0;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out, padding, 0.4s ease-out;
 }
 
 .nav-menu li a {
@@ -24,6 +33,7 @@
 }
 
 .menu {
+  flex-basis: 100%;
   margin-left: 50px;
 }
 
@@ -42,7 +52,7 @@
 .nav-menu .menu-icon .navicon:before,
 .nav-menu .menu-icon .navicon:after {
   background: $black;
-  content: "";
+  content: '';
   display: block;
   height: 100%;
   position: absolute;
@@ -60,6 +70,10 @@
 
 .nav-menu .menu-btn:checked ~ .menu {
   max-height: 240px;
+  padding-top: 20px;
+  @include media_min_break(md) {
+    padding-top: 0;
+  }
 }
 
 .nav-menu .menu-btn:checked ~ .menu-icon .navicon {
@@ -81,17 +95,17 @@
 
 @include media_min_break(md) {
   .menu {
+    flex-basis: auto;
     margin: 0;
   }
   .nav-menu li {
     float: left;
+    margin: 0;
   }
   .nav-menu li a {
-    padding: 30px 20px;
+    padding: 0px 20px;
   }
   .nav-menu .menu {
-    clear: none;
-    float: right;
     max-height: none;
   }
   .nav-menu .menu-icon {
@@ -121,7 +135,7 @@
       position: relative;
       &:before,
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         bottom: -8px;
         width: 0px;
