@@ -7,7 +7,7 @@ const ArticlePreview = ({ entry }) => {
     <ArticlePreviewTemplate
       title={entry.getIn(['data', 'title'])}
       date={entry.getIn(['data', 'date'])}
-      text={entry.getIn(['data', 'text'])}
+      text={entry.getIn(['data', 'body'])}
     />
   )
 }

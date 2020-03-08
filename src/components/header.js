@@ -25,7 +25,7 @@ const Header = () => {
             <ul className="menu bg-white">
               <li>
                 <Link className="nav-link" activeClassName="active" to={`/`}>
-                  <span className="nav-text c-black">home</span>
+                  <span className="nav-text c-black">Home</span>
                 </Link>
               </li>
               <li>
@@ -34,7 +34,7 @@ const Header = () => {
                   activeClassName="active"
                   to={`/about`}
                 >
-                  <span className="nav-text c-black">about us</span>
+                  <span className="nav-text c-black">About us</span>
                 </Link>
               </li>
               <li>
@@ -43,7 +43,7 @@ const Header = () => {
                   activeClassName="active"
                   to={`/awards`}
                 >
-                  <span className="nav-text c-black">awards</span>
+                  <span className="nav-text c-black">Awards</span>
                 </Link>
               </li>
               <li>
@@ -52,7 +52,7 @@ const Header = () => {
                   activeClassName="active"
                   to={`/history`}
                 >
-                  <span className="nav-text c-black">history</span>
+                  <span className="nav-text c-black">History</span>
                 </Link>
               </li>
               <li>
@@ -61,7 +61,7 @@ const Header = () => {
                   activeClassName="active"
                   to={`/contact`}
                 >
-                  <span className="nav-text c-black">contact</span>
+                  <span className="nav-text c-black">Contact</span>
                 </Link>
               </li>
               <li>
@@ -70,7 +70,7 @@ const Header = () => {
                   activeClassName="active"
                   to={`/news`}
                 >
-                  <span className="nav-text c-black">news</span>
+                  <span className="nav-text c-black">News</span>
                 </Link>
               </li>
             </ul>
