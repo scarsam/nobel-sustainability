@@ -8,7 +8,7 @@ public_folder: /images
 collections:
   - name: news
     label: News
-    folder: src/cms/news/news
+    folder: src/cms/news
     create: true
     slug: 'news/{{slug}}'
     editor:
