@@ -26,7 +26,7 @@ const HomePageTemplate = ({ news }) => {
                     <h3>{node.frontmatter.title}</h3>
                     <p className="c-green">{node.frontmatter.date}</p>
                     <div className="article-markdown">
-                      <ReactMarkdown source={node.frontmatter.text} />
+                      <ReactMarkdown source={node.excerpt} />
                     </div>
                     <Link className="news-link" to={node.fields.slug}>
                       Read More
