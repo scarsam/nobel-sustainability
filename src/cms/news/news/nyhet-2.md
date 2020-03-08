@@ -1,5 +1,8 @@
 ---
 title: Nyhet 2
+summary: >-
+  LONDON (Reuters) – Members of Sweden’s Nobel family, best known for the prizes
+  bearing their name, and the billionaire co-founder of Hargreaves Lansdown
 date: 2020-02-05T22:58:47.765Z
 text: >-
   LONDON (Reuters) – Members of Sweden’s Nobel family, best known for the prizes
