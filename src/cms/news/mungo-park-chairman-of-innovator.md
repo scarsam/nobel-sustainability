@@ -1,10 +1,8 @@
 ---
 title: 'Mungo Park, Chairman of Innovator'
-date: 2020-03-08T23:13:53.186Z
+date: 2018-04-13T23:13:00.000Z
 ---
 ![Mungo Park](/images/1.jpg "Mungo Park")
-
-
 
 Mungo Park, Chairman of Innovator Capital, presents Prince Albert with a special 2018 CleanEquity Monaco Award, designed by American conceptual artist Darren Bader.. Photo: CleanEquity Monaco\
 Prince Albert revealed the new Award for Sustainability with the Nobel Sustainability Trust and a Global Green Investment Bank, at the CleanEquity Monaco conference last Friday at the Fairmont Monte Carlo.\
@@ -27,5 +25,4 @@ Professor Nobel went on to say, “The issue of sustainability has in recent yea
 Following the groundbreaking announcements, Prince Albert, who will celebrate his 60th birthday on Wednesday March, 14, presented the three CleanEquity Awards, designed this year by American conceptual artist Darren Bader.\
 The awards winners were: Superdielectrics for Excellence in the Field of Environmental Technology Research; NanoSpun for Excellence in the Field of Environmental Technology Development; and BBOXX for Excellence in the Field of Environmental Technology Commercialisation.\
 Over the two days, twenty-seven companies presented at the 11th edition of the invitation-only CleanEquity Monaco.\
-“It’s the people assembled in this room that help turn science fiction into science fact,” said Prince Albert and their clean technologies are testament to his long-standing commitment for the Principality to be a model green country, which respects the natural environment and subscribes to be carbon neutral by 2050.\
-Article first published on March 13, 2018.
+“It’s the people assembled in this room that help turn science fiction into science fact,” said Prince Albert and their clean technologies are testament to his long-standing commitment for the Principality to be a model green country, which respects the natural environment and subscribes to be carbon neutral by 2050.
