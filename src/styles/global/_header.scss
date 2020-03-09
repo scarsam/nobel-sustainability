@@ -4,6 +4,7 @@
   z-index: 99;
   left: 0;
   right: 0;
+  top: 0;
   width: 100%;
 }
 
@@ -127,7 +128,6 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    margin: 0 0 45px;
     .nav-text {
       margin: 0 auto;
       padding: 0;

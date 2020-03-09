@@ -1,14 +1,15 @@
 import React from 'react'
 import '../../styles/pages/about.scss'
+import ReactMarkdown from 'react-markdown'
 
-export const ArticlePreviewTemplate = ({ title, date, body }) => {
+export const ArticlePreviewTemplate = ({ title, text }) => {
   return (
     <>
       <div className="container">
         <div className="col-md-8 offset-md-2">
           <h3>{title}</h3>
-          <p className="c-green">{date}</p>
-          <section dangerouslySetInnerHTML={{ __html: body }} />
+          <ReactMarkdown source={text} />
+          <section dangerouslySetInnerHTML={{ __html: text }} />
         </div>
       </div>
     </>
