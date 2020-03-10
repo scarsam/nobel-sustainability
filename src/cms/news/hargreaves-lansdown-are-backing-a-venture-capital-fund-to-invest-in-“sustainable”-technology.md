@@ -17,7 +17,7 @@ NST has lent its name in return for a slice of the profit. Initial backing of 10
 The fund will be followed by other regional ones focused on resource efficiency, clean energy and sustainable technology.
 
 Attachments:\
-[Editors’ notes](http://web.archive.org/web/20180818073808/http://nobelsustainability.org/wp-content/uploads/Launch-of-NST-UK.pdf)\
-[SET3](http://web.archive.org/web/20180818073808/http://nobelsustainability.org/wp-content/uploads/SET3.pdf)
+[Editors’ notes](http://nobelsustainability.org/wp-content/uploads/Launch-of-NST-UK.pdf)\
+[SET3](http://nobelsustainability.org/wp-content/uploads/SET3.pdf)
 
 Source: Reuters
