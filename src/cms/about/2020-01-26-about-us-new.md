@@ -14,62 +14,59 @@ sectionOne:
   text1: >-
     NST is a Swiss foundation, established in 2007 by four members of the Nobel
     family. Formerly known as the Nobel Charitable Trust, its name was changed
-    to the Nobel Sustainability Trust in 2011 so as to represent its role and
-    activities more accurately. To promote the activities described above NST
-    will encourage research, development, action and implementation of
-    sustainable solutions. A key component will be the creation of an Award for
-    Sustainability. This award, given annually, will be an accolade for those
-    who make outstanding contributions to sustainability.
+    to the Nobel Sustainability Trust in 2011 so as to more accurately represent
+    its role and activities. Its board of trustees today includes five members
+    of the Nobel Family.
+
+
+    To promote the activities described above, NST encourages research,
+    development, action and implementation of sustainable solutions. A key
+    component will be the creation of Awards for Sustainability. These awards,
+    given annually, will form an accolade for those who make outstanding
+    contributions to sustainability. The winners will be presented with the
+    awards at a dinner held in connection with a symposium, organised by NST, in
+    major cities around the world.
   text2: >-
-    The winners will be presented with the award at a gala dinner held in
-    connection with a symposium, organised by NST, in major cities around the
-    world. NST, via its secretariat in Switzerland and its representative
-    offices in Sweden and Costa Rica, will assist in the selection of
-    universities from various countries, which will collect the proposed
-    projects and candidates. One of these will also be the Award Coordinating
-    University (the “ACU”), this centre, in consultation with NST, will select
-    and maintain the list of sourcing universities. The ACU will form a
-    committee, the Sustainability Award Committee, which will have final say in
-    the selection of the award winners. This comittee will have members from
-    outside the ACU. NST will plan and manage the annual conferences and related
-    events.
+    NST, via its secretariat and main office in Switzerland and its
+    representative offices in Sweden, Pakistan, Japan and Costa Rica, will
+    assist in the selection of universities from various countries, which will
+    collect the proposed projects and candidates. One of these will also be the
+    Award Coordinating Entity (“ACE”), This entity, in consultation with NST,
+    will select and maintain the list of sourcing universities. The ACE will
+    create a committee, the Sustainability Award Committee, which will have
+    final say in the selection of the award winners. This body will include
+    members from various academic institutions. NST's different offices will
+    plan and manage the annual conferences and related events. It will liaise
+    with the media and organise and propose invitations for the award
+    ceremonies.
 
 
-    This comittee will have members from outside the ACU. NST will plan and
-    manage the annual conferences and related events. It will liaise with the
-    media and issue invitations for the award ceremonies. Stringent efforts will
-    be made to ensure that the NST Awards will be recognised, by all concerned,
-    as being independent of the traditional Nobel Prizes. NST’s financial
-    support will come from sovereign entities, family offices and corporations
-    who support its agenda. A clear understanding of the origin of these funds
-    is essential, so NST will work with licensed and registered entities, which
-    are regulated by the financial authorities in their respective
-    jurisdictions.
+    Stringent efforts will be made to ensure that the NST Awards will be
+    recognised, by all concerned, as being independent of the traditional Nobel
+    Prizes and that no administrative or commercial relations exist between the
+    Nobel Foundation and NST. 
 
 
-    Funding has begun and success has already been achieved. In 2016, Innovator
-    Capital (ICL) a specialist investment bank in London, facilitated the
-    creation of the Nobel Sustainability Fund® (NSF). The fund, seeded by the
-    Constitutional Reserve Fund of Monaco, with the support of H.S.H. Prince
-    Albert II of Monaco and Stephen Lansdown, co-founder of Hargreaves Lansdown,
-    is a multi-geography fund, managed by Earth Capital Partners (ECP),
-    subsidiary of the SET3 organisation, which accelerates the development and
-    growth of sustainable technology companies.
+    NST’s financial support will come from sovereign entities, family offices
+    and corporations who support its agenda. A clear understanding of the origin
+    of these funds is essential, so NST will work with licensed and registered
+    entities, which are regulated by the financial authorities in their
+    respective jurisdictions.
 sectionTwo:
   column1: >-
-    The Nobel family, founders of the Nobel Sustainability Trust (“NST”) have,
-    with great concern, been observing the devastation of the world’s vital,
-    natural and non-renewable resources. This overconsumption has led to an
-    increase in global temperatures and pollution of land, food, water and air.
-    The founders believe that the economic and social health of civilisation
-    will, to a large extent, depend on the availability of energy and a
-    sustainable approach to agriculture, forestry, industrial manufacturing and
-    water reclamation. This will require substantial intellectual and financial
-    effort. It is the aim of NST to assist with this process. The objective of
-    NST is to improve quality of life, which is, today, threatened by pollution,
-    climate change and depletion of natural resources. Sufficient food, water,
-    air and energy, in clean conditions, is essential to reaching this
-    objective.
+    The members of the Nobel family, founders of the Nobel Sustainability Trust
+    (“NST”) have, with great concern, been observing the devastation of the
+    world’s vital, natural and non-renewable resources. This overconsumption has
+    led to an increase in global temperatures and pollution of land, food, water
+    and air. The founders believe that the economic and social health of
+    civilisation will, to a large extent, depend on the availability of energy
+    and a sustainable approach to agriculture, forestry, industrial
+    manufacturing and water reclamation. This will require substantial
+    intellectual and financial effort. It is the aim of NST to assist with this
+    process. The objective of NST is to improve quality of life, which is,
+    today, threatened by pollution, climate change and depletion of natural
+    resources. Sufficient food, water, air and energy, in clean conditions, is
+    essential to reaching this objective.
   column2: |-
     **NST aims to contribute in the following areas:**
 
