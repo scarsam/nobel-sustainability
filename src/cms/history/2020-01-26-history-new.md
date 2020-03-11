@@ -36,12 +36,10 @@ sectionTwo:
     implement the conditions of his testament. The Nobel Family’s Social
     Commitment Under the leadership of Ludvig Nobel, and later on by his oldest
     son Emmanuel, the BraNobel Nafta company in Azerbaijan grew into the world’s
-    second largest in its field. The diesel engine factory in St.
-
-
-    Petersburg became the largest in the world. At this time the Nobel
-    industries in Russia were the country’s greatest and most influential
-    business organisation with more than 50.000 employees.
+    second largest in its field. The diesel engine factory in St. Petersburg
+    became the largest in the world. At this time the Nobel industries in Russia
+    were the country’s greatest and most influential business organisation with
+    more than 50.000 employees.
   column2: >-
     The success of Ludvig was based on a humanitarian and innovative way of
     doing things, combined with the mind of a scientific entrepreneur. The
