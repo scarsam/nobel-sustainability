@@ -8,32 +8,56 @@ image:
   image: /images/building.jpg
 firstSection:
   column1: >-
-    It shall be awarded to the individuals who during the past year have shown
-    the most inventive and effective development – or discoveries – within the
-    field of alternative, renewable and sustainable energy as well as promoting
-    the use of the same energy. The result must be feasible for practical use.
+    he members of the Nobel family and founders of NST have, with great concern,
+    been observing the devastation of the world’s vital, natural and
+    non-renewable resources. This over-consumption has led to an increase in
+    global temperatures and pollution of land, food, water and air. The founders
+    believe that the economic and social health of civilisation will, to a large
+    extent, depend on the availability of renewable energy and a sustainable
+    approach provided in agriculture, forestry, industrial manufacturing and
+    water reclamation. This will require substantial intellectual and financial
+    efforts. It is the aim of NST to assist with this process.
 
 
-    Candidates are primarily to be found among young researchers and inventors
-    from all over the world. Should a company, organisation or politician fulfil
-    the above criteria, they can also become a candidate, provided that the
-    result of their efforts will come to the benefit for all mankind.
+    The mission of the Nobel Sustainability Trust is therefore to promote a
+    sustainable economic growth that preserves and ultimately enhances the
+    living systems on the planet, create opportunities for people and harness
+    human ingenuity in support for a prosperous common future.
+
+
+    By participating in and supporting the Trust, its programs and activities,
+    we encourage people to take a stand for our future as a species on a
+    life-sustaining planet.
   column2: >-
-    The ENTRANTS are requested to send their ENTRIES to a Selection Committee
-    who will select a maximum of five finalists. The winner will be selected by
-    a jury of seven judges, selected among international and national experts
-    within the domain of sustainability.
+    It is our position that nothing is more important than this and we want to
+    sustain human life on this planet, through efforts in the following areas:
 
 
-    The Award shall be given once every year and will be presented in
-    Copenhagen, Denmark and save in the respect of the qualities required to be
-    worthy of the Award, there shall be no discrimination in the presenting
-    thereof.
+    1. Reduction of climate change with emphasis on global warming through the
+    promotion of advances in sustainable production and consumption with
+    emphasis on non-polluting and renewable technologies.
+
+    2. Acceleration in the transition to sustainable societies through promotion
+    of initiatives that increase prosperity, improve governance and enhance
+    transparency.
+
+    3. Within the limits of the planet’s carrying capacity, pursuing the
+    creation of a pollution-free, life-sustaining environment for all.
 
 
-    Nobel Sustainability Trust will release further information regarding The
-    Sustainability Award in the near future.
-  heading: Nobel Sustainability Trust Award
+    In pursuit of these goals, NST is instituting a Sustainability Conference
+    including bestowing two
+
+
+    Sustainability Awards in technology and implementation as well as two
+    scholarships in the same field.
+
+
+    The purpose of the Nobel Sustainability Trust Awards is to recognise
+    individuals for their outstanding contribution to sustainability and a
+    commitment to ensuring that the need of the present is met without
+    compromising the ability of future generations to meet their own needs.
+  heading: Nobel Sustainability Trust
 partners:
   partner1:
     image:
