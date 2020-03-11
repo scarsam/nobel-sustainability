@@ -8,8 +8,8 @@ image:
   image: /images/building.jpg
 firstSection:
   column1: >-
-    he members of the Nobel family and founders of NST have, with great concern,
-    been observing the devastation of the world’s vital, natural and
+    The members of the Nobel family and founders of NST have, with great
+    concern, been observing the devastation of the world’s vital, natural and
     non-renewable resources. This over-consumption has led to an increase in
     global temperatures and pollution of land, food, water and air. The founders
     believe that the economic and social health of civilisation will, to a large
