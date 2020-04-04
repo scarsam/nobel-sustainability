@@ -63,8 +63,13 @@ collections:
                 name: image
                 widget: object
                 fields:
-                  - { label: image, name: image, widget: image }
-                  - { label: alt, name: alt, widget: string }
+                  - {
+                      label: image,
+                      name: image,
+                      widget: image,
+                      required: false,
+                    }
+                  - { label: alt, name: alt, widget: string, required: false }
       - label: Second section
         name: secondSection
         widget: object
