@@ -33,16 +33,6 @@ const AwardsPagePreview = ({ entry }) => {
           column1: entry.getIn(['data', 'sectionFive', 'column1']),
           column2: entry.getIn(['data', 'sectionFive', 'column2']),
         }}
-        sectionSix={{
-          heading: entry.getIn(['data', 'sectionSix', 'heading']),
-          text: entry.getIn(['data', 'sectionSix', 'text']),
-        }}
-        sectionSeven={{
-          heading: entry.getIn(['data', 'sectionSeven', 'heading']),
-          subheading: entry.getIn(['data', 'sectionSeven', 'subheading']),
-          column1: entry.getIn(['data', 'sectionSeven', 'column1']),
-          column2: entry.getIn(['data', 'sectionSeven', 'column2']),
-        }}
       />
     </PreviewLayout>
   )

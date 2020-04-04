@@ -11,8 +11,6 @@ const AwardsPageTemplate = ({
   sectionThree,
   sectionFour,
   sectionFive,
-  sectionSix,
-  sectionSeven,
 }) => {
   return (
     <Layout>
@@ -60,7 +58,7 @@ const AwardsPageTemplate = ({
       </section>
 
       <section>
-        <div className="container padding-bottom-none">
+        <div className="container">
           <div className="row">
             <div className="col-lg-7 offset-lg-3">
               <h2>{sectionFour.heading}</h2>
@@ -70,7 +68,7 @@ const AwardsPageTemplate = ({
         </div>
       </section>
 
-      <section>
+      <section className="city-bg">
         <div className="container">
           <div className="row">
             <div className="col-lg-3 padding-bottom-20px padding-bottom-lg-none">
@@ -84,38 +82,6 @@ const AwardsPageTemplate = ({
             </div>
             <div className="col-md-6 col-lg-4">
               <ReactMarkdown source={sectionFive.column2} />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-grey-beige">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-3 padding-bottom-20px padding-bottom-lg-none">
-              <h2>{sectionSix.heading}</h2>
-            </div>
-            <div className="col-lg-8">
-              <ReactMarkdown source={sectionSix.text} />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="city-bg">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-3 padding-bottom-20px padding-bottom-lg-none">
-              <h2>{sectionSeven.heading}</h2>
-            </div>
-            <div className="col-md-6 col-lg-4">
-              <ReactMarkdown source={sectionSeven.column1} />
-              <h3 className="c-water border-top padding-top-20px">
-                {sectionSeven.subheading}
-              </h3>
-            </div>
-            <div className="col-md-6 col-lg-4">
-              <ReactMarkdown source={sectionSeven.column2} />
             </div>
           </div>
         </div>

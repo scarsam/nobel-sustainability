@@ -13,8 +13,6 @@ const AwardsPage = ({ data }) => {
     sectionThree,
     sectionFour,
     sectionFive,
-    sectionSix,
-    sectionSeven,
   } = data.allMarkdownRemark.edges[0].node.frontmatter
   return (
     <>
@@ -27,8 +25,6 @@ const AwardsPage = ({ data }) => {
         sectionThree={sectionThree}
         sectionFour={sectionFour}
         sectionFive={sectionFive}
-        sectionSix={sectionSix}
-        sectionSeven={sectionSeven}
       />
     </>
   )
@@ -72,16 +68,6 @@ export const pageQuery = graphql`
               text
             }
             sectionFive {
-              heading
-              subheading
-              column1
-              column2
-            }
-            sectionSix {
-              heading
-              text
-            }
-            sectionSeven {
               heading
               subheading
               column1

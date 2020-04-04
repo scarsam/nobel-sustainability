@@ -10,8 +10,6 @@ const AwardsPagePreviewTemplate = ({
   sectionThree,
   sectionFour,
   sectionFive,
-  sectionSix,
-  sectionSeven,
 }) => {
   return (
     <>
@@ -70,7 +68,7 @@ const AwardsPagePreviewTemplate = ({
       </section>
 
       <section>
-        <div className="container">
+        <div className="container city-bg">
           <div className="row">
             <div className="col-lg-3 padding-bottom-20px padding-bottom-lg-none">
               <h2>{sectionFive.heading}</h2>
@@ -83,38 +81,6 @@ const AwardsPagePreviewTemplate = ({
             </div>
             <div className="col-md-6 col-lg-4">
               <ReactMarkdown source={sectionFive.column2} />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-grey-beige">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-3 padding-bottom-20px padding-bottom-lg-none">
-              <h2>{sectionSix.heading}</h2>
-            </div>
-            <div className="col-lg-8">
-              <ReactMarkdown source={sectionSix.text} />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="city-bg">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-3 padding-bottom-20px padding-bottom-lg-none">
-              <h2>{sectionSeven.heading}</h2>
-            </div>
-            <div className="col-md-6 col-lg-4">
-              <ReactMarkdown source={sectionSeven.column1} />
-              <h3 className="c-water border-top padding-top-20px">
-                {sectionSeven.subheading}
-              </h3>
-            </div>
-            <div className="col-md-6 col-lg-4">
-              <ReactMarkdown source={sectionSeven.column2} />
             </div>
           </div>
         </div>
