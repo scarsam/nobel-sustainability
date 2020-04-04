@@ -65,8 +65,8 @@ partners:
       image: /images/earth-capital-logo.svg
   partner2:
     image:
-      alt: lombard odier company logo
-      image: /images/lombard-logo.svg
+      alt: ''
+      image: ''
 secondSection:
   column1: >-
     We will establish an international conference with focus on alternative,
