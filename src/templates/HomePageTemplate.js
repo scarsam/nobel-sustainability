@@ -99,7 +99,10 @@ const HomePageTemplate = ({
                     <div className="article-markdown">
                       <ReactMarkdown source={node.excerpt} />
                     </div>
-                    <Link className="news-link" to={node.fields.slug}>
+                    <Link
+                      className="news-link btn c-white"
+                      to={node.fields.slug}
+                    >
                       Read More
                     </Link>
                   </div>
