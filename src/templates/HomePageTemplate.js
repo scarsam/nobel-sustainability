@@ -44,18 +44,15 @@ const HomePageTemplate = ({
             <div className="col-md-4 d-flex align-items-center">
               <h2>Partners</h2>
             </div>
-            <div className="col-md-3 col-6 d-flex align-items-center">
-              <img
-                src={partners.partner1.image.image.publicURL}
-                alt={partners.partner1.image.alt}
-              />
-            </div>
-            <div className="col-md-3 col-6 d-flex align-items-center">
-              <img
-                src={partners.partner2.image.image.publicURL}
-                alt={partners.partner2.image.alt}
-              />
-            </div>
+            {partners &&
+              partners.map((partner, index) => (
+                <div
+                  key={index}
+                  className="col-md-3 col-6 d-flex align-items-center"
+                >
+                  <img src={partner.image.publicURL} alt={partner.alt} />
+                </div>
+              ))}
           </div>
         </div>
       </section>

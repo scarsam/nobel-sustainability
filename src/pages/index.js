@@ -11,7 +11,7 @@ const HomePage = ({ data }) => {
     title,
     subheading,
     image,
-    partners,
+    partner,
     firstSection,
     secondSection,
   } = data.home.edges[0].node.frontmatter
@@ -23,7 +23,7 @@ const HomePage = ({ data }) => {
         title={title}
         subheading={subheading}
         image={image}
-        partners={partners}
+        partners={partner}
         news={news}
         firstSection={firstSection}
         secondSection={secondSection}
@@ -84,23 +84,11 @@ export const pageQuery = graphql`
               column1
               column2
             }
-            partners {
-              partner1 {
-                image {
-                  image {
-                    publicURL
-                  }
-                  alt
-                }
+            partner {
+              image {
+                publicURL
               }
-              partner2 {
-                image {
-                  image {
-                    publicURL
-                  }
-                  alt
-                }
-              }
+              alt
             }
             secondSection {
               heading

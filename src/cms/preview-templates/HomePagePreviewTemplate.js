@@ -39,12 +39,12 @@ const HomePagePreviewTemplate = ({
             <div className="col-md-2 d-flex align-items-center">
               <h2>Partners</h2>
             </div>
-            <div className="col-md-3 col-6 d-flex align-items-center">
-              <PreviewCompatibleImage imageInfo={partners.partner1.image} />
-            </div>
-            <div className="col-md-3 col-6 d-flex align-items-center">
-              <PreviewCompatibleImage imageInfo={partners.partner2.image} />
-            </div>
+            {partners &&
+              partners.map(partner => (
+                <div className="col-md-3 col-6 d-flex align-items-center">
+                  <PreviewCompatibleImage image={partner.image} />
+                </div>
+              ))}
           </div>
         </div>
       </section>

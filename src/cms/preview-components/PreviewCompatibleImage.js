@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 
-const PreviewCompatibleImage = ({ imageInfo }) => {
-  const { alt = '', image } = imageInfo
+const PreviewCompatibleImage = ({ imageInfo, image }) => {
+  if (!image) image = imageInfo.image
+
   const [path, setPath] = useState()
 
   useEffect(() => {
@@ -9,11 +10,11 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
   }, [])
 
   async function resolveImage() {
-    let response = await image
+    const response = await image
     setPath(response.url)
   }
 
-  if (path) return <img src={path} alt={alt} />
+  if (path) return <img src={path} alt={''} />
 
   return null
 }

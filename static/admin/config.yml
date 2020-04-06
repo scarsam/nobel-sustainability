@@ -41,35 +41,13 @@ collections:
           - { label: heading, name: heading, widget: string }
           - { label: column 1, name: column1, widget: markdown }
           - { label: column 2, name: column2, widget: markdown }
-      - label: Partners
-        name: partners
-        widget: object
+      - label: Partner
+        name: partner
+        widget: list
         fields:
-          - label: partner 1
-            name: partner1
-            widget: object
-            fields:
-              - label: image
-                name: image
-                widget: object
-                fields:
-                  - { label: image, name: image, widget: image }
-                  - { label: alt, name: alt, widget: string }
-          - label: partner 2
-            name: partner2
-            widget: object
-            fields:
-              - label: image
-                name: image
-                widget: object
-                fields:
-                  - {
-                      label: image,
-                      name: image,
-                      widget: image,
-                      required: false,
-                    }
-                  - { label: alt, name: alt, widget: string, required: false }
+          - { label: image, name: image, widget: image }
+          - { label: alt, name: alt, widget: string }
+
       - label: Second section
         name: secondSection
         widget: object

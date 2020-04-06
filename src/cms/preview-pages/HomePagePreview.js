@@ -3,7 +3,7 @@ import HomePagePreviewTemplate from '../preview-templates/HomePagePreviewTemplat
 import PropTypes from 'prop-types'
 import PreviewLayout from '../preview-components/PreviewLayout'
 
-const HomePagePreview = ({ entry, getAsset }) => {
+const HomePagePreview = ({ entry, getAsset, widgetsFor }) => {
   return (
     <PreviewLayout>
       <HomePagePreviewTemplate
@@ -18,36 +18,10 @@ const HomePagePreview = ({ entry, getAsset }) => {
           column1: entry.getIn(['data', 'firstSection', 'column1']),
           column2: entry.getIn(['data', 'firstSection', 'column2']),
         }}
-        partners={{
-          partner1: {
-            image: {
-              image: getAsset(
-                entry.getIn(['data', 'partners', 'partner1', 'image', 'image'])
-              ),
-              alt: entry.getIn([
-                'data',
-                'partners',
-                'partner1',
-                'image',
-                'alt',
-              ]),
-            },
-          },
-          partner2: {
-            image: {
-              image: getAsset(
-                entry.getIn(['data', 'partners', 'partner2', 'image', 'image'])
-              ),
-              alt: entry.getIn([
-                'data',
-                'partners',
-                'partner2',
-                'image',
-                'alt',
-              ]),
-            },
-          },
-        }}
+        partners={widgetsFor('partner').map(partner => ({
+          image: getAsset(partner.getIn(['data', 'image'])),
+          alt: partner.getIn(['data', 'alt']),
+        }))}
         secondSection={{
           heading: entry.getIn(['data', 'secondSection', 'heading']),
           column1: entry.getIn(['data', 'secondSection', 'column1']),
