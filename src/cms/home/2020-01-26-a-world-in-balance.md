@@ -2,7 +2,7 @@
 title: A world in balance
 subheading: >-
   We bring public awareness to the issues of pollution and clean energy and
-  encouraging change 
+  encouraging change
 image:
   alt: roof of solar panels under a blue sky
   image: /images/building.jpg
@@ -58,15 +58,10 @@ firstSection:
     commitment to ensuring that the need of the present is met without
     compromising the ability of future generations to meet their own needs.
   heading: Nobel Sustainability Trust
-partners:
-  partner1:
-    image:
-      alt: earth capital company logo
-      image: /images/earth-capital-logo.svg
-  partner2:
-    image:
-      alt: ''
-      image: ''
+partner:
+  - alt: earth capital company logo
+    image: /images/earth-capital-logo.svg
+
 secondSection:
   column1: >-
     We will establish an international conference with focus on alternative,
@@ -92,4 +87,3 @@ secondSection:
     image: /images/trees.jpg
     text: 'Creation a pollution-free, life-sustaining environment for all'
 ---
-
