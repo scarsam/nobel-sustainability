@@ -61,7 +61,8 @@ firstSection:
 partner:
   - alt: earth capital company logo
     image: /images/earth-capital-logo.svg
-
+  - alt: testalt
+    image: /images/earth-capital-logo.svg
 secondSection:
   column1: >-
     We will establish an international conference with focus on alternative,
@@ -87,3 +88,4 @@ secondSection:
     image: /images/trees.jpg
     text: 'Creation a pollution-free, life-sustaining environment for all'
 ---
+
