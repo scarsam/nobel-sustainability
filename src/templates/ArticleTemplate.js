@@ -15,6 +15,13 @@ const ArticleTemplate = ({ data }) => {
             dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
           />
         </div>
+        <div className="col-md-8  offset-md-2">
+          <div className="padding-top-20px">
+            <a className="btn c-white" onClick={() => window.history.back()}>
+              Back
+            </a>
+          </div>
+        </div>
       </div>
     </Layout>
   )
