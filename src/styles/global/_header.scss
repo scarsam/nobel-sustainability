@@ -104,7 +104,7 @@
     margin: 0;
   }
   .nav-menu li a {
-    padding: 0px 20px;
+    padding: 0px 10px;
   }
   .nav-menu .menu {
     max-height: none;
@@ -166,6 +166,11 @@
           width: 50%;
         }
       }
+    }
+  }
+  @include media_min_break(lg) {
+    .nav-menu li a {
+      padding: 0 20px;
     }
   }
 }
