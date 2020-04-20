@@ -26,7 +26,7 @@
 
 .nav-menu .menu {
   max-height: 0;
-  transition: max-height 0.2s ease-out, padding, 0.4s ease-out;
+  transition: max-height 0.2s ease-out;
 }
 
 .nav-menu li a {
@@ -104,6 +104,7 @@
     margin: 0;
   }
   .nav-menu li a {
+    font-size: 0.85rem;
     padding: 0px 10px;
   }
   .nav-menu .menu {
@@ -170,6 +171,7 @@
   }
   @include media_min_break(lg) {
     .nav-menu li a {
+      font-size: 1rem;
       padding: 0 20px;
     }
   }
