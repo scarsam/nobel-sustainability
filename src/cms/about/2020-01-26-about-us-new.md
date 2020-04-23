@@ -44,7 +44,7 @@ sectionOne:
     Stringent efforts will be made to ensure that the NST Awards will be
     recognised, by all concerned, as being independent of the traditional Nobel
     Prizes and that no administrative or commercial relations exist between the
-    Nobel Foundation and NST. 
+    Nobel Foundation and NST.
 
 
     NST’s financial support will come from sovereign entities, family offices
@@ -126,44 +126,39 @@ sectionThree:
       instrumental for developing heat transfer products into an exponential
       growth resulting in a €500 million worldwide market.
   heading: The board
-sectionFour:
-  employeeOne:
-    image:
-      alt: Stina Nordlander
-      image: /images/stina.png
-    name: Stina Nordlander
-    text: >-
-      Miss Stina Nordlander graduated 2016 from junior college after studying
-      natural sciences with the focus on biology. After graduating she worked as
-      a natural science and mathematics teacher for 10-11 year old school
-      children at a middle level school in the Northern Swedish town of Umeå.
+# sectionFour:
+#   employeeOne:
+#     - image:
+#       alt: Stina Nordlander
+#       image: /images/stina.png
+#       name: Stina Nordlander
+#       text: >-
+#         Miss Stina Nordlander graduated 2016 from junior college after studying
+#         natural sciences with the focus on biology. After graduating she worked as
+#         a natural science and mathematics teacher for 10-11 year old school
+#         children at a middle level school in the Northern Swedish town of Umeå.
 
+#         Early in 2015, Stina Nordlander began working at a local refugee
+#         accommodation as a Swedish teacher. Her programs went viral on Youtube.
 
-      Early in 2015, Stina Nordlander began working at a local refugee
-      accommodation as a Swedish teacher. Her programs went viral on Youtube.
+#         She has won multiple titles in beauty contests during recent years placing
+#         second in the Miss World Sweden competition of 2015 and became the first
+#         runner-up for the Swedish representative to the competition of Miss World
+#         2015. She was also crowned Miss Supranational Sweden 2015. Currently Miss
+#         Nordlander is working as Chief Operating Officer and Office Manager for
+#         the Nobel Sustainability Trust Foundation.
+#     - image:
+#       alt: James Burton
+#       image: /images/james.png
+#       name: James Burton
+#       text: >-
+#         James is an expert in prize design and operations. He has advised
+#         organisations such as the World Bank, NASA, Coca Cola, Emerson Electric
+#         Co. and The Nigerian Ministry of Finance on structuring their own prizes
+#         and contributed to widely read books on the subject.
 
-
-      She has won multiple titles in beauty contests during recent years placing
-      second in the Miss World Sweden competition of 2015 and became the first
-      runner-up for the Swedish representative to the competition of Miss World
-      2015. She was also crowned Miss Supranational Sweden 2015. Currently Miss
-      Nordlander is working as Chief Operating Officer and Office Manager for
-      the Nobel Sustainability Trust Foundation.
-  employeeTwo:
-    image:
-      alt: James Burton
-      image: /images/james.png
-    name: James Burton
-    text: >-
-      James is an expert in prize design and operations. He has advised
-      organisations such as the World Bank, NASA, Coca Cola, Emerson Electric
-      Co. and The Nigerian Ministry of Finance on structuring their own prizes
-      and contributed to widely read books on the subject.
-
-
-      Previously he served as Chief of Staff to XPRIZE founder Peter Diamandis
-      and as head of prize development at HeroX. James holds an MSc and MBA from
-      the University of Oxford, where he was a Pershing Square Scholar.
-  heading: Personell
+#         Previously he served as Chief of Staff to XPRIZE founder Peter Diamandis
+#         and as head of prize development at HeroX. James holds an MSc and MBA from
+#         the University of Oxford, where he was a Pershing Square Scholar.
+#   heading: Personell
 ---
-

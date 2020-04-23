@@ -92,19 +92,19 @@ const AboutPagePreview = ({ entry, getAsset }) => {
             },
           },
         }}
-        sectionFour={{
-          heading: entry.getIn(['data', 'sectionFour', 'heading']),
-          employeeOne: widgetsFor('employeeOne').map(email => ({
-            name: email.getIn(['data', 'name']),
-            email: email.getIn(['data', 'email']),
-            name: entry.getIn(['data', 'name']),
-            text: entry.getIn(['data', 'text']),
-            image: {
-              image: getAsset(entry.getIn(['data', 'image', 'image'])),
-              alt: entry.getIn(['data', 'image', 'alt']),
-            },
-          })),
-        }}
+        // sectionFour={{
+        //   heading: entry.getIn(['data', 'sectionFour', 'heading']),
+        //   employeeOne: widgetsFor('employeeOne').map(email => ({
+        //     name: email.getIn(['data', 'name']),
+        //     email: email.getIn(['data', 'email']),
+        //     name: entry.getIn(['data', 'name']),
+        //     text: entry.getIn(['data', 'text']),
+        //     image: {
+        //       image: getAsset(entry.getIn(['data', 'image', 'image'])),
+        //       alt: entry.getIn(['data', 'image', 'alt']),
+        //     },
+        //   })),
+        // }}
       />
     </PreviewLayout>
   )
