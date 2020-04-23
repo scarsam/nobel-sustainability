@@ -14,7 +14,6 @@ export const AboutPagePreviewTemplate = ({
   sectionThree,
   sectionFour,
 }) => {
-  console.log(sectionFour)
   return (
     <>
       <IntroText headline={title} subheading={subheading} />
@@ -94,34 +93,36 @@ export const AboutPagePreviewTemplate = ({
           </div>
         </div>
       </section>
-      <section className="personell-bg">
+      {/* <section className="personell-bg">
         <div className="container">
           <div className="row">
             <div className="col-12 text-center padding-bottom-60px">
               <h2>{sectionFour.heading}</h2>
             </div>
             {sectionFour.employeeOne &&
-              sectionFour.employeeOne.map(employee => (
-                <div
-                  key={employee.name}
-                  className="col-md-5 offset-md-1 margin-top-md-20px padding-bottom-30px padding-bottom-md-none"
-                >
-                  <div className="d-flex align-items-center margin-bottom-30px">
-                    <PreviewCompatibleImage
-                      imageInfo={employee.image}
-                      type="fixed"
-                    />
-                    <div className="padding-left-30px">
-                      <h3>{employee.name}</h3>
-                      <img src={squigglyLine} alt="underline" />
+              sectionFour.employeeOne.map(employee => {
+                return (
+                  <div
+                    key={employee.name}
+                    className="col-md-5 offset-md-1 margin-top-md-20px padding-bottom-30px padding-bottom-md-none"
+                  >
+                    <div className="d-flex align-items-center margin-bottom-30px">
+                      <PreviewCompatibleImage
+                        imageInfo={employee.image}
+                        type="fixed"
+                      />
+                      <div className="padding-left-30px">
+                        <h3>{employee.name}</h3>
+                        <img src={squigglyLine} alt="underline" />
+                      </div>
                     </div>
+                    <ReactMarkdown source={employee.text} />
                   </div>
-                  <ReactMarkdown source={employee.text} />
-                </div>
-              ))}
+                )
+              })}
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   )
 }
