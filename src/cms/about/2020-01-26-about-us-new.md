@@ -126,39 +126,76 @@ sectionThree:
       instrumental for developing heat transfer products into an exponential
       growth resulting in a €500 million worldwide market.
   heading: The board
-# sectionFour:
-#   employeeOne:
-#     - image:
-#       alt: Stina Nordlander
-#       image: /images/stina.png
-#       name: Stina Nordlander
-#       text: >-
-#         Miss Stina Nordlander graduated 2016 from junior college after studying
-#         natural sciences with the focus on biology. After graduating she worked as
-#         a natural science and mathematics teacher for 10-11 year old school
-#         children at a middle level school in the Northern Swedish town of Umeå.
+sectionFour:
+  employeeOne:
+    - image:
+        alt: Stina Nordlander
+        image: /images/stina.png
+      name: Stina Nordlander
+      text: >-
+        Miss Stina Nordlander graduated 2016 from junior college after studying
+        natural sciences with the focus on biology. After graduating she worked
+        as a natural science and mathematics teacher for 10-11 year old school
+        children at a middle level school in the Northern Swedish town of Umeå.
 
-#         Early in 2015, Stina Nordlander began working at a local refugee
-#         accommodation as a Swedish teacher. Her programs went viral on Youtube.
 
-#         She has won multiple titles in beauty contests during recent years placing
-#         second in the Miss World Sweden competition of 2015 and became the first
-#         runner-up for the Swedish representative to the competition of Miss World
-#         2015. She was also crowned Miss Supranational Sweden 2015. Currently Miss
-#         Nordlander is working as Chief Operating Officer and Office Manager for
-#         the Nobel Sustainability Trust Foundation.
-#     - image:
-#       alt: James Burton
-#       image: /images/james.png
-#       name: James Burton
-#       text: >-
-#         James is an expert in prize design and operations. He has advised
-#         organisations such as the World Bank, NASA, Coca Cola, Emerson Electric
-#         Co. and The Nigerian Ministry of Finance on structuring their own prizes
-#         and contributed to widely read books on the subject.
+        Early in 2015, Stina Nordlander began working at a local refugee
+        accommodation as a Swedish teacher. Her programs went viral on Youtube.
 
-#         Previously he served as Chief of Staff to XPRIZE founder Peter Diamandis
-#         and as head of prize development at HeroX. James holds an MSc and MBA from
-#         the University of Oxford, where he was a Pershing Square Scholar.
-#   heading: Personell
+
+        She has won multiple titles in beauty contests during recent years
+        placing second in the Miss World Sweden competition of 2015 and became
+        the first runner-up for the Swedish representative to the competition of
+        Miss World 2015. She was also crowned Miss Supranational Sweden 2015.
+        Currently Miss Nordlander is working as Chief Operating Officer and
+        Office Manager for the Nobel Sustainability Trust Foundation.
+    - image:
+        alt: James Burton
+        image: /images/james.png
+      name: James Burton
+      text: >-
+        James is an expert in prize design and operations. He has advised
+        organisations such as the World Bank, NASA, Coca Cola, Emerson Electric
+        Co. and The Nigerian Ministry of Finance on structuring their own prizes
+        and contributed to widely read books on the subject.
+
+
+        Previously he served as Chief of Staff to XPRIZE founder Peter Diamandis
+        and as head of prize development at HeroX. James holds an MSc and MBA
+        from the University of Oxford, where he was a Pershing Square Scholar.
+    - image:
+        alt: Kristian Vangsgaard
+        image: /images/kristian.png
+      name: Kristian Vangsgaard - Global Brand ambassador
+      text: >-
+        In 2017, Kristian Vangsgaard entered the Nobel Sustainability Trust as a
+        Global Brand Ambassador. He has a background in entrepreneurship, brand
+        development and in the automobile and food & beverages industry. In his
+        very versatile career, his travels around the world made him realize
+        that immediate action is needed, in order to hand over a more balanced
+        planet to the generations to come. Kristian Vangsgaard works globally to
+        gather financial contributions, and sign up country representatives.
+        This work enables NST to be present in as many countries as possible,
+        forming a community of doctors and professors that ensures innovation
+        and talent development within the field, securing a better future.
+
+
+        In the recent couple of of years, Kristian Vangsgaard has taken the lead
+        on establishing the NST Award as an international event. Working closely
+        with various governments and their respective collaborative financial
+        institutions - hence engaging all strategic partners - the aim is to
+        make the NST Awards an event in a world wide setting through a 10 year
+        plan.
+
+
+        Several initiatives need to be put into work *now*. In order to connect
+        NST more closely with citizens, businesses and organizations, NST has
+        appointed Kristian Vangsgaard as head of the initiative, providing him
+        with the necessary means to make NST a more commercialized and modern
+        organization. Looking forward, the NST will appear in an increasing
+        amount of new arenas such as a social networks, education platforms,
+        mastermind events for exclusive small groups of 20 participants and
+        several more areas.
+  heading: Personell
 ---
+
