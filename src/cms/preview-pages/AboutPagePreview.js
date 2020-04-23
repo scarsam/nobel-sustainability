@@ -3,7 +3,7 @@ import AboutPagePreviewTemplate from '../preview-templates/AboutPagePreviewTempl
 import PropTypes from 'prop-types'
 import PreviewLayout from '../preview-components/PreviewLayout'
 
-const AboutPagePreview = ({ entry, getAsset }) => {
+const AboutPagePreview = ({ entry, getAsset, widgetsFor }) => {
   return (
     <PreviewLayout>
       <AboutPagePreviewTemplate
@@ -92,19 +92,23 @@ const AboutPagePreview = ({ entry, getAsset }) => {
             },
           },
         }}
-        // sectionFour={{
-        //   heading: entry.getIn(['data', 'sectionFour', 'heading']),
-        //   employeeOne: widgetsFor('employeeOne').map(email => ({
-        //     name: email.getIn(['data', 'name']),
-        //     email: email.getIn(['data', 'email']),
-        //     name: entry.getIn(['data', 'name']),
-        //     text: entry.getIn(['data', 'text']),
-        //     image: {
-        //       image: getAsset(entry.getIn(['data', 'image', 'image'])),
-        //       alt: entry.getIn(['data', 'image', 'alt']),
-        //     },
-        //   })),
-        // }}
+        sectionFour={{
+          heading: entry.getIn(['data', 'sectionFour', 'heading']),
+          employeeOne: widgetsFor('sectionFour', 'employeeOne').map(
+            employee => {
+              console.log({ employee })
+              console.log(employee.getIn(['data', 'employeeOne']))
+              return {
+                name: employee.getIn(['data', 'name']),
+                text: employee.getIn(['data', 'text']),
+                image: {
+                  image: getAsset(employee.getIn(['data', 'image', 'image'])),
+                  alt: employee.getIn(['data', 'image', 'alt']),
+                },
+              }
+            }
+          ),
+        }}
       />
     </PreviewLayout>
   )

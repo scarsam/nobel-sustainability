@@ -103,37 +103,23 @@ export const pageQuery = graphql`
                 }
               }
             }
-            # sectionFour {
-            #   heading
-            #   employeeOne {
-            #     name
-            #     text
-            #     image {
-            #       alt
-            #       image {
-            #         childImageSharp {
-            #           fixed(width: 100) {
-            #             ...GatsbyImageSharpFixed
-            #           }
-            #         }
-            #       }
-            #     }
-            #   }
-            #   employeeTwo {
-            #     name
-            #     text
-            #     image {
-            #       alt
-            #       image {
-            #         childImageSharp {
-            #           fixed(width: 100) {
-            #             ...GatsbyImageSharpFixed
-            #           }
-            #         }
-            #       }
-            #     }
-            #   }
-            # }
+            sectionFour {
+              heading
+              employeeOne {
+                name
+                text
+                image {
+                  alt
+                  image {
+                    childImageSharp {
+                      fixed(width: 100) {
+                        ...GatsbyImageSharpFixed
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
