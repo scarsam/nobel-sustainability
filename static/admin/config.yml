@@ -283,21 +283,9 @@ collections:
         widget: object
         fields:
           - { label: heading, name: heading, widget: string }
-          - label: Employee One
+          - label: Personell
             name: employeeOne
-            widget: object
-            fields:
-              - { label: name, name: name, widget: string }
-              - { label: text, name: text, widget: markdown }
-              - label: image
-                name: image
-                widget: object
-                fields:
-                  - { label: image, name: image, widget: image }
-                  - { label: alt, name: alt, widget: string }
-          - label: Employee Two
-            name: employeeTwo
-            widget: object
+            widget: list
             fields:
               - { label: name, name: name, widget: string }
               - { label: text, name: text, widget: markdown }

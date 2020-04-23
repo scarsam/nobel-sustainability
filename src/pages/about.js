@@ -119,20 +119,20 @@ export const pageQuery = graphql`
                   }
                 }
               }
-              employeeTwo {
-                name
-                text
-                image {
-                  alt
-                  image {
-                    childImageSharp {
-                      fixed(width: 100) {
-                        ...GatsbyImageSharpFixed
-                      }
-                    }
-                  }
-                }
-              }
+              # employeeTwo {
+              #   name
+              #   text
+              #   image {
+              #     alt
+              #     image {
+              #       childImageSharp {
+              #         fixed(width: 100) {
+              #           ...GatsbyImageSharpFixed
+              #         }
+              #       }
+              #     }
+              #   }
+              # }
             }
           }
         }

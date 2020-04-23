@@ -99,7 +99,7 @@ const AboutPageTemplate = ({
           </div>
         </div>
       </section>
-      <section className="personell-bg">
+      {/* <section className="personell-bg">
         <div className="container">
           <div className="row">
             <div className="col-12 text-center padding-bottom-60px">
@@ -135,7 +135,7 @@ const AboutPageTemplate = ({
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </Layout>
   )
 }

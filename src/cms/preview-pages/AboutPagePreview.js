@@ -94,50 +94,16 @@ const AboutPagePreview = ({ entry, getAsset }) => {
         }}
         sectionFour={{
           heading: entry.getIn(['data', 'sectionFour', 'heading']),
-          employeeOne: {
-            name: entry.getIn(['data', 'sectionFour', 'employeeOne', 'name']),
-            text: entry.getIn(['data', 'sectionFour', 'employeeOne', 'text']),
+          employeeOne: widgetsFor('employeeOne').map(email => ({
+            name: email.getIn(['data', 'name']),
+            email: email.getIn(['data', 'email']),
+            name: entry.getIn(['data', 'name']),
+            text: entry.getIn(['data', 'text']),
             image: {
-              image: getAsset(
-                entry.getIn([
-                  'data',
-                  'sectionFour',
-                  'employeeOne',
-                  'image',
-                  'image',
-                ])
-              ),
-              alt: entry.getIn([
-                'data',
-                'sectionFour',
-                'employeeOne',
-                'image',
-                'alt',
-              ]),
+              image: getAsset(entry.getIn(['data', 'image', 'image'])),
+              alt: entry.getIn(['data', 'image', 'alt']),
             },
-          },
-          employeeTwo: {
-            name: entry.getIn(['data', 'sectionFour', 'employeeTwo', 'name']),
-            text: entry.getIn(['data', 'sectionFour', 'employeeTwo', 'text']),
-            image: {
-              image: getAsset(
-                entry.getIn([
-                  'data',
-                  'sectionFour',
-                  'employeeTwo',
-                  'image',
-                  'image',
-                ])
-              ),
-              alt: entry.getIn([
-                'data',
-                'sectionFour',
-                'image',
-                'image',
-                'alt',
-              ]),
-            },
-          },
+          })),
         }}
       />
     </PreviewLayout>
