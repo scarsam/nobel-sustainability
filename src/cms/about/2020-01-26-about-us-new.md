@@ -196,11 +196,6 @@ sectionFour:
         amount of new arenas such as a social networks, education platforms,
         mastermind events for exclusive small groups of 20 participants and
         several more areas.
-    - image:
-        alt: dfsf
-        image: /images/stina.jpg
-      name: tesd
-      text: adads
   heading: Personell
 ---
 
