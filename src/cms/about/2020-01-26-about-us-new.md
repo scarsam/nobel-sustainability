@@ -197,10 +197,42 @@ sectionFour:
         mastermind events for exclusive small groups of 20 participants and
         several more areas.
     - image:
-        alt: Alt text here
+        alt: Kevin Lee
         image: /images/KL profilbild.jpeg
-      name: Insert name here
-      text: Insert text here
+      name: Kevin Lee — CEO of NST Media
+      text: >-
+        Kevin Lee is a world-class music educator, cellist & famous Hollywood
+        producer, art director of Hollywood News, the member of World Film
+        Review Board of U.S. Hollywood News and the art director of China Show,
+        Lincoln Center, New York. Currently, he is the international art
+        director of “Journey to the West”, a large-scale Chinese show at Macao
+        Sands Hotel.
+
+
+        Kevin Lee studied at the Curtis School of Music and the Juilliard School
+        in the United States. In 1988, he won the Alexander Zilpin Music Award
+        and the New York Golden Disc Award. Later, he taught at Harvard
+        University. In 1989, he co-founded the China Elite Orchestra with the
+        violinist Weixin Xu in New York. In 2001, Lee Children Virtuoso Org was
+        successfully founded by him. In 2004，he received the U.S.-China Cultural
+        Envoy Award from the U.S. government, becoming the first Chinese in the
+        world to receive the award. In 2008, his two music albums "Listen to
+        China" and "Fantasy 2008" got released for the Beijing Olympic Games and
+        won the RIAA Gold Disc Award. In 2014, he served as the executive
+        producer of the documentary "The Lady in Number 6- Music saved me” which
+        won the 86th Academy Award for Best Documentary Short Film. In the same
+        year, he served as the co-chairman of the Hollywood International Film
+        Festival Alliance. He founded the international film festival brand
+        “Hollywood Express” in 2015 and “World Film Technology Festival” in
+        2017. Because of this, he got “The Presidential Award for Global Star
+        Diamond” from the National Academy of Sciences in 2018.
+
+
+        Kevin Lee is currently the Chairman of the Sino-US Cultural Exchange
+        Council, US-China Cultural Exchange Ambassador, U.S. Government Award
+        Laureate, CEO of NST Media for the Nobel NST Sustainable Development
+        Fund. He is also the President of the NST Foundation China Association
+        and nominee for the Nobel NST Prize.
   heading: Personell
 ---
 
