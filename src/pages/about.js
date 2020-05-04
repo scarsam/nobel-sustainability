@@ -81,7 +81,7 @@ export const pageQuery = graphql`
                   alt
                   image {
                     childImageSharp {
-                      fixed(width: 100) {
+                      fixed(width: 100, height: 100) {
                         ...GatsbyImageSharpFixed
                       }
                     }
@@ -95,7 +95,7 @@ export const pageQuery = graphql`
                   alt
                   image {
                     childImageSharp {
-                      fixed(width: 100) {
+                      fixed(width: 100, height: 100) {
                         ...GatsbyImageSharpFixed
                       }
                     }
@@ -112,7 +112,7 @@ export const pageQuery = graphql`
                   alt
                   image {
                     childImageSharp {
-                      fixed(width: 100) {
+                      fixed(width: 100, height: 100) {
                         ...GatsbyImageSharpFixed
                       }
                     }
