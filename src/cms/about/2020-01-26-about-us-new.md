@@ -166,7 +166,7 @@ sectionFour:
     - image:
         alt: Kristian Vangsgaard
         image: /images/kristian.png
-      name: Kristian Vangsgaard - Global Brand ambassador
+      name: Kristian Vangsgaard — Global Brand ambassador
       text: >-
         In 2017, Kristian Vangsgaard entered the Nobel Sustainability Trust as a
         Global Brand Ambassador. He has a background in entrepreneurship, brand
@@ -233,6 +233,45 @@ sectionFour:
         Laureate, CEO of NST Media for the Nobel NST Sustainable Development
         Fund. He is also the President of the NST Foundation China Association
         and nominee for the Nobel NST Prize.
+    - image:
+        alt: Maqsood Ahmad Naz
+        image: /images/Maqsood-Naz.jpeg
+      name: 'Mr. Maqsood Ahmad Naz — Ambassador – Pakistan & UAE, Houston-Texas'
+      text: >-
+        Maqsood Ahmad Naz is an entrepreneur and philanthropist, with more than
+        30 years of industrial experience, Mr. Naz is serving Pakistan’s
+        Textile, Power Generation and Water Treatment sectors through his
+        Organisation of Olympia International. He has served as the Senior Vice
+        Chairman for Federation of Pakistan, Chamber of Commerce and Industry
+        (FPCCI), Central Standing Committee for Textiles (2016-18) and is
+        currently serving as its Convener for Water Recycling. 
+
+
+
+
+        Mr. Naz is also the President and Founder of the Shelter and Care
+        Foundation for the disabled and handicapped. The foundation aims to
+        assist the underprivileged of the local society to obtain medical
+        treatment and the professional skills to be self-sufficient. 
+
+
+
+
+        He has developed international business operations based primarily in
+        Pakistan, UAE and USA and has encouraged bilateral trade between
+        Pakistan and USA through the platform of the US-PAK Business Development
+        Gateway. His appointment as the Ambassador of Nobel Sustainability Trust
+        (NST) for Pakistan, UAE and Houston-Texas chapters, shows the
+        organisation's and his commitment to align global industry with the
+        NST's goals and values. 
+
+
+
+
+        The three nations are intended to become major operational centers for
+        the promotion of renewable technologies and policies, life-sustaining
+        clean environments, thereby providing inspiration and protection to
+        present and future generations.
   heading: Personell
 ---
 
