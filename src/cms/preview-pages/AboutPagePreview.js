@@ -92,24 +92,20 @@ const AboutPagePreview = ({ entry, getAsset, widgetsFor }) => {
             },
           },
         }}
-        // sectionFour={{
-        //   heading: entry.getIn(['data', 'sectionFour', 'heading']),
-        //   employeeOne: widgetsFor('sectionFour', 'employeeOne').map(
-        //     employee => {
-        //       console.log(employee.getIn(['employeeOne']))
-        //       return {
-        //         name: employee.getIn(['data', 'employeeOne', 'name']),
-        //         text: employee.getIn(['data', 'employeeOne', 'text']),
-        //         image: {
-        //           image: getAsset(
-        //             employee.getIn(['data', 'employeeOne', 'image', 'image'])
-        //           ),
-        //           alt: employee.getIn(['data', 'employeeOne', 'image', 'alt']),
-        //         },
-        //       }
-        //     }
-        //   ),
-        // }}
+        sectionFour={{
+          heading: entry.getIn(['data', 'sectionFour', 'heading']),
+          employeeOne: entry
+            .getIn(['data', 'sectionFour', 'employeeOne'])
+            .map(employeeOne => {
+              return {
+                name: employeeOne.getIn(['name']),
+                text: employeeOne.getIn(['text']),
+                image: {
+                  image: getAsset(employeeOne.getIn(['image', 'image'])),
+                },
+              }
+            }),
+        }}
       />
     </PreviewLayout>
   )

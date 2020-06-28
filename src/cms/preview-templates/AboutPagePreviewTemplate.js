@@ -93,7 +93,7 @@ export const AboutPagePreviewTemplate = ({
           </div>
         </div>
       </section>
-      {/* <section className="personell-bg">
+      <section className="personell-bg">
         <div className="container">
           <div className="row">
             <div className="col-12 text-center padding-bottom-60px">
@@ -108,6 +108,7 @@ export const AboutPagePreviewTemplate = ({
                   >
                     <div className="d-flex align-items-center margin-bottom-30px">
                       <PreviewCompatibleImage
+                        className="personell-image"
                         imageInfo={employee.image}
                         type="fixed"
                       />
@@ -122,7 +123,7 @@ export const AboutPagePreviewTemplate = ({
               })}
           </div>
         </div>
-      </section> */}
+      </section>
     </>
   )
 }

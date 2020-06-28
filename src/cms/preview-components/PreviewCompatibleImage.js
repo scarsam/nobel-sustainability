@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const PreviewCompatibleImage = ({ imageInfo, image }) => {
+const PreviewCompatibleImage = ({ imageInfo, image, className = null }) => {
   if (!image) image = imageInfo.image
 
   const [path, setPath] = useState()
@@ -14,7 +14,7 @@ const PreviewCompatibleImage = ({ imageInfo, image }) => {
     setPath(response.url)
   }
 
-  if (path) return <img src={path} alt={''} />
+  if (path) return <img class={className} src={path} alt={''} />
 
   return null
 }

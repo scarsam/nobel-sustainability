@@ -1,9 +1,13 @@
 .personell-bg {
   background-image: url(../../images/about/map-bg.svg);
-  .gatsby-image-wrapper {
+  .gatsby-image-wrapper,
+  .personell-image {
     border-radius: 50%;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
   }
 }
 

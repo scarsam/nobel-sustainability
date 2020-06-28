@@ -112,7 +112,10 @@ const AboutPageTemplate = ({
                   className="col-md-5 offset-md-1 margin-top-md-20px padding-bottom-30px padding-bottom-md-none"
                 >
                   <div className="d-flex align-items-center margin-bottom-30px">
-                    <Img fixed={employee.image.image.childImageSharp.fixed} />
+                    <Img
+                      className="personell-image"
+                      fixed={employee.image.image.childImageSharp.fixed}
+                    />
                     <div className="padding-left-30px">
                       <h3>{employee.name}</h3>
                       <img src={squigglyLine} alt="underline" />
