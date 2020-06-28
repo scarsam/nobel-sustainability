@@ -148,6 +148,33 @@ sectionThree:
         Erik Nobel is today managing director in Stockholm for Levine, Leichtman
         Capital Partners, an independent investment management firm with its
         head office in California.
+    - image:
+        alt: Stephanie Nobel
+        image: /images/stephanie-nobel.jpg
+      name: Stephanie Nobel
+      text: |-
+        Stephanie Nobel was born in Stockholm in 1987.
+
+         After graduating from senior high school in Stockholm she studied pedagogy at the University of Malmö. She received a Bachelor of Arts in Education degree in 2018. 
+
+        Stephanie is presently working as a teacher at Tolvåkerskolan in Skåne
+    - image:
+        alt: Johan Nobel
+        image: /images/johan-nobel.png
+      name: Johan Nobel
+      text: >-
+        Johan Nobel has a long experience from all kinds of financial risks
+        including the risks associated with Environmental, Social and Governance
+        (ESG). He holds an MSc in Economics of Innovation and Growth from the
+        Royal Institute of Technology and B.Sc. in Economics and Mathematics
+        from Stockholm University. 
+
+
+        Johan currently works at a Stockholm based Hedge Fund focusing in direct
+        lending to midsized Nordic companies. Prior to that he has worked within
+        Fixed Income, Insurance and latest as a deal manager at Swedish Export
+        Credit Corporation, a state-owned company that finances Swedish
+        exporters, their subsidiaries, and foreign customers.
   heading: The board
 sectionFour:
   employeeOne:
