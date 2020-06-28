@@ -153,6 +153,7 @@ collections:
         fields:
           - { label: name, name: name, widget: string }
           - { label: email, name: email, widget: string }
+          - { label: phone, name: phone, widget: string }
 
   - name: 'awards'
     label: Awards
