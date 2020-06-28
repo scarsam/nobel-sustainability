@@ -235,7 +235,7 @@ sectionFour:
         and nominee for the Nobel NST Prize.
     - image:
         alt: Maqsood Ahmad Naz
-        image: /images/Maqsood-Naz.jpeg
+        image: /images/Maqsood-Naz-200px.jpg
       name: 'Mr. Maqsood Ahmad Naz — Ambassador – Pakistan & UAE, Houston-Texas'
       text: >-
         Maqsood Ahmad Naz is an entrepreneur and philanthropist, with more than
