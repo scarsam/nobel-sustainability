@@ -65,17 +65,26 @@ const ContactPagePreviewTemplate = ({
                 Email
               </h3>
             </div>
-            {emails &&
-              emails.map((user, index) => {
-                return (
-                  <div key={index} className="col-md-4">
-                    <h4>{user.name}</h4>
-                    <p>
-                      <a href={`mailto:${user.email}`}>{user.email}</a>
-                    </p>
-                  </div>
-                )
-              })}
+            <div className="col-md-8">
+              <div className="row">
+                {emails &&
+                  emails.map((user, index) => {
+                    return (
+                      <div key={index} className="col-md-6 padding-bottom-20px">
+                        <h4>{user.name}</h4>
+                        <p className="margin-bottom-5px">
+                          <a href={`mailto:${user.email}`}>{user.email}</a>
+                        </p>
+                        {user.phone && (
+                          <p>
+                            <a href={`tel:${user.phone}`}>{user.phone}</a>
+                          </p>
+                        )}
+                      </div>
+                    )
+                  })}
+              </div>
+            </div>
           </div>
         </div>
       </section>

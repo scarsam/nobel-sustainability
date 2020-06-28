@@ -29,6 +29,7 @@ const ContactPagePreview = ({ entry, widgetsFor }) => {
         emails={widgetsFor('emails').map(email => ({
           name: email.getIn(['data', 'name']),
           email: email.getIn(['data', 'email']),
+          phone: email.getIn(['data', 'phone']),
         }))}
       />
     </PreviewLayout>
