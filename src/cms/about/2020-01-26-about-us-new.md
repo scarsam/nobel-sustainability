@@ -76,12 +76,7 @@ sectionTwo:
     * Inspiration for present and future generations
   heading: The Mission of the Nobel Sustainability Trust
 sectionThree:
-  boardMembers:
-    - image:
-        alt: Erik Nobel
-        image: /images/erik-nobel.jpg
-      name: Erik Nobel
-      text: TestText
+  boardMembers: []
   heading: The board
 sectionFour:
   employeeOne:
