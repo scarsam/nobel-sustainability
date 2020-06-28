@@ -76,7 +76,78 @@ sectionTwo:
     * Inspiration for present and future generations
   heading: The Mission of the Nobel Sustainability Trust
 sectionThree:
-  boardMembers: []
+  boardMembers:
+    - image:
+        alt: Michael Nobel
+        image: /images/michael.png
+      name: Michael Nobel
+      text: >-
+        The chairman of NST, university professor Michael Nobel, PhD,
+        participated in the introduction of magnetic resonance imaging as
+        European vice president of Fonar Corp. From 1991 to 2007 he served as
+        Executive Chairman of the MRAB Group, a company providing MRI services
+        to Swedish hospitals. From 1991 to 2006 he was Vice Chairman and
+        Chairman of the Board of the Nobel Family. He has been consultant to
+        Unesco in Paris and the United Nations Social Affairs Division in
+        Geneva. Michael Nobel is presently chairman or board member of six
+        international companies in medical diagnostics, treatment and
+        information and in five non-for-profit organizations.
+
+
+        He is appointed distinguished professor at the Advanced Research
+        Institute of Natural Science and Technology at Osaka City University and
+        as guest professor at the Seisa and Soka Universities in Japan. Michael
+        Nobel has received twelve honorary doctorates and professorships from
+        universities around the world and fourteen other types of awards for his
+        work in medical innovation and conflict resolution as well as in other
+        fields.
+    - image:
+        alt: Peter Nobel
+        image: /images/peter.png
+      name: Peter Nobel
+      text: >-
+        Peter Nobel co-founded the Swedish clean tech company HeatCore AB which
+        operates in the energy efficiency sector. The company is developing and
+        marketing a highly compact and efficient heat cell for applications in
+        the global heating industry. Peter has a degree of Master of Science in
+        Material Science and Engineering from the Royal Institute of Technology
+        in Stockholm and a degree in business administration from Lund
+        University.
+
+
+        He has a track record of over 25 years positioning companies for success
+        and market share growth in various industrial markets. He possesses a
+        long experience of holding executive positions in sales and marketing,
+        R&D and manufacturing functions in global companies like Alfa Laval and
+        SWEP International.
+
+
+        He has significant expertise in successfully navigating long sales
+        cycles for industrial components for various global industry sectors and
+        was instrumental for developing heat transfer products into an
+        exponential growth resulting in a €500 million worldwide market.
+    - image:
+        alt: Erik Nobel
+        image: /images/erik-nobel.jpg
+      name: Erik Nobel
+      text: >-
+        Erik Nobel was born in Stockholm in 1979. 
+
+
+        Academically he graduated from the Stockholm School of Economics with a
+        master of science degree in business and economics, majoring in
+        accounting and financial management in 2003. 
+
+
+        He has a long and distinguished career in financial administration in
+        several Nordic and international companies, notably as investment
+        director in the Swedish 6th AP fund. Previously he worked for several
+        years at JP Morgan and Erik Penser Fonder. 
+
+
+        Erik Nobel is today managing director in Stockholm for Levine, Leichtman
+        Capital Partners, an independent investment management firm with its
+        head office in California.
   heading: The board
 sectionFour:
   employeeOne:
