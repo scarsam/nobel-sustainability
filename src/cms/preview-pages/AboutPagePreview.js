@@ -27,70 +27,17 @@ const AboutPagePreview = ({ entry, getAsset, widgetsFor }) => {
         }}
         sectionThree={{
           heading: entry.getIn(['data', 'sectionThree', 'heading']),
-          boardMemberOne: {
-            name: entry.getIn([
-              'data',
-              'sectionThree',
-              'boardMemberOne',
-              'name',
-            ]),
-            text: entry.getIn([
-              'data',
-              'sectionThree',
-              'boardMemberOne',
-              'text',
-            ]),
-            image: {
-              image: getAsset(
-                entry.getIn([
-                  'data',
-                  'sectionThree',
-                  'boardMemberOne',
-                  'image',
-                  'image',
-                ])
-              ),
-              alt: entry.getIn([
-                'data',
-                'sectionThree',
-                'boardMemberOne',
-                'image',
-                'alt',
-              ]),
-            },
-          },
-          boardMemberTwo: {
-            name: entry.getIn([
-              'data',
-              'sectionThree',
-              'boardMemberTwo',
-              'name',
-            ]),
-            text: entry.getIn([
-              'data',
-              'sectionThree',
-              'boardMemberTwo',
-              'text',
-            ]),
-            image: {
-              image: getAsset(
-                entry.getIn([
-                  'data',
-                  'sectionThree',
-                  'boardMemberTwo',
-                  'image',
-                  'image',
-                ])
-              ),
-              alt: entry.getIn([
-                'data',
-                'sectionThree',
-                'boardMemberTwo',
-                'image',
-                'alt',
-              ]),
-            },
-          },
+          boardMembers: entry
+            .getIn(['data', 'sectionThree', 'boardMembers'])
+            .map(boardMember => {
+              return {
+                name: boardMember.getIn(['name']),
+                text: boardMember.getIn(['text']),
+                image: {
+                  image: getAsset(boardMember.getIn(['image', 'image'])),
+                },
+              }
+            }),
         }}
         sectionFour={{
           heading: entry.getIn(['data', 'sectionFour', 'heading']),

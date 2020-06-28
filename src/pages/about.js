@@ -74,21 +74,7 @@ export const pageQuery = graphql`
             }
             sectionThree {
               heading
-              boardMemberOne {
-                name
-                text
-                image {
-                  alt
-                  image {
-                    childImageSharp {
-                      fixed(width: 100, height: 100) {
-                        ...GatsbyImageSharpFixed
-                      }
-                    }
-                  }
-                }
-              }
-              boardMemberTwo {
+              boardMembers {
                 name
                 text
                 image {
