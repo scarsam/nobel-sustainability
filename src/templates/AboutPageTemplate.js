@@ -60,42 +60,33 @@ const AboutPageTemplate = ({
           </div>
         </div>
       </section>
-      <section className="bg-sand">
+      <section className="bg-sand board-members">
         <div className="container">
           <div className="row">
             <div className="col-12 text-center padding-bottom-60px">
               <h2>{sectionThree.heading}</h2>
             </div>
-            <div className="col-md-5 offset-md-1 padding-bottom-30px padding-bottom-md-none">
-              <div className="d-flex align-items-center margin-bottom-30px">
-                <Img
-                  fixed={
-                    sectionThree.boardMemberOne.image.image.childImageSharp
-                      .fixed
-                  }
-                />
-                <div className="padding-left-30px">
-                  <h3>{sectionThree.boardMemberOne.name}</h3>
-                  <img src={squigglyLine} alt="underline" />
-                </div>
-              </div>
-              <ReactMarkdown source={sectionThree.boardMemberOne.text} />
-            </div>
-            <div className="col-md-5">
-              <div className="d-flex align-items-center margin-bottom-30px">
-                <Img
-                  fixed={
-                    sectionThree.boardMemberTwo.image.image.childImageSharp
-                      .fixed
-                  }
-                />
-                <div className="padding-left-30px">
-                  <h3>{sectionThree.boardMemberTwo.name}</h3>
-                  <img src={squigglyLine} alt="underline" />
-                </div>
-              </div>
-              <ReactMarkdown source={sectionThree.boardMemberTwo.text} />
-            </div>
+            {sectionThree.boardMembers &&
+              sectionThree.boardMembers.map((boardMember, index) => {
+                return (
+                  <div
+                    className="col-md-5 offset-md-1 margin-top-md-20px padding-bottom-30px padding-bottom-md-none"
+                    key={index}
+                  >
+                    <div className="d-flex align-items-center margin-bottom-30px">
+                      <Img
+                        className="board-member-image"
+                        fixed={boardMember.image.image.childImageSharp.fixed}
+                      />
+                      <div className="padding-left-30px">
+                        <h3>{boardMember.name}</h3>
+                        <img src={squigglyLine} alt="underline" />
+                      </div>
+                    </div>
+                    <ReactMarkdown source={boardMember.text} />
+                  </div>
+                )
+              })}
           </div>
         </div>
       </section>
