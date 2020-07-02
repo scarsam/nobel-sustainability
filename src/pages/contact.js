@@ -6,19 +6,13 @@ import SEO from '../components/seo'
 const ContactPage = ({ data }) => {
   const {
     title,
-    officeOne,
-    officeTwo,
     emails,
+    offices,
   } = data.allMarkdownRemark.edges[0].node.frontmatter
   return (
     <>
       <SEO title={title} />
-      <ContactPageTemplate
-        title={title}
-        officeOne={officeOne}
-        officeTwo={officeTwo}
-        emails={emails}
-      />
+      <ContactPageTemplate title={title} emails={emails} offices={offices} />
     </>
   )
 }
@@ -41,16 +35,7 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             title
-            officeOne {
-              name
-              street
-              zip
-              city
-              country
-              lat
-              long
-            }
-            officeTwo {
+            offices {
               name
               street
               zip

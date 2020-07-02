@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import LeafletMap from '../components/map'
 
-const ContactPageTemplate = ({ title, officeOne, officeTwo, emails }) => {
+const ContactPageTemplate = ({ title, emails, offices }) => {
   return (
     <Layout>
       <h1 className="text-center padding-top-50px padding-bottom-50px">
@@ -16,40 +16,34 @@ const ContactPageTemplate = ({ title, officeOne, officeTwo, emails }) => {
                 Offices
               </h3>
             </div>
-            <div className="col-lg-8 col-xl-4 offset-xl-0 padding-bottom-40px padding-bottom-xl-none">
-              <address>
-                <h4>{officeOne.name}</h4>
-                <p>
-                  {officeOne.street}
-                  <span className="d-block">
-                    {officeOne.zip} {officeOne.city}, {officeOne.country}
-                  </span>
-                </p>
-                {typeof window !== 'undefined' && (
-                  <LeafletMap
-                    position={[officeOne.lat, officeOne.long]}
-                    zoom={15}
-                  />
-                )}
-              </address>
-            </div>
-            <div className="col-lg-8 offset-lg-4 col-xl-4 offset-xl-0">
-              <address>
-                <h4>{officeTwo.name}</h4>
-                <p>
-                  {officeTwo.street}
-                  <span className="d-block">
-                    {officeTwo.zip} {officeTwo.city}, {officeTwo.country}
-                  </span>
-                </p>
-                {typeof window !== 'undefined' && (
-                  <LeafletMap
-                    position={[officeTwo.lat, officeTwo.long]}
-                    zoom={15}
-                  />
-                )}
-              </address>
-            </div>
+            {offices &&
+              offices.map((office, index) => {
+                return (
+                  <div
+                    className={
+                      'col-lg-8 col-xl-4 offset-xl-0 padding-bottom-40px padding-bottom-xl-none ' +
+                      (index > 2 ? 'offset-md-3 offset-lg-2 offset-2' : '')
+                    }
+                    key={index}
+                  >
+                    <address>
+                      <h4>{office.name}</h4>
+                      <p>
+                        {office.street}
+                        <span className="d-block">
+                          {office.zip} {office.city}, {office.country}
+                        </span>
+                      </p>
+                      {typeof window !== 'undefined' && (
+                        <LeafletMap
+                          position={[office.lat, office.long]}
+                          zoom={15}
+                        />
+                      )}
+                    </address>
+                  </div>
+                )
+              })}
           </div>
         </div>
       </section>

@@ -124,9 +124,9 @@ collections:
       preview: true
     fields:
       - { label: Title, name: title, widget: string }
-      - label: Office 1
-        name: officeOne
-        widget: object
+      - label: Offices
+        name: offices
+        widget: list
         fields:
           - { label: name, name: name, widget: string }
           - { label: street, name: street, widget: string }
@@ -135,18 +135,6 @@ collections:
           - { label: country, name: country, widget: string }
           - { label: latitude, name: lat, valueType: float, widget: number }
           - { label: longitude, name: long, valueType: float, widget: number }
-      - label: Office 2
-        name: officeTwo
-        widget: object
-        fields:
-          - { label: name, name: name, widget: string }
-          - { label: street, name: street, widget: string }
-          - { label: zip, name: zip, widget: string }
-          - { label: city, name: city, widget: string }
-          - { label: country, name: country, widget: string }
-          - { label: latitude, name: lat, valueType: float, widget: number }
-          - { label: longitude, name: long, valueType: float, widget: number }
-          - { label: country, name: country, widget: string }
       - label: Email
         name: emails
         widget: list

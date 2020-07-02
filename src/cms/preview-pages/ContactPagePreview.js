@@ -8,24 +8,15 @@ const ContactPagePreview = ({ entry, widgetsFor }) => {
     <PreviewLayout>
       <ContactPageTemplate
         title={entry.getIn(['data', 'title'])}
-        officeOne={{
-          name: entry.getIn(['data', 'officeOne', 'name']),
-          street: entry.getIn(['data', 'officeOne', 'street']),
-          zip: entry.getIn(['data', 'officeOne', 'zip']),
-          city: entry.getIn(['data', 'officeOne', 'city']),
-          country: entry.getIn(['data', 'officeOne', 'country']),
-          lat: entry.getIn(['data', 'officeOne', 'lat']),
-          long: entry.getIn(['data', 'officeOne', 'long']),
-        }}
-        officeTwo={{
-          name: entry.getIn(['data', 'officeTwo', 'name']),
-          street: entry.getIn(['data', 'officeTwo', 'street']),
-          zip: entry.getIn(['data', 'officeTwo', 'zip']),
-          city: entry.getIn(['data', 'officeTwo', 'city']),
-          country: entry.getIn(['data', 'officeTwo', 'country']),
-          lat: entry.getIn(['data', 'officeTwo', 'lat']),
-          long: entry.getIn(['data', 'officeTwo', 'long']),
-        }}
+        offices={widgetsFor('offices').map(office => ({
+          name: office.getIn(['data', 'name']),
+          street: office.getIn(['data', 'street']),
+          zip: office.getIn(['data', 'zip']),
+          city: office.getIn(['data', 'city']),
+          country: office.getIn(['data', 'country']),
+          lat: office.getIn(['data', 'lat']),
+          long: office.getIn(['data', 'long']),
+        }))}
         emails={widgetsFor('emails').map(email => ({
           name: email.getIn(['data', 'name']),
           email: email.getIn(['data', 'email']),
