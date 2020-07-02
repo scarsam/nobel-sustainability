@@ -16,34 +16,32 @@ const ContactPageTemplate = ({ title, emails, offices }) => {
                 Offices
               </h3>
             </div>
-            {offices &&
-              offices.map((office, index) => {
-                return (
-                  <div
-                    className={
-                      'col-lg-8 col-xl-4 offset-xl-0 padding-bottom-40px padding-bottom-xl-none ' +
-                      (index > 2 ? 'offset-md-3 offset-lg-2 offset-2' : '')
-                    }
-                    key={index}
-                  >
-                    <address>
-                      <h4>{office.name}</h4>
-                      <p>
-                        {office.street}
-                        <span className="d-block">
-                          {office.zip} {office.city}, {office.country}
-                        </span>
-                      </p>
-                      {typeof window !== 'undefined' && (
-                        <LeafletMap
-                          position={[office.lat, office.long]}
-                          zoom={15}
-                        />
-                      )}
-                    </address>
-                  </div>
-                )
-              })}
+            <div className="col-md-8">
+              <div className="row justify-content-end">
+                {offices &&
+                  offices.map((office, index) => {
+                    return (
+                      <div className="col-md-6 padding-bottom-20px" key={index}>
+                        <address>
+                          <h4>{office.name}</h4>
+                          <p>
+                            {office.street}
+                            <span className="d-block">
+                              {office.zip} {office.city}, {office.country}
+                            </span>
+                          </p>
+                          {typeof window !== 'undefined' && (
+                            <LeafletMap
+                              position={[office.lat, office.long]}
+                              zoom={15}
+                            />
+                          )}
+                        </address>
+                      </div>
+                    )
+                  })}
+              </div>
+            </div>
           </div>
         </div>
       </section>
