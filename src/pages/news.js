@@ -9,7 +9,7 @@ const NewsPage = ({ data }) => {
 
   return (
     <>
-      <SEO title="news" />
+      <SEO title="News" />
       <NewsPageTemplate news={news} />
     </>
   )
