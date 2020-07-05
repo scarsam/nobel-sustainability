@@ -216,7 +216,7 @@ sectionFour:
     - image:
         alt: Kristian Vangsgaard
         image: /images/kristian.png
-      name: Kristian Vangsgaard — Global Brand ambassador
+      name: Kristian Vangsgaard
       text: >-
         In 2017, Kristian Vangsgaard entered the Nobel Sustainability Trust as a
         Global Brand Ambassador. He has a background in entrepreneurship, brand
@@ -246,10 +246,11 @@ sectionFour:
         amount of new arenas such as a social networks, education platforms,
         mastermind events for exclusive small groups of 20 participants and
         several more areas.
+      title: Global Brand ambassador
     - image:
         alt: Kevin Lee
         image: /images/KL profilbild.jpeg
-      name: Kevin Lee — CEO of NST Media
+      name: Kevin Lee
       text: >-
         Kevin Lee is a world-class music educator, cellist & famous Hollywood
         producer, art director of Hollywood News, the member of World Film
@@ -283,10 +284,11 @@ sectionFour:
         Laureate, CEO of NST Media for the Nobel NST Sustainable Development
         Fund. He is also the President of the NST Foundation China Association
         and nominee for the Nobel NST Prize.
+      title: CEO of NST Media
     - image:
         alt: Maqsood Ahmad Naz
         image: /images/Maqsood-Naz-200px.jpg
-      name: 'Mr. Maqsood Ahmad Naz — Ambassador – Pakistan & UAE, Houston-Texas'
+      name: Mr. Maqsood Ahmad Naz
       text: >-
         Maqsood Ahmad Naz is an entrepreneur and philanthropist, with more than
         30 years of industrial experience, Mr. Naz is serving Pakistan’s
@@ -322,5 +324,7 @@ sectionFour:
         the promotion of renewable technologies and policies, life-sustaining
         clean environments, thereby providing inspiration and protection to
         present and future generations.
+      title: 'Ambassador – Pakistan & UAE, Houston-Texas'
   heading: Personell
 ---
+
