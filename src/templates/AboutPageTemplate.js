@@ -79,8 +79,7 @@ const AboutPageTemplate = ({
                         fixed={boardMember.image.image.childImageSharp.fixed}
                       />
                       <div className="padding-left-30px">
-                        <h3>{boardMember.name}</h3>
-                        <img src={squigglyLine} alt="underline" />
+                        <h3 className="squiggly-line">{boardMember.name}</h3>
                       </div>
                     </div>
                     <ReactMarkdown source={boardMember.text} />
@@ -109,7 +108,7 @@ const AboutPageTemplate = ({
                     />
                     <div className="padding-left-30px">
                       <h3>{employee.name}</h3>
-                      <img src={squigglyLine} alt="underline" />
+                      <h4 className="squiggly-line">{employee.title}</h4>
                     </div>
                   </div>
                   <ReactMarkdown source={employee.text} />

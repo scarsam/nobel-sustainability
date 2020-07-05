@@ -46,6 +46,7 @@ const AboutPagePreview = ({ entry, getAsset, widgetsFor }) => {
             .map(employeeOne => {
               return {
                 name: employeeOne.getIn(['name']),
+                title: employeeOne.getIn(['title']),
                 text: employeeOne.getIn(['text']),
                 image: {
                   image: getAsset(employeeOne.getIn(['image', 'image'])),

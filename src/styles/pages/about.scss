@@ -23,6 +23,20 @@
   }
 }
 
+.squiggly-line {
+  position: relative;
+  &:after {
+    display: block;
+    content: '';
+    position: absolute;
+    background-image: url(../../images/about/squiggly-line-v2.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 15px;
+    margin-top: 10px;
+  }
+}
+
 .bg-map {
   background-image: url(../../images/about/map.svg);
   background-repeat: no-repeat;

@@ -265,6 +265,7 @@ collections:
             widget: list
             fields:
               - { label: name, name: name, widget: string }
+              - { label: title, name: title, widget: string, required: false }
               - { label: text, name: text, widget: markdown }
               - label: image
                 name: image

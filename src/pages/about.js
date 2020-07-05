@@ -93,6 +93,7 @@ export const pageQuery = graphql`
               heading
               employeeOne {
                 name
+                title
                 text
                 image {
                   alt
