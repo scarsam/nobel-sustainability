@@ -1,6 +1,5 @@
 import React from 'react'
 import IntroText from '../../components/intro_text'
-import squigglyLine from '../../images/about/squiggly-line.svg'
 import '../../styles/pages/about.scss'
 import PreviewCompatibleImage from '../preview-components/PreviewCompatibleImage'
 import ReactMarkdown from 'react-markdown'
@@ -109,8 +108,8 @@ export const AboutPagePreviewTemplate = ({
                         type="fixed"
                       />
                       <div className="padding-left-30px">
-                        <h3>{employee.name}</h3>
-                        <h4 className="squiggly-line">{employee.title}</h4>
+                        <h3 className="margin-bottom-5px">{employee.name}</h3>
+                        <strong className="d-block">{employee.title}</strong>
                       </div>
                     </div>
                     <ReactMarkdown source={employee.text} />

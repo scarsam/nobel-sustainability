@@ -107,8 +107,8 @@ const AboutPageTemplate = ({
                       fixed={employee.image.image.childImageSharp.fixed}
                     />
                     <div className="padding-left-30px">
-                      <h3>{employee.name}</h3>
-                      <h4 className="squiggly-line">{employee.title}</h4>
+                      <h3 className="margin-bottom-5px">{employee.name}</h3>
+                      <strong className="d-block">{employee.title}</strong>
                     </div>
                   </div>
                   <ReactMarkdown source={employee.text} />
