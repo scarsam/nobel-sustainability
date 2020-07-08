@@ -33,4 +33,10 @@ california:
     stores:
       - name: A-1 Market
         address: 1420 Encinal Avenue
+  - city: Arcata
+    stores:
+      - name: Murphy's Market
+        address: Sunnybrae 785 Bayside Road
+      - name: Wildberries Marketplace
+        address: 747 13th Street
 ---
